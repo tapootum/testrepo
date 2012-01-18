@@ -1,0 +1,1105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Calendar - tapootum - Redmine Osdev</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="IThGMdKHwaFIyIhdtJ7zq37tWg8/KvTfh2hjFsmhyB4="/>
+<link rel='shortcut icon' href='/favicon.ico?1326253075' />
+<link href="/themes/a1/stylesheets/application.css?1325709068" media="all" rel="stylesheet" type="text/css" />
+
+<script src="/javascripts/prototype.js?1326253073" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1326253073" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1326253073" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1326253073" type="text/javascript"></script>
+<script src="/javascripts/application.js?1326253073" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1326253075);}
+    </style>
+<![endif]-->
+
+          <link rel="stylesheet" href="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/jquery.jqplot.min.css" type="text/css" />
+
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery-1.6.2.min.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery-ui-1.8.16.custom.min.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jeditable.mini.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.cookie.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.scrollfollow.js?1326343141" type="text/javascript"></script>
+          <!--[if IE]><script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/excanvas.js?1326343141" type="text/javascript"></script><![endif]-->
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/jquery.jqplot.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/plugins/jqplot.highlighter.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/plugins/jqplot.canvasTextRenderer.min.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js?1326343141" type="text/javascript"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/jquery/jquery.jqplot/plugins/jqplot.enhancedLegendRenderer.min.js?1326343141" type="text/javascript"></script>
+
+          <script type="text/javascript" src="/rb_all_projects/server_variables"></script>
+          <script src="/plugin_assets/redmine_backlogs/javascripts/common.js?1326343141" type="text/javascript"></script>
+<script src="/plugin_assets/redmine_backlogs/javascripts/burndown.js?1326343141" type="text/javascript"></script>
+        
+<!-- page specific tags -->
+<script src="/javascripts/calendar/calendar.js?1326253070" type="text/javascript"></script><script src="/javascripts/calendar/lang/calendar-en.js?1326253069" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script><script src="/javascripts/calendar/calendar-setup.js?1326253070" type="text/javascript"></script><link href="/stylesheets/calendar.css?1326253075" media="screen" rel="stylesheet" type="text/css" /></head>
+<body class="theme-A1 controller-calendars action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="/my/account" class="my-account">My account</a></li>
+<li><a href="/logout" class="logout">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a href="/users/3">tapootum</a></div>
+    <ul><li><a href="/" class="home">Home</a></li>
+<li><a href="/my/page" class="my-page">My page</a></li>
+<li><a href="/projects" class="projects">Projects</a></li>
+<li><a href="/admin" class="administration">Administration</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="/search/index/tapootum" method="get">
+        
+        <label for='q'>
+          <a href="/search/index/tapootum" accesskey="4">Search</a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        <select onchange="if (this.value != '') { window.location = this.value; }"><option value=''>Jump to a project...</option><option value="" disabled="disabled">---</option><option selected="selected" value="/projects/tapootum?jump=calendar">tapootum</option></select>
+    </div>
+    
+
+    <h1>tapootum</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="/projects/tapootum" class="overview">Overview</a></li>
+<li><a href="/projects/tapootum/activity" class="activity">Activity</a></li>
+<li><a href="/projects/tapootum/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="/projects/tapootum/issues" class="issues">Issues</a></li>
+<li><a href="/rb/master_backlog/tapootum" class="rb-master-backlogs">Backlogs</a></li>
+<li><a href="/rb/releases/tapootum" class="rb-releases">Releases</a></li>
+<li><a href="/projects/tapootum/issues/new" accesskey="7" class="new-issue">New issue</a></li>
+<li><a href="/projects/tapootum/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="/projects/tapootum/issues/calendar" class="calendar selected">Calendar</a></li>
+<li><a href="/projects/tapootum/news" class="news">News</a></li>
+<li><a href="/projects/tapootum/documents" class="documents">Documents</a></li>
+<li><a href="/projects/tapootum/wiki" class="wiki">Wiki</a></li>
+<li><a href="/projects/tapootum/files" class="files">Files</a></li>
+<li><a href="/projects/tapootum/repository" class="repository">Repository</a></li>
+<li><a href="/projects/tapootum/settings" class="settings">Settings</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="" id="main">
+    <div id="sidebar">
+        
+    <h3>Issues</h3>
+<a href="/projects/tapootum/issues?set_filter=1">View all issues</a><br />
+
+<a href="/projects/tapootum/issues/report">Summary</a><br />
+
+
+
+
+  <a href="/projects/tapootum/issues/calendar">Calendar</a><br />
+
+
+  <a href="/projects/tapootum/issues/gantt">Gantt</a><br />
+
+
+          <div id="backlogs_view_issues_sidebar"></div>
+          <script type="text/javascript">
+            jQuery(document).ready(function() {
+              jQuery('#backlogs_view_issues_sidebar').load('http://redmine.osdev.co.th/rb/hooks/sidebar/tapootum');
+            });
+          </script>
+        
+
+
+
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <h2>Calendar</h2>
+
+<form action="/projects/tapootum/issues/calendar" id="query_form" method="get">
+<input id="set_filter" name="set_filter" type="hidden" value="1" />
+<fieldset id="filters" class="collapsible ">
+  <legend onclick="toggleFieldset(this);">Filters</legend>
+  <div style="">
+    <script type="text/javascript">
+//<![CDATA[
+function add_filter() {
+  select = $('add_filter_select');
+  field = select.value
+  Element.show('tr_' +  field);
+  check_box = $('cb_' + field);
+  check_box.checked = true;
+  toggle_filter(field);
+  select.selectedIndex = 0;
+
+  for (i=0; i<select.options.length; i++) {
+    if (select.options[i].value == field) {
+      select.options[i].disabled = true;
+    }
+  }
+}
+
+function toggle_filter(field) {
+  check_box = $('cb_' + field);
+  if (check_box.checked) {
+    Element.show("operators_" + field);
+    Form.Element.enable("operators_" + field);
+    toggle_operator(field);
+  } else {
+    Element.hide("operators_" + field);
+    Form.Element.disable("operators_" + field);
+    enableValues(field, []);
+  }
+}
+
+function enableValues(field, indexes) {
+  var f = $$(".values_" + field);
+  for(var i=0;i<f.length;i++) {
+    if (indexes.include(i)) {
+      Form.Element.enable(f[i]);
+      f[i].up('span').show();
+    } else {
+      f[i].value = '';
+      Form.Element.disable(f[i]);
+      f[i].up('span').hide();
+    }
+  }
+  if (indexes.length > 0) {
+    Element.show("div_values_" + field);
+  } else {
+    Element.hide("div_values_" + field);
+  }
+}
+
+function toggle_operator(field) {
+  operator = $("operators_" + field);
+  switch (operator.value) {
+    case "!*":
+    case "*":
+    case "t":
+    case "w":
+    case "o":
+    case "c":
+      enableValues(field, []);
+      break;
+    case "><":
+      enableValues(field, [0,1]);
+      break;
+    case "<t+":
+    case ">t+":
+    case "t+":
+    case ">t-":
+    case "<t-":
+    case "t-":
+      enableValues(field, [2]);
+      break;
+    default:
+      enableValues(field, [0]);
+      break;
+  }
+}
+
+function toggle_multi_select(el) {
+  var select = $(el);
+  if (select.multiple == true) {
+    select.multiple = false;
+  } else {
+    select.multiple = true;
+  }
+}
+
+function submit_query_form(id) {
+  selectAllOptions("selected_columns");
+  $(id).submit();
+}
+
+function apply_filters_observer() {
+  $$("#query_form input[type=text]").invoke("observe", "keypress", function(e){
+    if(e.keyCode == Event.KEY_RETURN) {
+      submit_query_form("query_form");
+    }
+  });
+}
+Event.observe(document,"dom:loaded", apply_filters_observer);
+//]]>
+</script>
+
+<table width="100%">
+<tr>
+<td>
+<table>
+
+    
+    <tr  id="tr_status_id" class="filter">
+    <td class="field">
+        <input checked="checked" id="cb_status_id" name="f[]" onclick="toggle_filter('status_id');" type="checkbox" value="status_id" />
+        <label for="cb_status_id">Status</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_status_id">Filter</label>
+        <select id="operators_status_id" name="op[status_id]" onchange="toggle_operator('status_id');"><option value="o" selected="selected">open</option>
+<option value="=">is</option>
+<option value="!">is not</option>
+<option value="c">closed</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_status_id" style="display:none;">
+    
+        <span class="span_values_status_id">
+          <select class="values_status_id" id="values_status_id_1" name="v[status_id][]"><option value="1">New</option>
+<option value="2">In Progress</option>
+<option value="3">Resolved</option>
+<option value="4">Feedback</option>
+<option value="5">Closed</option>
+<option value="6">Rejected</option></select>
+          <a href="#" onclick="toggle_multi_select('values_status_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('status_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_tracker_id" class="filter">
+    <td class="field">
+        <input id="cb_tracker_id" name="f[]" onclick="toggle_filter('tracker_id');" type="checkbox" value="tracker_id" />
+        <label for="cb_tracker_id">Tracker</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_tracker_id">Filter</label>
+        <select id="operators_tracker_id" name="op[tracker_id]" onchange="toggle_operator('tracker_id');"><option value="=">is</option>
+<option value="!">is not</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_tracker_id" style="display:none;">
+    
+        <span class="span_values_tracker_id">
+          <select class="values_tracker_id" id="values_tracker_id_1" name="v[tracker_id][]"><option value="1">Bug</option>
+<option value="2">Feature</option>
+<option value="3">Support</option></select>
+          <a href="#" onclick="toggle_multi_select('values_tracker_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('tracker_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_priority_id" class="filter">
+    <td class="field">
+        <input id="cb_priority_id" name="f[]" onclick="toggle_filter('priority_id');" type="checkbox" value="priority_id" />
+        <label for="cb_priority_id">Priority</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_priority_id">Filter</label>
+        <select id="operators_priority_id" name="op[priority_id]" onchange="toggle_operator('priority_id');"><option value="=">is</option>
+<option value="!">is not</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_priority_id" style="display:none;">
+    
+        <span class="span_values_priority_id">
+          <select class="values_priority_id" id="values_priority_id_1" name="v[priority_id][]"><option value="3">Low</option>
+<option value="4">Normal</option>
+<option value="5">High</option>
+<option value="6">Urgent</option>
+<option value="7">Immediate</option></select>
+          <a href="#" onclick="toggle_multi_select('values_priority_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('priority_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_assigned_to_id" class="filter">
+    <td class="field">
+        <input id="cb_assigned_to_id" name="f[]" onclick="toggle_filter('assigned_to_id');" type="checkbox" value="assigned_to_id" />
+        <label for="cb_assigned_to_id">Assigned To</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_assigned_to_id">Filter</label>
+        <select id="operators_assigned_to_id" name="op[assigned_to_id]" onchange="toggle_operator('assigned_to_id');"><option value="=">is</option>
+<option value="!">is not</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_assigned_to_id" style="display:none;">
+    
+        <span class="span_values_assigned_to_id">
+          <select class="values_assigned_to_id" id="values_assigned_to_id_1" name="v[assigned_to_id][]"><option value="me">&lt;&lt; me &gt;&gt;</option>
+<option value="3">admin Jarin Charoensiri</option>
+<option value="5">Jarin Charoensiri</option>
+<option value="6">test test</option>
+<option value="4">Thanabodee Charoenpiriyakij</option></select>
+          <a href="#" onclick="toggle_multi_select('values_assigned_to_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('assigned_to_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_author_id" class="filter">
+    <td class="field">
+        <input id="cb_author_id" name="f[]" onclick="toggle_filter('author_id');" type="checkbox" value="author_id" />
+        <label for="cb_author_id">Author</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_author_id">Filter</label>
+        <select id="operators_author_id" name="op[author_id]" onchange="toggle_operator('author_id');"><option value="=">is</option>
+<option value="!">is not</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_author_id" style="display:none;">
+    
+        <span class="span_values_author_id">
+          <select class="values_author_id" id="values_author_id_1" name="v[author_id][]"><option value="me">&lt;&lt; me &gt;&gt;</option>
+<option value="3">admin Jarin Charoensiri</option>
+<option value="5">Jarin Charoensiri</option>
+<option value="6">test test</option>
+<option value="4">Thanabodee Charoenpiriyakij</option></select>
+          <a href="#" onclick="toggle_multi_select('values_author_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('author_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_assigned_to_role" class="filter">
+    <td class="field">
+        <input id="cb_assigned_to_role" name="f[]" onclick="toggle_filter('assigned_to_role');" type="checkbox" value="assigned_to_role" />
+        <label for="cb_assigned_to_role">Assignee's role</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_assigned_to_role">Filter</label>
+        <select id="operators_assigned_to_role" name="op[assigned_to_role]" onchange="toggle_operator('assigned_to_role');"><option value="=">is</option>
+<option value="!">is not</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_assigned_to_role" style="display:none;">
+    
+        <span class="span_values_assigned_to_role">
+          <select class="values_assigned_to_role" id="values_assigned_to_role_1" name="v[assigned_to_role][]"><option value="3">Manager</option>
+<option value="4">Developer</option>
+<option value="5">Reporter</option></select>
+          <a href="#" onclick="toggle_multi_select('values_assigned_to_role_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('assigned_to_role');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_fixed_version_id" class="filter">
+    <td class="field">
+        <input id="cb_fixed_version_id" name="f[]" onclick="toggle_filter('fixed_version_id');" type="checkbox" value="fixed_version_id" />
+        <label for="cb_fixed_version_id">Target version</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_fixed_version_id">Filter</label>
+        <select id="operators_fixed_version_id" name="op[fixed_version_id]" onchange="toggle_operator('fixed_version_id');"><option value="=">is</option>
+<option value="!">is not</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_fixed_version_id" style="display:none;">
+    
+        <span class="span_values_fixed_version_id">
+          <select class="values_fixed_version_id" id="values_fixed_version_id_1" name="v[fixed_version_id][]"><option value="5">tapootum - sprint#1</option></select>
+          <a href="#" onclick="toggle_multi_select('values_fixed_version_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('fixed_version_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_subject" class="filter">
+    <td class="field">
+        <input id="cb_subject" name="f[]" onclick="toggle_filter('subject');" type="checkbox" value="subject" />
+        <label for="cb_subject">Subject</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_subject">Filter</label>
+        <select id="operators_subject" name="op[subject]" onchange="toggle_operator('subject');"><option value="~">contains</option>
+<option value="!~">doesn't contain</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_subject" style="display:none;">
+    
+        <span class="span_values_subject"><input class="values_subject" id="values_subject" name="v[subject][]" size="30" type="text" /></span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('subject');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_created_on" class="filter">
+    <td class="field">
+        <input id="cb_created_on" name="f[]" onclick="toggle_filter('created_on');" type="checkbox" value="created_on" />
+        <label for="cb_created_on">Created</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_created_on">Filter</label>
+        <select id="operators_created_on" name="op[created_on]" onchange="toggle_operator('created_on');"><option value="=">is</option>
+<option value="&gt;=">&gt;=</option>
+<option value="&lt;=">&lt;=</option>
+<option value="&gt;&lt;">between</option>
+<option value="&gt;t-">less than days ago</option>
+<option value="&lt;t-">more than days ago</option>
+<option value="t-">days ago</option>
+<option value="t">today</option>
+<option value="w">this week</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_created_on" style="display:none;">
+    
+        <span class="span_values_created_on"><input class="values_created_on" id="values_created_on_1" name="v[created_on][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_created_on_1_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_created_on_1', ifFormat : '%Y-%m-%d', button : 'values_created_on_1_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_created_on"><input class="values_created_on" id="values_created_on_2" name="v[created_on][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_created_on_2_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_created_on_2', ifFormat : '%Y-%m-%d', button : 'values_created_on_2_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_created_on"><input class="values_created_on" id="v_created_on_" name="v[created_on][]" size="3" type="text" /> days</span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('created_on');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_updated_on" class="filter">
+    <td class="field">
+        <input id="cb_updated_on" name="f[]" onclick="toggle_filter('updated_on');" type="checkbox" value="updated_on" />
+        <label for="cb_updated_on">Updated</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_updated_on">Filter</label>
+        <select id="operators_updated_on" name="op[updated_on]" onchange="toggle_operator('updated_on');"><option value="=">is</option>
+<option value="&gt;=">&gt;=</option>
+<option value="&lt;=">&lt;=</option>
+<option value="&gt;&lt;">between</option>
+<option value="&gt;t-">less than days ago</option>
+<option value="&lt;t-">more than days ago</option>
+<option value="t-">days ago</option>
+<option value="t">today</option>
+<option value="w">this week</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_updated_on" style="display:none;">
+    
+        <span class="span_values_updated_on"><input class="values_updated_on" id="values_updated_on_1" name="v[updated_on][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_updated_on_1_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_updated_on_1', ifFormat : '%Y-%m-%d', button : 'values_updated_on_1_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_updated_on"><input class="values_updated_on" id="values_updated_on_2" name="v[updated_on][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_updated_on_2_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_updated_on_2', ifFormat : '%Y-%m-%d', button : 'values_updated_on_2_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_updated_on"><input class="values_updated_on" id="v_updated_on_" name="v[updated_on][]" size="3" type="text" /> days</span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('updated_on');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_start_date" class="filter">
+    <td class="field">
+        <input id="cb_start_date" name="f[]" onclick="toggle_filter('start_date');" type="checkbox" value="start_date" />
+        <label for="cb_start_date">Start date</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_start_date">Filter</label>
+        <select id="operators_start_date" name="op[start_date]" onchange="toggle_operator('start_date');"><option value="=">is</option>
+<option value="&gt;=">&gt;=</option>
+<option value="&lt;=">&lt;=</option>
+<option value="&gt;&lt;">between</option>
+<option value="&lt;t+">in less than</option>
+<option value="&gt;t+">in more than</option>
+<option value="t+">in</option>
+<option value="t">today</option>
+<option value="w">this week</option>
+<option value="&gt;t-">less than days ago</option>
+<option value="&lt;t-">more than days ago</option>
+<option value="t-">days ago</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_start_date" style="display:none;">
+    
+        <span class="span_values_start_date"><input class="values_start_date" id="values_start_date_1" name="v[start_date][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_start_date_1_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_start_date_1', ifFormat : '%Y-%m-%d', button : 'values_start_date_1_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_start_date"><input class="values_start_date" id="values_start_date_2" name="v[start_date][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_start_date_2_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_start_date_2', ifFormat : '%Y-%m-%d', button : 'values_start_date_2_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_start_date"><input class="values_start_date" id="v_start_date_" name="v[start_date][]" size="3" type="text" /> days</span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('start_date');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_due_date" class="filter">
+    <td class="field">
+        <input id="cb_due_date" name="f[]" onclick="toggle_filter('due_date');" type="checkbox" value="due_date" />
+        <label for="cb_due_date">Due date</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_due_date">Filter</label>
+        <select id="operators_due_date" name="op[due_date]" onchange="toggle_operator('due_date');"><option value="=">is</option>
+<option value="&gt;=">&gt;=</option>
+<option value="&lt;=">&lt;=</option>
+<option value="&gt;&lt;">between</option>
+<option value="&lt;t+">in less than</option>
+<option value="&gt;t+">in more than</option>
+<option value="t+">in</option>
+<option value="t">today</option>
+<option value="w">this week</option>
+<option value="&gt;t-">less than days ago</option>
+<option value="&lt;t-">more than days ago</option>
+<option value="t-">days ago</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_due_date" style="display:none;">
+    
+        <span class="span_values_due_date"><input class="values_due_date" id="values_due_date_1" name="v[due_date][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_due_date_1_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_due_date_1', ifFormat : '%Y-%m-%d', button : 'values_due_date_1_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_due_date"><input class="values_due_date" id="values_due_date_2" name="v[due_date][]" size="10" type="text" /> <img alt="Calendar" class="calendar-trigger" id="values_due_date_2_trigger" src="/images/calendar.png?1326253057" /><script type="text/javascript">
+//<![CDATA[
+Calendar.setup({inputField : 'values_due_date_2', ifFormat : '%Y-%m-%d', button : 'values_due_date_2_trigger' });
+//]]>
+</script></span>
+        <span class="span_values_due_date"><input class="values_due_date" id="v_due_date_" name="v[due_date][]" size="3" type="text" /> days</span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('due_date');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_estimated_hours" class="filter">
+    <td class="field">
+        <input id="cb_estimated_hours" name="f[]" onclick="toggle_filter('estimated_hours');" type="checkbox" value="estimated_hours" />
+        <label for="cb_estimated_hours">Estimated time</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_estimated_hours">Filter</label>
+        <select id="operators_estimated_hours" name="op[estimated_hours]" onchange="toggle_operator('estimated_hours');"><option value="=">is</option>
+<option value="&gt;=">&gt;=</option>
+<option value="&lt;=">&lt;=</option>
+<option value="&gt;&lt;">between</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_estimated_hours" style="display:none;">
+    
+        <span class="span_values_estimated_hours"><input class="values_estimated_hours" id="values_estimated_hours_1" name="v[estimated_hours][]" size="6" type="text" /></span>
+        <span class="span_values_estimated_hours"><input class="values_estimated_hours" id="values_estimated_hours_2" name="v[estimated_hours][]" size="6" type="text" /></span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('estimated_hours');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_done_ratio" class="filter">
+    <td class="field">
+        <input id="cb_done_ratio" name="f[]" onclick="toggle_filter('done_ratio');" type="checkbox" value="done_ratio" />
+        <label for="cb_done_ratio">% Done</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_done_ratio">Filter</label>
+        <select id="operators_done_ratio" name="op[done_ratio]" onchange="toggle_operator('done_ratio');"><option value="=">is</option>
+<option value="&gt;=">&gt;=</option>
+<option value="&lt;=">&lt;=</option>
+<option value="&gt;&lt;">between</option>
+<option value="!*">none</option>
+<option value="*">all</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_done_ratio" style="display:none;">
+    
+        <span class="span_values_done_ratio"><input class="values_done_ratio" id="values_done_ratio_1" name="v[done_ratio][]" size="6" type="text" /></span>
+        <span class="span_values_done_ratio"><input class="values_done_ratio" id="values_done_ratio_2" name="v[done_ratio][]" size="6" type="text" /></span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('done_ratio');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_watcher_id" class="filter">
+    <td class="field">
+        <input id="cb_watcher_id" name="f[]" onclick="toggle_filter('watcher_id');" type="checkbox" value="watcher_id" />
+        <label for="cb_watcher_id">Watcher</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_watcher_id">Filter</label>
+        <select id="operators_watcher_id" name="op[watcher_id]" onchange="toggle_operator('watcher_id');"><option value="=">is</option>
+<option value="!">is not</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_watcher_id" style="display:none;">
+    
+        <span class="span_values_watcher_id">
+          <select class="values_watcher_id" id="values_watcher_id_1" name="v[watcher_id][]"><option value="me">&lt;&lt; me &gt;&gt;</option></select>
+          <a href="#" onclick="toggle_multi_select('values_watcher_id_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('watcher_id');</script>
+    </td>
+    </tr>
+
+    
+    <tr style="display:none;" id="tr_backlogs_issue_type" class="filter">
+    <td class="field">
+        <input id="cb_backlogs_issue_type" name="f[]" onclick="toggle_filter('backlogs_issue_type');" type="checkbox" value="backlogs_issue_type" />
+        <label for="cb_backlogs_issue_type">Backlog type</label>
+    </td>
+    <td class="operator">
+        <label class="hidden-for-sighted" for="op_backlogs_issue_type">Filter</label>
+        <select id="operators_backlogs_issue_type" name="op[backlogs_issue_type]" onchange="toggle_operator('backlogs_issue_type');"><option value="=">is</option>
+<option value="!">is not</option></select>
+    </td>
+    <td class="values">
+    <div id="div_values_backlogs_issue_type" style="display:none;">
+    
+        <span class="span_values_backlogs_issue_type">
+          <select class="values_backlogs_issue_type" id="values_backlogs_issue_type_1" name="v[backlogs_issue_type][]"><option value="story">Story</option>
+<option value="task">Task</option>
+<option value="impediment">Impediment</option>
+<option value="any">any</option></select>
+          <a href="#" onclick="toggle_multi_select('values_backlogs_issue_type_1');; return false;"><img alt="Bullet_toggle_plus" src="/images/bullet_toggle_plus.png?1326253057" /></a>
+        </span>
+    
+    </div>
+    <script type="text/javascript">toggle_filter('backlogs_issue_type');</script>
+    </td>
+    </tr>
+
+</table>
+</td>
+<td class="add-filter">
+<label for="add_filter_select">Add filter</label>
+<select id="add_filter_select" onchange="add_filter();"><option value=""></option>
+<option value="tracker_id">Tracker</option>
+<option value="priority_id">Priority</option>
+<option value="assigned_to_id">Assigned To</option>
+<option value="author_id">Author</option>
+<option value="assigned_to_role">Assignee's role</option>
+<option value="fixed_version_id">Target version</option>
+<option value="subject">Subject</option>
+<option value="created_on">Created</option>
+<option value="updated_on">Updated</option>
+<option value="start_date">Start date</option>
+<option value="due_date">Due date</option>
+<option value="estimated_hours">Estimated time</option>
+<option value="done_ratio">% Done</option>
+<option value="watcher_id">Watcher</option>
+<option value="backlogs_issue_type">Backlog type</option></select>
+</td>
+</tr>
+</table>
+<input id="f_" name="f[]" type="hidden" value="" />
+
+  </div>
+</fieldset>
+
+<p style="float:right;">
+  <a href="/projects/tapootum/issues/calendar?month=12&amp;year=2011">« December 2011</a> | <a href="/projects/tapootum/issues/calendar?month=2&amp;year=2012">February »</a>
+</p>
+
+<p class="buttons">
+<label for="month">Month</label>
+<select id="month" name="month">
+<option selected="selected" value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
+
+<label for="year">Year</label>
+<select id="year" name="year">
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option selected="selected" value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+</select>
+
+
+<a class="icon icon-checked" href="#" onclick="$(&quot;query_form&quot;).submit(); return false;">Apply</a>
+<a href="/projects/tapootum/issues/calendar?set_filter=1" class="icon icon-reload">Clear</a>
+</p>
+</form>
+
+
+
+<table class="cal">
+<thead>
+<tr><th scope="col" title="Week" class="week-number"></th><th scope="col">Sunday</th><th scope="col">Monday</th><th scope="col">Tuesday</th><th scope="col">Wednesday</th><th scope="col">Thursday</th><th scope="col">Friday</th><th scope="col">Saturday</th></tr>
+</thead>
+<tbody>
+<tr>
+
+<td class='week-number' title='Week'>1</td>
+<td class="even">
+<p class="day-num">1</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">2</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">3</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">4</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">5</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">6</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">7</p>
+
+</td>
+</tr><tr>
+
+<td class='week-number' title='Week'>2</td>
+<td class="even">
+<p class="day-num">8</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">9</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">10</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">11</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">12</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">13</p>
+
+  
+  <span class="icon icon-package">
+    
+    <a href="/versions/5">sprint#1</a>
+  </span>
+  
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">14</p>
+
+</td>
+</tr><tr>
+
+<td class='week-number' title='Week'>3</td>
+<td class="even">
+<p class="day-num">15</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">16</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">17</p>
+
+</td>
+
+
+
+<td class="even today">
+<p class="day-num">18</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">19</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">20</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">21</p>
+
+</td>
+</tr><tr>
+
+<td class='week-number' title='Week'>4</td>
+<td class="even">
+<p class="day-num">22</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">23</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">24</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">25</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">26</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">27</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">28</p>
+
+</td>
+</tr><tr>
+
+<td class='week-number' title='Week'>5</td>
+<td class="even">
+<p class="day-num">29</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">30</p>
+
+</td>
+
+
+
+<td class="even">
+<p class="day-num">31</p>
+
+</td>
+
+
+
+<td class="odd">
+<p class="day-num">1</p>
+
+</td>
+
+
+
+<td class="odd">
+<p class="day-num">2</p>
+
+</td>
+
+
+
+<td class="odd">
+<p class="day-num">3</p>
+
+</td>
+
+
+
+<td class="odd">
+<p class="day-num">4</p>
+
+</td>
+
+
+</tr>
+</tbody>
+</table>
+
+
+<p class="legend cal">
+  <span class="starting">issue beginning this day</span>
+  <span class="ending">issue ending this day</span>
+  <span class="starting ending">issue beginning and ending this day</span>
+</p>
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

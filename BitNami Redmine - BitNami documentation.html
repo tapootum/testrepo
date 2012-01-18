@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" dir="ltr">
+<head>
+<title>BitNami Redmine - BitNami documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" title="What's new feed" href="/index.php?title=Special:Recentchanges&amp;feed=rss" />
+<link rel="alternate" type="application/rss+xml" title="Page and subpages changes feed" href="/index.php?title=Special:Article&amp;type=feed&amp;feedtype=subpagechanges&amp;pageid=144" />
+<link rel="alternate" type="application/rss+xml" title="Page changes feed" href="/index.php?title=Special:Article&amp;type=feed&amp;pageid=144" />
+<meta name="generator" content="MindTouch Core" />
+<link rel="search" type="application/opensearchdescription+xml" title="BitNami documentation Search" href="/deki/gui/opensearch.php?type=description" /><link rel="stylesheet" type="text/css" media="screen" href="/skins/common/reset.css" /><link rel="stylesheet" type="text/css" media="screen" href="/skins/common/css.php" /> <!--[if IE 7]><style type="text/css">@import "/skins/common/_ie7.css";</style><![endif]--><!--[if IE 6]><style type="text/css">@import "/skins/common/_ie.css";</style><![endif]--><!--[if IE 7]><link href="/skins/deuce/lighty-blue/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 6]><link href="/skins/deuce/lighty-blue/ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="/skins/deuce/lighty-blue/css.php" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" media="print" href="/skins/common/print.css" /><link rel="stylesheet" type="text/css" media="print" href="/skins/deuce/print.css" />
+<script type="text/javascript">CKEDITOR_BASEPATH = "/deki/plugins/page_editor_ckeditor/ckeditor/";</script>
+<script type="text/javascript" src="/skins/common/js.php?perms=LOGIN,BROWSE,READ,SUBSCRIBE"></script>	<script type="text/javascript">
+
+		var aLt = aLt || [];aLt["attach-no-description"] = 'No description'; aLt["cancel"] = 'Cancel'; aLt["close"] = 'Close'; aLt["comment-delete"] = 'Are you sure you want to delete this comment?'; aLt["contentrating-title-popup"] = 'Thanks for your feedback'; aLt["error"] = 'Error'; aLt["error-permission-denied"] = 'Permission denied'; aLt["error-permission-details"] = 'Your account does not have sufficient permissions to perform that action.'; aLt["gallery-close"] = 'close'; aLt["gallery-next"] = 'next'; aLt["gallery-prev"] = 'prev'; aLt["internal-error"] = 'Sorry, but there was an internal problem - please try again soon.'; aLt["js-label_cancel"] = 'Cancel'; aLt["js-label_save"] = 'Save'; aLt["js-tooltip_cancel"] = 'Exit Without Saving Changes'; aLt["js-tooltip_save"] = 'Save and Exit (Alt+S)'; aLt["ldap-provide-credentials"] = 'Please provide external service login credentials.'; aLt["loading"] = 'Loading...'; aLt["menu-confirm-delete"] = 'Are you sure you want to delete this file?'; aLt["menu-delete-file"] = 'Delete'; aLt["menu-edit-description"] = 'Edit description'; aLt["menu-move-file"] = 'Move'; aLt["menu-previous-versions"] = 'Previous versions'; aLt["menu-view-original"] = 'View original'; aLt["ready"] = 'Ready'; aLt["remove-tag"] = 'Remove tag'; aLt["restore-tag"] = 'Restore tag'; aLt["adding-tags"] = 'Adding Tags...'; aLt["save"] = 'Save'; aLt["submit"] = 'Submit'; aLt["wikibits-attach-another"] = 'Attach another file'; aLt["wikibits-attach-file"] = 'Attach File'; aLt["wikibits-cant-attach-editing"] = 'Sorry, you can\'t attach files while editing a page. Please close the editor first.'; aLt["wikibits-edit-section"] = 'Edit section'; aLt["wikibits-remove-file"] = 'Remove file';  var wfMsg = wfMsg || function (key) { return aLt[key] ? aLt[key] : 'MISSING: ' + key; };
+	//hook in menu clicking events to the document's body
+	YAHOO.util.Event.addListener(document, "click", function () { DWMenu.BodyClick(); });
+	YAHOO.util.Event.onDOMReady(function () { new clientWindow });
+
+		
+
+			YAHOO.util.Event.onDOMReady(function() {
+			tb_init("a.lightbox, area.lightbox, input.lightbox, a[rel='awesomebox']");//pass where to apply thickbox
+		});
+	
+			YAHOO.util.Event.onDOMReady(function() {
+			MTComments.HookBehavior();
+		});
+		</script>
+
+<script type="text/javascript" src="http://wiki.bitnami.org/@api/deki/services/default/48/res/jquery2/jquery-ui.js"></script><link rel="stylesheet" href="http://wiki.bitnami.org/@api/deki/services/default/48/res/jquery2/themes/smoothness/ui.all.css" type="text/css" media="screen" /><script type="text/javascript" src="/deki/plugins/nav_pane/rgbcolor.js"></script>
+<script type="text/javascript" src="/deki/plugins/nav_pane/nav.js"></script>
+
+<script type="text/javascript">
+
+Deki.BaseHref = 'http://wiki.bitnami.org';
+Deki.PageId = 144;
+Deki.PageTitle = 'Applications/BitNami Redmine';
+Deki.PageLanguageCode = 'en-us';
+Deki.FollowRedirects = 1;
+Deki.PathTpl = '/skins/deuce';
+Deki.PathSkin = '/skins/deuce/lighty-blue';
+Deki.PathCommon = '/skins/common';
+Deki.UserName = 'Anonymous';
+Deki.Today = '18 Jan 2012';
+Deki.UserIsAnonymous = true;
+Deki.EditorConfigToken = 'fb1bd39a';
+Deki.EditorStylesToken = '4c447ea7';
+Deki.PageEditable = false;
+</script>
+<script type="text/javascript">aLt["commercial-required"] = 'Gather feedback on your content with <strong>community scoring</strong> - these ratings weight results in adaptive search. Through curation analytics, ratings are used to highlight pages in need of attention. <a href="http://www.mindtouch.com/redir/mindtouch-tcs/">Learn more on enabling these capabilities with MindTouch 2010.</a>';aLt["login-required"] = 'You must be <a href="/index.php?title=Special:Userlogin&returntotitle=Applications%2FBitNami+Redmine">logged in</a> to perform that action';</script><link href="/skins/common/custom_css.php" rel="stylesheet" type="text/css" /></head>
+<body class="yui-skin-sam">
+<noscript><div class="noscript">This application requires Javascript to be enabled.</div></noscript><div id="header">
+	<div class="wrap">
+		<div class="logo">
+			<a href="/"><img src="http://wiki.bitnami.org/@api/deki/site/logo.png" /></a>
+		</div>
+		<div class="search">
+			<form action="/Special:Search">
+				<fieldset>
+					<label for="searchInput">
+						<span class="text">Search:</span>
+					</label>
+					<input type="text" name="search" tabindex="1" class="search" id="searchInput" value="" />
+					<select name="ns"  id="" class="deki-search-namespaces"><option value="all">All pages</option><option value="main" selected="selected">Main pages</option></select><input type="hidden" value="Applications/BitNami_Redmine" name="path" id="hidden-path" />					<button type="submit">Search</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="wrap">
+	<div id="sitenav">
+		<div class="site">
+			<ul>
+				<li class="home"><a href="/">Home</a></li>
+				<li class="mypage"><a href="/index.php?title=Special:Userlogin&returntomypage=y">My Page</a></li>
+				<li class="whatsnew"><a href="/Special:Recentchanges">Recent changes</a></li>
+								<li class="tools"><a href="#" onclick="return DWMenu.Position('menutools', this, 0, 0);"><span class="more">Tools</span></a></li>
+				<li class="help"><a href="http://www.mindtouch.com/redir/support-help/">Help</a></li>
+			</ul>
+		</div>
+		<div class="user">
+			<ul>
+							<li><a href="/index.php?title=Special:Userlogin&returntotitle=Applications%2FBitNami+Redmine" class="login">Log in</a></li>
+						</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="bodyheader">
+		<div class="spacer">&nbsp;</div>
+	</div>	
+	
+	<div id="body">
+		<div class="nav">
+			<div id="siteNavTree"><div class="node dockedNode homeNode parentClosed" id="n22" c="n103" path=""><a href="http://wiki.bitnami.org/" title="BitNami documentation"><span>BitNami documentati...</span></a></div><div class="node dockedNode lastDocked parentClosed" id="n103" c="n249,n125,n154,n226,n162,n194,n196,n204,n144,n241,n177,n124" p="n22" path="Applications/" sd="0"><a href="http://wiki.bitnami.org/Applications" title="Applications"><span>Applications</span></a></div><div class="node childNode sibling" id="n249" p="n103" path="Applications/BitNami_Alfresco/"><a href="http://wiki.bitnami.org/Applications/BitNami_Alfresco" title="BitNami Alfresco"><span>BitNami Alfresco</span></a></div><div class="node childNode sibling parentClosed" id="n125" p="n103" path="Applications/BitNami_Drupal/" cd="0"><a href="http://wiki.bitnami.org/Applications/BitNami_Drupal" title="BitNami Drupal"><span>BitNami Drupal</span></a></div><div class="node childNode sibling parentClosed" id="n154" p="n103" path="Applications/BitNami_Joomla!/" cd="0"><a href="http://wiki.bitnami.org/Applications/BitNami_Joomla!" title="BitNami Joomla!"><span>BitNami Joomla!</span></a></div><div class="node childNode sibling" id="n226" p="n103" path="Applications/BitNami_LimeSurvey/"><a href="http://wiki.bitnami.org/Applications/BitNami_LimeSurvey" title="BitNami LimeSurvey"><span>BitNami LimeSurvey</span></a></div><div class="node childNode sibling" id="n162" p="n103" path="Applications/BitNami_Magento/"><a href="http://wiki.bitnami.org/Applications/BitNami_Magento" title="BitNami Magento"><span>BitNami Magento</span></a></div><div class="node childNode sibling" id="n194" p="n103" path="Applications/BitNami_OSQA/"><a href="http://wiki.bitnami.org/Applications/BitNami_OSQA" title="BitNami OSQA"><span>BitNami OSQA</span></a></div><div class="node childNode sibling" id="n196" p="n103" path="Applications/BitNami_Piwik/"><a href="http://wiki.bitnami.org/Applications/BitNami_Piwik" title="BitNami Piwik"><span>BitNami Piwik</span></a></div><div class="node childNode sibling" id="n204" p="n103" path="Applications/BitNami_Pootle/"><a href="http://wiki.bitnami.org/Applications/BitNami_Pootle" title="BitNami Pootle"><span>BitNami Pootle</span></a></div><div class="node childNode sibling selected" id="n144" p="n103" path="Applications/BitNami_Redmine/"><a href="http://wiki.bitnami.org/Applications/BitNami_Redmine" title="BitNami Redmine"><span>BitNami Redmine</span></a></div><div class="node childNode sibling" id="n241" p="n103" path="Applications/BitNami_SugarCRM/"><a href="http://wiki.bitnami.org/Applications/BitNami_SugarCRM" title="BitNami SugarCRM"><span>BitNami SugarCRM</span></a></div><div class="node childNode sibling" id="n177" p="n103" path="Applications/BitNami_Trac/"><a href="http://wiki.bitnami.org/Applications/BitNami_Trac" title="BitNami Trac"><span>BitNami Trac</span></a></div><div class="node childNode sibling parentClosed" id="n124" p="n103" path="Applications/BitNami_Wordpress/" cd="0"><a href="http://wiki.bitnami.org/Applications/BitNami_Wordpress" title="BitNami Wordpress"><span>BitNami Wordpress</span></a></div></div><script type="text/javascript">var navMaxWidth = 1600;YAHOO.util.Event.onAvailable("siteNavTree", ((typeof Deki.nav != "undefined") ? Deki.nav.init : null), Deki.nav, true);</script>		</div>
+		<div class="body">
+			<div class="pagebar">
+				<div class="options">
+					<ul>
+						<li class="pageedit"><a href="#" title="Edit page" onclick="return false" class="disabled"><span></span>Edit page</a></li>
+						<li class="pagecreate"><a href="#" title="New page" class="disabled disabled-login"><span></span>New page</a></li>
+						<li class="pagemore last"><a href="#" onclick="return DWMenu.Position('menuoptions', this, 0, 0);"><span class="more">More</span></a></li>
+					</ul>
+				</div>
+					
+				<div class="info">
+					<dl>
+						<dd class="pagemain"><a href="/Applications/BitNami_Redmine" class="active" title="View page">View page</a></dd>
+						<dd class="pagetalk"><a href="/Talk:Applications/BitNami_Redmine" title="Talk page" onclick="" class="inactive"><span></span>Talk page</a></dd>
+													<dd class="last pagealerts"><div id="deki-page-alerts" class="disabled">
+				<div class="toggle">
+					<a href="javascript:void(0);" class="off">
+						<span>Page Notifications</span>
+						<span class="status">Off</span>
+					</a>
+				</div></div></dd>
+											</dl>
+				</div>
+								<div class="clear"></div>
+			</div>
+			
+				
+				<div class="breadcrumbs hideforedit">
+					<div class="pagemetalinks">
+						<ul>
+							<li class="pagetoc"><a href="#" onclick="Deki.$('#pagetoc').toggle();return false;">Table of contents</a></li>
+						</ul>
+					</div>
+														 				<div class="hierarchy">
+			 					<ol class="dw-hierarchy deki-hierarchy"><li class="first"><a href="http://wiki.bitnami.org/" class="deki-ns">BitNami documentation</a></li>
+<li><a href="http://wiki.bitnami.org/Applications" class="deki-ns">Applications</a></li>
+<li class="last"><a href="http://wiki.bitnami.org/Applications/BitNami_Redmine" class="deki-ns current">BitNami Redmine</a></li></ol>			 				</div>
+		 						 					 			<div class="br"></div>
+				</div>
+						
+									 			
+			<div class="content">
+			
+				<div class="toc" id="pagetoc" style="display:none;">
+					<div class="pageToc"><h5>Table of contents</h5><div class="tocdata"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_change_the_default_URL_to_the_root.3f" rel="internal">How to change the default URL to the root?</a></li><li><span>4.</span> <a href="#How_to_create_a_full_backup_of_Redmine.3f" rel="internal">How to create a full backup of Redmine?</a></li><li><span>5.</span> <a href="#How_to_upgrade_Redmine.3f" rel="internal">How to upgrade Redmine?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Redmine.3f" rel="internal">How to install a plugin on Redmine?</a></li><li><span>7.</span> <a href="#How_to_install_the_Redmine_Ultraviolet_plugin.3f" rel="internal">How to install the Redmine Ultraviolet plugin?</a></li><li><span>8.</span> <a href="#How_to_configure_the_email_settings_of_Redmine.3f" rel="internal">How to configure the email settings of Redmine?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_configure_Redmine_with_Phusion_Passenger" rel="internal">How to configure Redmine with Phusion Passenger</a></li><li><span>11.</span> <a href="#How_to_change_the_default_URL_with_Phussion_Passenger" rel="internal">How to change the default URL with Phussion Passenger</a></li><li><span>12.</span> <a href="#How_to_see_the_Subversion_repository_from_Redmine_application_or_from_web_browser_directly.3f" rel="internal">How to see the Subversion repository from Redmine application or from web browser directly?</a></li><li><span>13.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Git" rel="internal">How to configure Redmine for advanced integration with Git</a></li><li><span>14.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Subversion" rel="internal">How to configure Redmine for advanced integration with Subversion</a></li></ol></div></div>				</div>
+								<div class="title">
+					
+					<h1 id="title">
+										BitNami Redmine					
+										</h1>
+
+										<div class="modified hideforedit">
+						Modified <a href="/index.php?title=Applications/BitNami_Redmine&action=history" title="08:15, 29 Nov 2011">08:15, 29 Nov 2011</a> by <a href="/User:Admin" class="link-user" rel="internal">Admin</a> <span class="pagehistory">| <a href="/index.php?title=Applications/BitNami_Redmine&action=history" class="" title="Page History">Page History</a></span>
+					</div>
+										
+				</div>
+								
+				<div id="sessionMsg"><div class="inner"><ul></ul></div></div>				
+				<div class="text">
+					<div id="page-top"><div id="pageToc"><div class="pageToc"><h5>Table of contents</h5><div class="tocdata"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_change_the_default_URL_to_the_root.3f" rel="internal">How to change the default URL to the root?</a></li><li><span>4.</span> <a href="#How_to_create_a_full_backup_of_Redmine.3f" rel="internal">How to create a full backup of Redmine?</a></li><li><span>5.</span> <a href="#How_to_upgrade_Redmine.3f" rel="internal">How to upgrade Redmine?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Redmine.3f" rel="internal">How to install a plugin on Redmine?</a></li><li><span>7.</span> <a href="#How_to_install_the_Redmine_Ultraviolet_plugin.3f" rel="internal">How to install the Redmine Ultraviolet plugin?</a></li><li><span>8.</span> <a href="#How_to_configure_the_email_settings_of_Redmine.3f" rel="internal">How to configure the email settings of Redmine?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_configure_Redmine_with_Phusion_Passenger" rel="internal">How to configure Redmine with Phusion Passenger</a></li><li><span>11.</span> <a href="#How_to_change_the_default_URL_with_Phussion_Passenger" rel="internal">How to change the default URL with Phussion Passenger</a></li><li><span>12.</span> <a href="#How_to_see_the_Subversion_repository_from_Redmine_application_or_from_web_browser_directly.3f" rel="internal">How to see the Subversion repository from Redmine application or from web browser directly?</a></li><li><span>13.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Git" rel="internal">How to configure Redmine for advanced integration with Git</a></li><li><span>14.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Subversion" rel="internal">How to configure Redmine for advanced integration with Subversion</a></li></ol></div></div></div><div id="topic"><div id="pageText"><p><div class="wiki-toc"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_change_the_default_URL_to_the_root.3f" rel="internal">How to change the default URL to the root?</a></li><li><span>4.</span> <a href="#How_to_create_a_full_backup_of_Redmine.3f" rel="internal">How to create a full backup of Redmine?</a></li><li><span>5.</span> <a href="#How_to_upgrade_Redmine.3f" rel="internal">How to upgrade Redmine?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Redmine.3f" rel="internal">How to install a plugin on Redmine?</a></li><li><span>7.</span> <a href="#How_to_install_the_Redmine_Ultraviolet_plugin.3f" rel="internal">How to install the Redmine Ultraviolet plugin?</a></li><li><span>8.</span> <a href="#How_to_configure_the_email_settings_of_Redmine.3f" rel="internal">How to configure the email settings of Redmine?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_configure_Redmine_with_Phusion_Passenger" rel="internal">How to configure Redmine with Phusion Passenger</a></li><li><span>11.</span> <a href="#How_to_change_the_default_URL_with_Phussion_Passenger" rel="internal">How to change the default URL with Phussion Passenger</a></li><li><span>12.</span> <a href="#How_to_see_the_Subversion_repository_from_Redmine_application_or_from_web_browser_directly.3f" rel="internal">How to see the Subversion repository from Redmine application or from web browser directly?</a></li><li><span>13.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Git" rel="internal">How to configure Redmine for advanced integration with Git</a></li><li><span>14.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Subversion" rel="internal">How to configure Redmine for advanced integration with Subversion</a></li></ol></div></p>
+<p>Redmine is a flexible<strong> project management</strong> web application. Written using Ruby on Rails framework, it is cross-platform and cross-database. Its main features are:</p>
+<ul> <li>Multiple projects support</li> <li>Flexible role based access control.</li> <li>Flexible issue tracking system</li> <li>Gantt chart and calendar</li> <li>News, documents and files management</li> <li>Feeds and email notifications.</li> <li>Per project wiki</li> <li>Per project forums</li> <li>Simple time tracking functionality</li> <li>Custom fields for issues, projects and users</li> <li><span class="caps">SCM</span> integration (<span class="caps">SVN</span>, <span class="caps">CVS</span>, Mercurial and Darcs)</li> <li>Multiple <span class="caps">LDAP</span> authentication support</li> <li>User self-registration support</li> <li>Multilanguage support</li> <li>Multiple databases support</li>
+</ul>
+<p>Please, take a look to the <a title="Native Installers Quick Start Guide" rel="internal" href="http://wiki.bitnami.org/Native_Installers_Quick_Start_Guide">Quick Start Guide</a> to know the basic use of this Stack.</p>
+<div id="section_1"><span id="How_to_start.2fstop_the_servers.3f"></span><h4 class="editable">How to start/stop the servers?</h4>
+<p>
+<p>The Stacks include a graphical tool to manage the servers easily. You can find the &quot;manager-windows.exe&quot;, &quot;manager-osx&quot; or &quot;manager-linux&quot; tool in the installation directory. Using this tool, you can Start, Stop or Restart the servers and check the log files.</p>
+<p>If you prefer, you can use the &quot;ctlscript.sh&quot; utility from the command line. This script is in the installation directory.</p>
+<p><img align="left" alt="linux_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/11/=linux_platform.png" /> On Linux:</p>
+<p>&nbsp;</p>
+<pre>$ cd <em>installdir</em>
+$ ./ctlscript.sh start
+</pre>
+<p><img align="left" alt="win_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/12/=win_platform.png" /> On Windows: Start -&gt; BitNami <em>application</em> Stack -&gt; Services -&gt; Start servers</p>
+<p>&nbsp;</p>
+<p><img align="left" alt="mac_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/13/=mac_platform.png" /></p>
+<p>On OS X: You can use the &quot;ctlscript.sh&quot; utility from a Terminal.</p>
+<p>&nbsp;</p>
+<pre>host:~ user$ cd /Applications/<em>application-version</em>
+host:~ user$ ./ctlscript.sh start
+</pre>
+<p>You get more info about this at &nbsp;<a title="Native Installers Quick Start Guide#How_can_I_start_or_stop_the_servers.3f" rel="internal" href="http://wiki.bitnami.org/Native_Installers_Quick_Start_Guide#How_can_I_start_or_stop_the_servers.3f">Native Installers Quick Start Guide#How_can_I_start_or_stop_the_servers.3f</a></p></p>
+</div><div id="section_2"><span id="How_to_change_the_default_URL.3f"></span><h4 class="editable">How to change the default URL?</h4>
+<p>If you want to change Redmine to the root url you should follow the next next section. In this section you can see how to replace the URL &quot;/redmine&quot; with &quot;/new_url&quot;.</p>
+<p>It is necessary to modify the Apache configuration. Edit &quot;<em><strong>installdir</strong></em>/apps/redmine/conf/redmine.conf&quot;<span id="cke_bm_128S" style="display: none;">&nbsp; </span> the file to modify the &quot;/redmine&quot; setting:</p>
+<pre>ProxyPass /<strong>redmine</strong> balancer://redminecluster
+ProxyPassReverse /<strong><em>redmine</em></strong> balancer://redminecluster
+
+&lt;Proxy balancer://redminecluster&gt;
+  BalancerMember http://127.0.0.1:3001/<em><strong>redmine</strong></em>
+  BalancerMember http://127.0.0.1:3002/<em><strong>redmine</strong></em>
+&lt;/Proxy&gt;</pre>
+<p><img align="left" alt="linux_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/11/=linux_platform.png" />&nbsp; <img align="left" alt="mac_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/13/=mac_platform.png" />On Linux and OS X, you should modify the installdir/apps/redmine/config/mongrel_cluster.yml file and change the prefix option. Then restart the servers.</p>
+<p><img align="left" alt="win_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/12/=win_platform.png" /> On Windows, you should modify the &quot;<em>installdir</em>/apps/redmine/scripts/serviceinstall.bat&quot; and change the prefix entry &quot;--prefix /redmine&quot;. Then run the following command from a command prompt with Admin privileges:</p>
+<pre>&gt; cd &ldquo;C:\Program Files\BitNami Redmine Stack\apps\redmine\scripts&rdquo;
+&gt; serviceinstall.bat <span class="caps">UNINSTALL</span>
+&gt; serviceinstall.bat <span class="caps">INSTALL
+</span></pre>
+</div><div id="section_3"><span id="How_to_change_the_default_URL_to_the_root.3f"></span><h4 class="editable">How to change the default URL to the root?</h4>
+<p>You can change the<span style="font-style: italic;"> &quot;</span><em>installdir</em>/apps/redmine/conf/redmine.conf&quot; file to modify the &quot;/redmine&quot; url to the root url. You can find below a configuration example. Please take into account that your current redmine.conf file may be a little bit different. Add a virtual host entry if it is missing. The number of the balancer members depends on the number of mongrels running. We use only one mongrel on port 3001 by default for the BitNami Cloud Hosting. Please remove the others like 3002 in such a case.</p>
+<pre>&lt;VirtualHost *:80&gt;
+  ServerAdmin example.com
+  ServerName example.com
+  ServerAlias server
+  ErrorLog &quot;logs/error.log&quot; 
+  CustomLog &quot;logs/access.log&quot; combined
+ # this not only blocks access to .svn directories, but makes it                
+ # appear as though they aren't even there, not just that they are              
+ # forbidden                                                                    
+ &lt;DirectoryMatch &quot;^/.*/\.svn/&quot;&gt;
+    ErrorDocument 403 /404.html
+    Order allow,deny
+    Deny from all
+    Satisfy All
+  &lt;/DirectoryMatch&gt;
+  # This passes through remote_user to mongrel                                  
+  RewriteEngine On
+  # Redirect non-static requests to cluster                                     
+  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f
+  RewriteRule ^/(.*)$ balancer://redminecluster%{REQUEST_URI} [P,QSA,L]
+&lt;/VirtualHost&gt;
+
+#ProxyPass / balancer://redminecluster
+#ProxyPassReverse / balancer://redminecluster
+
+&lt;Proxy balancer://redminecluster&gt;
+  BalancerMember http://127.0.0.1:3001
+  BalancerMember http://127.0.0.1:3002
+  # The number of balancer members depends on the number of mongrels running
+  # We use only one mongrel on port 3001 by default for the BitNami Cloud Hosting
+  # Please remove the others like 3002 above in such a case.
+&lt;/Proxy&gt;
+</pre>
+<p>It is also necessary to edit the prefix in the Redmine application.</p>
+<p><img align="left" alt="linux_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/11/=linux_platform.png" />&nbsp; <img align="left" alt="mac_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/13/=mac_platform.png" />On Linux and OS X, you should modify the installdir/apps/redmine/config/mongrel_cluster.yml file and remove prefix option.</p>
+<p><img align="left" alt="win_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/12/=win_platform.png" /> On Windows, you should modify the &quot;<em>installdir</em>/apps/redmine/scripts/serviceinstall.bat&quot; and remove the prefix entry &quot;--prefix /redmine&quot;. Then run the following command from a command prompt with Admin privileges:</p>
+<pre>&gt; cd &ldquo;C:\Program Files\BitNami Redmine Stack\apps\redmine\scripts&rdquo;
+&gt; serviceinstall.bat <span class="caps">UNINSTALL</span>
+&gt; serviceinstall.bat <span class="caps">INSTALL</span></pre>
+</div><div id="section_4"><span id="How_to_create_a_full_backup_of_Redmine.3f"></span><h4 class="editable">How to create a full backup of Redmine?</h4>
+<p>
+<p>Because BitNami stacks are self-contained, the simplest option for performing your backups is to copy or compress the BitNami Stack installation directory. To do so in a safe manner, you will need to stop all servers, so this method may not be appropriate if you have people accessing the application continously.</p>
+<p><img align="left" alt="linux_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/11/=linux_platform.png" /> On Linux and OS X:<img align="left" alt="mac_platform.png" class="internal lwrap" src="http://wiki.bitnami.org/@api/deki/files/13/=mac_platform.png" /></p>
+<pre>
+$ cd <em>installdir</em>
+$ ./ctlscript.sh stop
+$ cp -r <em>installdir</em> <em>application</em>-backup
+</pre>
+<p>Or you can create a tarball:</p>
+<pre>$ tar -czvf <em>application</em>-backup.tar.gz <em>installdir
+</em></pre>
+<p>Or a zip file:</p>
+<pre>$ zip -r <em>application</em>-backup.zip <em>installdir</em>/*</pre>
+<p>To restore this backup you only need to uncompress the backup in the same location. It is important to use the same path that was used when the stack was originally installed.</p>
+<p>For example if you have a backup in a Red Hat machine, you can copy it to an Ubuntu Linux machine (a different distro!) in the same location. Then start the servers and that&rsquo;s all.</p>
+<pre>$ cd <em>installdir</em>
+$ ./ctlscript.sh start
+</pre>
+<p><img align="left" alt="win_platform.png" class="internal lwrap" src="http://wiki.bitnami.org/@api/deki/files/12/=win_platform.png" /> On Windows:</p>
+<p>On Windows, you should follow the same process. Stop the servers using the shortcuts and copy the whole installation directory. To restore the system, copy the directory to a different Windows machine in the same location and follow these steps from a command prompt:</p>
+<pre>$ cd <em>installdir</em>
+$ serviceinstall.bat INSTALL
+</pre>
+<br />
+<p>You can access your BitNami Application at the usual <span class="caps">URL</span>.</p>
+<p>If you want to create only a database backup, check the following link&nbsp;<a title="/Components/MySQL#How_to_create_a_database_backup.3f" rel="internal" href="http://wiki.bitnami.org/Components/MySQL#How_to_create_a_database_backup.3f">/Components/MySQL#How_to_create_a_database_backup</a>.</p></p>
+</div><div id="section_5"><span id="How_to_upgrade_Redmine.3f"></span><h4 class="editable">How to upgrade Redmine?</h4>
+<p>It is strongly recommended that you create a backup before starting the update process. If you have important data, it is advisable that you create and try to restore a backup to ensure that everything works properly.</p>
+<p>There are two different ways to upgrade your application.</p>
+<ol> <li>If you want to upgrade the application and all Stack components PHP, Ruby, MySQL, Apache&hellip; You can follow the steps described at <a rel="internal" title="../Native_Installers_Quick_Start_Guide#How_to_upgrade_the_full_Stack_migrating_the_data.3f" href="/../Native_Installers_Quick_Start_Guide#How_to_upgrade_the_full_Stack_migrating_the_data.3f">How to upgrade the full Stack migrating the data?</a></li> <li>In case you only want to upgrade the application code without modifying any other Stack components. You can find below the steps to upgrade onlye the Redmine application.</li>
+</ol>
+<p>First, you have to download the new Redmine version. You can choose to download the latest stable version of <a class="external" rel="external nofollow" href="http://rubyforge.org/frs/?group_id=1850" title="http://rubyforge.org/frs/?group_id=1850" target="_blank">Redmine from RubyForge</a> or you can download the latest repository version. In that case, you can use the Subversion tool included in the Stack:</p>
+<pre><code>$ svn co svn://rubyforge.org/var/svn/redmine/trunk redmine
+</code></pre>
+<p>Once you have downloaded the newer Redmine version, you need to stop the servers and rename the old redmine folder:</p>
+<pre><code>$ cd <em>installdir</em>
+$ ./ctlscript.sh stop
+$ mv apps/redmine apps/redmine-old
+</code></pre>
+<p>On Windows:</p>
+<pre><code>$ cd <em>installdir</em>
+$ servicerun.bat STOP
+$ cd apps
+$ rename redmine redmine-old
+</code></pre>
+<p>Move the new redmine version to the apps folder and name it &ldquo;redmine&rdquo; and then copy the following folders and files from the old copy to the new one: &ldquo;scripts&rdquo;, &ldquo;conf&rdquo; and &ldquo;files&rdquo; folders and all the yml files inside &ldquo;config&rdquo;. It is also necessary to create the &ldquo;<em>installdir</em>/apps/redmine/tmp/pids&rdquo; folder.</p>
+<pre><code>$ cd <em>installdir</em>/apps
+$ cp -r redmine-old/scripts redmine-old/conf redmine-old/files redmine-old/files redmine/
+$ cp redmine-old/config/email.yml redmine/config/
+$ cp redmine-old/config/database.yml redmine/config/
+$ mkdir redmine/tmp/pids
+</code></pre>
+<p>Copy your base configuration settings-file <code>config/configuration.yml</code> into the new <code>config</code> directory. <strong>If you are upgrading from a version older than 1.2.0</strong>, copy your email settings from your <code>&quot;config/email.yml&quot;</code> into the new <code>&quot;config/configuration.yml&quot;</code> file. This can be created by copying the <code>&quot;configuration.yml.example&quot;</code> file.</p>
+<p>If you have installed plugins in the previous version, copy the folders from &quot;<code>vendor/plugins&quot;</code> directory into new installation directory.</p>
+<p>If you want to keep using the currently installed Rails version, you should comment out the following line in &ldquo;<em>installdir</em>/apps/redmine/config/environment.rb&rdquo; file</p>
+<pre><code>RAILS_GEM_VERSION = 'x.x.x' unless defined? RAILS_GEM_VERSION
+</code></pre>
+<p>You also need to copy session store keys to the new redmine location:</p>
+<pre><code>$ cd <em>installdir</em>/apps
+$ cp redmine-old/config/initializers/session_store.rb redmine/config/initializers
+</code></pre>
+<p>In case this file doesn&rsquo;t exist in your old installation or you get an error message about session key, you may need to run this instead:</p>
+<pre><code>$ cd <em>installdir</em>/apps/redmine
+$ rake config/initializers/session_store.rb
+</code></pre>
+<br />
+<p>It is also necessary to update the database to merge the changes in the new version. Remember to start the &ldquo;use_redmine&rdquo; script or the shortcut on Windows before typing the following commands:</p>
+<pre><code>$ cd <em>installdir</em>/apps/redmine
+$ rake db:migrate RAILS_ENV=&quot;production&quot;
+</code></pre>
+<br />
+<p>If you have installed plugins you should also run these commands:</p>
+<pre><code>$ rake db:migrate:upgrade_plugin_migrations RAILS_ENV=&quot;production&quot;
+$ rake db:migrate_plugins RAILS_ENV=&quot;production&quot;
+</code></pre>
+<br />
+<p>Finally you should clean the cache and the sessions:</p>
+<pre><code>$ rake tmp:cache:clear
+$ rake tmp:sessions:clear
+</code></pre>
+<br />
+<p>Restart the servers and you can access to your new Redmine.</p></div><div id="section_6"><span id="How_to_install_a_plugin_on_Redmine.3f"></span><h4 class="editable">How to install a plugin on Redmine?</h4>
+<ol> <li>Download the plugin and copy your plugin directory into<span style="font-family: monospace;"> <em>installdir</em>/apps/redmine</span><code>/vendor/plugins</code>.</li> <li>If the plugin requires a migration, run the following command to upgrade your database (make a db backup before). You should run these command from a use_redmine console:<br />
+<br /> <code>$ rake db:migrate:plugins RAILS_ENV=production</code><br />
+&nbsp;</li> <li>Restart Redmine application.</li>
+</ol>
+</div><div id="section_7"><span id="How_to_install_the_Redmine_Ultraviolet_plugin.3f"></span><h4 class="editable">How to install the Redmine Ultraviolet plugin?</h4>
+<p>Some of plugins require to be compiled, for instance, the Redmine Ultraviolet Syntax Highlighting plugin (<a class=" external" rel="external nofollow" href="http://www.redmine.org/plugins/redmine_ultraviolet" title="http://www.redmine.org/plugins/redmine_ultraviolet" target="_blank">http://www.redmine.org/plugins/redmine_ultraviolet</a>). It is necessary that you machine have the compilation tools (gcc, make and their dependencies). If you are running a Virtual Appliance or an AMI, you should do the following:</p>
+<pre>$ sudo apt-get install gcc make
+$ sudo apt-get install libonig-dev
+$ sudo gem install ultraviolet
+</pre>
+<p>Now you can download the plugin and install it in Redmine application</p>
+<pre>$ sudo git clone git://github.com/epitron/redmine_ultraviolet.git
+$ sudo mv redmine_ultraviolet /<em>installdir</em>/apps/redmine/vendor/plugins
+$ sudo /<em>installdir</em>/ctlscript.sh restart redmine
+</pre>
+<p>That's all, you can enable any Ultraviolet theme in the administrator account.</p></div><div id="section_8"><span id="How_to_configure_the_email_settings_of_Redmine.3f"></span><h4 class="editable">How to configure the email settings of Redmine?</h4>
+<p>You can configure the email settings in the <em>&quot;installdir</em>/apps/redmine/config/configuration.yml&quot; file. In older versions you should use the &quot;<em>installdir</em>/apps/redmine/config/email.yml&quot; file. The sample configuration for GMail account is shown below:</p>
+<pre><span class="l-Scalar-Plain">production</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">delivery_method</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">:smtp</span>
+  <span class="l-Scalar-Plain">smtp_settings</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">tls</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+    <span class="l-Scalar-Plain">address</span><span class="p-Indicator">:</span> <span class="s">&quot;smtp.gmail.com&quot;</span>
+    <span class="l-Scalar-Plain">port</span><span class="p-Indicator">:</span> <span class="s">587</span>
+    <span class="l-Scalar-Plain">domain</span><span class="p-Indicator">:</span> <span class="s">&quot;smtp.gmail.com&quot;</span>
+    <span class="l-Scalar-Plain">authentication</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">:plain</span>
+    <span class="l-Scalar-Plain">user_name</span><span class="p-Indicator">:</span> <span class="s">&quot;your_email@gmail.com&quot;</span>
+    <span class="l-Scalar-Plain">password</span><span class="p-Indicator">:</span> <span class="s">&quot;your_password&quot;
+<strong>    enable_starttls_auto: true</strong></span></pre>
+<p>Please make sure you have the <span class="s"><strong><strong>enable_starttls_auto</strong></strong> property setotherwise the error message <strong>&quot;</strong></span><strong>(530 5.7.0 Must issue a STARTTLS command first ...&quot;</strong><span class="s"> is shown.</span></p>
+<p>Once the email.yml file is changed, you need to restart the mongrel process:</p>
+<pre>$ sudo installdir/ctlscript.sh restart redmine
+</pre>
+<p>You can also find more info at the <a class="external" title="http://www.redmine.org/projects/redmine/wiki/EmailConfiguration" rel="external nofollow" href="http://www.redmine.org/projects/redmine/wiki/EmailConfiguration" target="_blank">Redmine wiki page</a> and <a class="external" title="http://redmineblog.com/articles/setup-redmine-to-send-email-using-gmail" rel="external nofollow" href="http://redmineblog.com/articles/setup-redmine-to-send-email-using-gmail" target="_blank">Redmine blog</a>.</p></div><div id="section_9"><span id="How_to_enable_SSL.3f"></span><h4 class="editable">How to enable SSL?</h4>
+<p><span>You can see how to configure Apache to enable SSL connections at <a title="Apache" rel="internal" href="http://wiki.bitnami.org/Components/Apache#How_to_enable_SSL_to_access_through_https.3f">How to enable SSL to access through https?</a></span></p>
+</div><div id="section_10"><span id="How_to_configure_Redmine_with_Phusion_Passenger"></span><h4 class="editable">How to configure Redmine with Phusion Passenger</h4>
+<p>
+<p>Make sure you have the Phussion Passenger enabled. Check if the following lines exists and are not commented out in Apache config file /<em>installdir</em>/apache2/conf/httpd.conf. Notice that the path includes the passenger version that could change. To know your passenger version you can run the &quot;gem list&quot; command.</p>
+<pre>LoadModule passenger_module /<em>installdir</em>/ruby/lib/ruby/gems/1.8/gems/passenger-2.2.11/ext/apache2/mod_passenger.so
+PassengerRoot /<em>installdir</em>/ruby/lib/ruby/gems/1.8/gems/passenger-2.2.11
+PassengerRuby /<em>installdir</em>/ruby/bin/ruby
+</pre>
+<p>Assuming you have your application running in <em>/application</em> location, substitute the content of the file /<em>installdir</em>/apps/<em>application</em>/conf/<em>application</em>.conf with the following:</p>
+<pre>&lt;VirtualHost *:80&gt;
+  RailsBaseURI /application
+  &lt;Directory /<em>installdir</em>/apache2/htdocs/<em>application</em>&gt;
+    Options -MultiViews
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</pre>
+<p>Then ssh to your machine and create a symbolic link:</p>
+<pre>sudo ln -s /<em>installdir</em>/apps/<em>application</em>/public /<em>installdir</em>/apache2/htdocs/<em>application</em>
+</pre>
+<p>(You should make sure that the 'public' and 'config' application folders and their parent directories are readable and executable by Apache).</p>
+<p>Restart Apache server:</p>
+<pre>sudo /<em>installdir</em>/ctlscript.sh restart apache
+</pre></p>
+</div><div id="section_11"><span id="How_to_change_the_default_URL_with_Phussion_Passenger"></span><h4 class="editable">How to change the default URL with Phussion Passenger</h4>
+<p>
+<p>Please make sure you have the Phussion Passenger enabled (check the previous section for the details). Then substitute the content of the file /opt/bitnami/apps/<em>application</em>/conf/<em>application</em>.conf with the following:</p>
+<pre>&lt;VirtualHost *:80&gt;
+  DocumentRoot /<em>installdir</em>/apps/<em>application</em>/public
+  &lt;Directory /<em>installdir</em>/apps/<em>application</em>/public/&gt;
+     Allow from all
+     Options -MultiViews
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</pre>
+<p>Restart Apache server:</p>
+<pre>sudo /<em>installdir</em>/ctlscript.sh restart apache
+</pre></p>
+</div><div id="section_12"><span id="How_to_see_the_Subversion_repository_from_Redmine_application_or_from_web_browser_directly.3f"></span><h4 class="editable">How to see the Subversion repository from Redmine application or from web browser directly?</h4>
+<p>Redmine application itself lets to check the Repository changes and link to the number case. You only have to configure the Repository URL from the project settings.</p>
+<pre>SCM: Subversion
+URL: http://your_repository
+Login: repository_login
+Password: repository_password
+</pre>
+<p><a title="Redmine-svn.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png"><img alt="Redmine-svn.png" class="internal default" style="width: 718px; height: 260px;" src="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png" /></a></p>
+<p>If you do not have any repository yet, you can create it manually. This guide describes <a title="/Components/Subversion" rel="internal" href="http://wiki.bitnami.org/Components/Subversion">how you can create a Subversion repository</a> in your machine.</p>
+<p>If you also want to see the repository directly from the web browser, you can configure Apache server to serve the repository. You can find the exact steps <a title="/Components/Subversion#How_to_see_the_Subversion_repository_from_the_web_browser.3f" rel="internal" href="http://wiki.bitnami.org/Components/Subversion#How_to_see_the_Subversion_repository_from_the_web_browser.3f">here</a>.</p></div><div id="section_13"><span id="How_to_configure_Redmine_for_advanced_integration_with_Git"></span><h4 class="editable">How to configure Redmine for advanced integration with Git</h4>
+<p>Before starting this guide, take into account that this is not necessary to see the repository changes in the Redmine application. If you only want to see the repository changes and link to the issues, it is only necessary to configure the project repository: Project -&gt; Settings -&gt; Repository -&gt; URL and Control Version System.</p>
+<p>This Redmine advanced configuration is to use the users created in the Redmine application for the Git repository. For example, you can create new users from the Redmine application which will be the same that be able to &quot;push&quot; changes in the Git project repository. Since 1.1.3-1 version, Redmine Stack ships all required modules for this configuration. Notice that if you are using Virtual Appliances or AMIs the&nbsp;<strong><em>installdir</em></strong>&nbsp;variable is &quot;/opt/bitnami&quot; and <em><strong>your_user</strong></em> is &quot;bitnami&quot;. It could be necessary to use the &quot;sudo&quot; command if the Stack was installed by the root user. This guide is based on the&nbsp;Felix Sch&auml;fer guide posted at the <a class="external" title="http://www.redmine.org/projects/redmine/wiki/HowTo_configure_Redmine_for_advanced_git_integration" rel="external nofollow" href="http://www.redmine.org/projects/redmine/wiki/HowTo_configure_Redmine_for_advanced_git_integration" target="_blank">Redmine Wiki</a>.</p>
+<p>1. Create a Git repository. I will use &quot;projects&quot; to a folder where the repositories are going to be created. This directory should have write privileges for the &quot;daemon&quot; user.&nbsp;</p>
+<pre>$ cd <em><strong>installdir</strong></em>
+$ sudo mkdir projects
+$ sudo mkdir projects/test
+$ cd projects/test
+$ sudo git init --bare
+$ sudo chown -R <strong><em>your_user</em></strong>:daemon projects</pre>
+<p>2. Download the Grack project from GitHub:&nbsp;</p>
+<pre>$ cd /opt/bitnami/apache2/htdocs/
+$ git clone http://github.com/schacon/grack.git
+$ chown <strong><em>your_user</em></strong>:daemon grack</pre>
+<p>Edit the &quot;grack/config.ru&quot; file to specify where is your Git project:</p>
+<div> <pre>$LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__) + '/lib')
+
+use Rack::ShowExceptions
+require 'git_http'
+
+config = {
+  :project_root =&gt; &quot;/<strong><em>installdir</em></strong>/projects/&quot;,
+  :git_path =&gt; '/<em><strong>installdir</strong></em>/git/bin/git',
+  :upload_pack =&gt; true,
+  :receive_pack =&gt; true,
+}
+
+run GitHttp::App.new(config)</pre> <div>&nbsp;</div>
+</div>
+<div>3. You can now test the basic behaviour. Start the Grack server and try to clone the repository and push the changes from a different machine:</div>
+<pre>$ cd /opt/bitnami/apache2/htdocs/grack
+$ rackup --host 127.0.0.1 -p 8080 config.ru</pre>
+<p>3.a. Then you can try to clone the repository and push changes from a different machine.</p>
+<pre>$ cd /tmp/
+$ git clone http://IP_MACHINE:8080/test
+$ cd test
+$ echo &quot;test&quot; &gt; test_file
+$ git add test_file
+$ git commit -m &quot;test&quot; test_file
+$ git push origin master
+</pre>
+<p>And you can see something similar to the following:</p>
+<pre>Counting objects: 3, done.
+Writing objects: 100% (3/3), 200 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To http://IP_MACHINE:8080/test
+* [new branch]      master -&gt; master
+</pre>
+<p>4. You can now stop the Grack server and configue Apache with Passenger. It is necessary to create two directories in the grack folder:</p>
+<pre>$ mkdir /installdir/apache2/htdocs/grack/public
+$ mkdir /installdir/apache2/htdocs/grack/tmp</pre>
+<p>Edit the /<strong><em>installdir</em></strong>/apache2/conf/httpd.conf and add the following (notice that versions could be different)</p>
+<pre>...
+LoadModule passenger_module /<em>installdir</em>/ruby/lib/ruby/gems/1.8/gems/passenger-2.2.11/ext/apache2/mod_passenger.so
+PassengerRoot /<em>installdir</em>/ruby/lib/ruby/gems/1.8/gems/passenger-2.2.11
+PassengerRuby /<em>installdir</em>/ruby/bin/ruby
+...
+&nbsp;
+</pre>
+<div> <pre>&lt;VirtualHost *:80&gt;
+     DocumentRoot &quot;/<strong><em>installdir</em></strong>/apache2/htdocs/grack/public&quot;
+    &lt;Directory &quot;/<strong><em>installdir</em></strong>/apache2/htdocs/grack/public&quot;&gt;
+         Options None
+         AllowOverride None
+         Order allow,deny
+         Allow from all
+     &lt;/Directory&gt; 
+ &lt;/VirtualHost&gt;</pre>
+</div>
+<div>&nbsp;</div>
+<div>You can now restart Apache server and try the same basic approach to clone the repository that you did in the 3.a step. The URL should be now <a class=" external" rel="external nofollow" href="http://IP_MACHINE/test" title="http://IP_MACHINE/test" target="_blank">http://IP_MACHINE/test</a>, without the 8080 port.</div>
+<div>&nbsp;</div>
+<div>5. We are going to configure the Git access control using the Redmine.pm module. This module does not officially support Git so you should have to install the latest patch from&nbsp;<a class="external" rel="external nofollow" href="http://www.redmine.org/issues/4905" title="http://www.redmine.org/issues/4905" target="_blank">http://www.redmine.org/issues/4905</a></div>
+<div>&nbsp;</div>
+<pre>$ cd /tmp
+$ wget http://www.redmine.org/attachments/5989/0001-merged-LeeF-s-patch-with-Michael-Fox-s-security-fix-redminetrunk.patch
+$ cd /<strong><em>installdir</em></strong>/apps/redmine/extra/svn/
+$ sudo mv /tmp/*.patch .
+$ sudo patch -p0 &lt; *.patch</pre>
+<p>I have a problem with line 487 in the &quot;Redmine.pm&quot; file. You can comment this line if you do not use the &quot;example.git&quot; name for your repository.</p>
+<p>Once you have fixed the Redmine.pm to support Git's smart HTTP protocol, you should copy in the appropiate perl folder.</p>
+<pre>$ sudo cp Redmine.pm /<strong><em>installdir</em></strong>/perl/lib/site_perl/5.8.8/i686_linux/Apache/</pre>
+<p>6. Enable the perl module in httpd.conf adding the following line.</p>
+<pre>LoadModule perl_module modules/mod_perl.so</pre>
+<p>7. Finally add the following configuration in your already created VirtualHost in the step 4. The <em>redmine_db_user</em> and the <em>redmine_db_password</em> credentials you can get from the &quot;<strong><em>installdir</em></strong>/apps/redmine/config/database.yml&quot; file</p>
+<div> <pre>&lt;VirtualHost *:80&gt;	
+&nbsp;&nbsp; &nbsp; DocumentRoot &quot;/<strong><em>installdir</em></strong>/apache2/htdocs/grack/public&quot;
+     &lt;Directory &quot;/<strong><em>installdir</em></strong>/apache2/htdocs/grack/public&quot;&gt;
+        Options None
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+     &lt;/Directory&gt;
+     
+    PerlLoadModule Apache::Redmine
+    &lt;Directory &quot;/<strong><em>installdir</em></strong>/apache2/htdocs/grack/public&quot;&gt;
+        Options None
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+     &lt;/Directory&gt;
+     
+     &lt;Location &quot;/&quot;&gt;
+       AuthType Basic
+       AuthName &quot;Redmine git repositories&quot;
+       Require valid-user
+       
+       PerlAccessHandler Apache::Authn::Redmine::access_handler
+       PerlAuthenHandler Apache::Authn::Redmine::authen_handler
+       RedmineDSN &quot;DBI:mysql:database=bitnami_redmine;host=localhost;mysql_socket=/installdir/mysql/tmp/mysql.sock&quot;
+       RedmineDbUser &quot;<em><strong>redmine_db_user</strong></em>&quot;
+       RedmineDbPass &quot;<em><strong>redmine_db_password</strong></em>&quot;
+       RedmineGitSmartHttp yes
+     &lt;/Location&gt;
+&lt;/VirtualHost&gt;</pre>
+</div>
+<p>You can now restart Apache and create the Project &quot;test&quot; in the Redmine application. Specify the path to the repository (i.e. /opt/bitnami/projects/test) and add a user as a Developer to this project. Now everything is ready to the created user be able to develop in the &quot;test&quot; repository using the same password that he has to access to the Redmine application. You can try the basic approach to clone and &quot;push&quot; a change in the repository that you did in the 3.a step.</p></div><div id="section_14"><span id="How_to_configure_Redmine_for_advanced_integration_with_Subversion"></span><h4 class="editable">How to configure Redmine for advanced integration with Subversion</h4>
+<p>Before starting this guide, take into account that this is not necessary to see the repository changes in the Redmine application. If you only want to see the repository changes and link to the issues, it is only necessary to configure the project repository: Project -&gt; Settings -&gt; Repository -&gt; URL and Control Version System.</p>
+<p>This Redmine configuration is for <em>automatic repository creation and rights management</em>. Since 1.1.3-1 version, Redmine Stack ships all required modules for this configuration. Notice that if you are using Virtual Appliances or AMIs the <strong><em>installdir</em></strong> variable is &quot;/opt/bitnami&quot;. It could be necessary to use the &quot;sudo&quot; command if the Stack was installed by the root user.</p>
+<ul> <li>Uncomment the following lines in Apache configuration file (httpd.conf):</li>
+</ul>
+<pre>LoadModule dav_svn_module modules/mod_dav_svn.so
+...
+LoadModule perl_module modules/mod_perl.so
+</pre>
+<ul> <li>Copy the Redmine.pm file into the Perl modules folder:</li>
+</ul>
+<pre>$ cp <em><strong>installdir</strong></em>/apps/redmine/extra/svn/Redmine.pm <em><strong>installdir</strong></em>/perl/lib/site_perl/5.8.8/i686-linux/Apache/
+</pre>
+<ul> <li>Create a folder for the repository, for instance:</li>
+</ul>
+<pre>$ mkdir <strong><em>installdir</em></strong>/repository
+$ mkdir <strong>installdir</strong>/repository/svn
+$ chown root:daemon                  [or &quot;your_user:your_user&quot; if you installed the Stack without root privileges]
+$ chmod 0755 <strong><em>installdir</em></strong>/repository
+$ chmod 0750 <em><strong>installdir</strong></em>/repository/svn
+</pre>
+<ul> <li>Edit the <strong><em>installdir</em></strong>/apps/redmine/conf/redmine.conf file.</li>
+</ul>
+<pre>ProxyPass /redmine balancer://redminecluster
+ProxyPassReverse /redmine balancer://redminecluster
+ProxyPass /svn !
+
+&lt;Proxy balancer://redminecluster&gt;
+  BalancerMember http://127.0.0.1:3001/redmine
+  RewriteCond %{REQUEST_URI} !/svn(/|$)
+  
+&lt;/Proxy&gt;
+
+  
+PerlLoadModule Apache::Redmine
+&lt;Location /svn&gt;
+  DAV svn
+  SVNParentPath &quot;/<em><strong>installdir</strong></em>/repository/svn&quot; 
+  Order deny,allow
+  Deny from all
+  Satisfy any
+
+  PerlAccessHandler Apache::Authn::Redmine::access_handler
+  PerlAuthenHandler Apache::Authn::Redmine::authen_handler
+  AuthType Basic
+  AuthName &quot;Redmine SVN Repository&quot; 
+
+  #read-only access   
+  &lt;Limit GET PROPFIND OPTIONS REPORT&gt;
+     Require valid-user
+     Allow from all
+     # Allow from another-ip
+     Satisfy any
+  &lt;/Limit&gt;
+  # write access
+  &lt;LimitExcept GET PROPFIND OPTIONS REPORT&gt;
+    Require valid-user
+  &lt;/LimitExcept&gt;
+
+  ## for mysql
+  RedmineDSN &quot;DBI:mysql:database=bitnami_redmine;host=localhost;mysql_socket=/<strong><em>installdir</em></strong>/mysql/tmp/mysql.sock&quot; 
+
+  RedmineDbUser &quot;bitnami&quot; 
+  RedmineDbPass &quot;<strong><em>bitnami_database_password</em></strong>&quot;    
+  #You can find this value at /<em>installdir</em>/apps/redmine/config/database.yml
+&lt;/Location&gt;
+</pre>
+<ul> <li>Restart the servers:</li>
+</ul>
+<pre>$ <strong><em>installdir</em></strong>/ctlscript.sh restart
+</pre>
+<ul> <li>Log in the Redmine application as Administrator and go to &quot;Settings&quot; -&gt; &quot;Repositories&quot; -&gt; &quot;Enable WS for repository management&quot;.</li> <li>Click on &quot;Generate a key&quot; and save it.</li> <li>Add the following line in the crontab. You can edit the crontab using the command &quot;crontab -e&quot;</li>
+</ul>
+<pre>*/2 * * * * <strong><em>installdir</em></strong>/ruby/bin/ruby <strong><em>installdir</em></strong>/apps/redmine/extra/svn/reposman.rb --redmine localhost/redmine --svn-dir <strong><em>installdir</em></strong>/repository/svn --owner root --group daemon --command=&quot;<strong><em>installdir</em></strong>/subversion/bin/svnadmin create --pre-1.6-compatible --fs-type fsfs&quot; --url http://YOUR_PUBLIC_IP_ADDRESS/svn --key=YOUR_API_KEY --verbose &gt;&gt; /var/log/reposman.log 
+</pre>
+<ul> <li>If you have configured Redmine to accress through SSL, you can specify &quot;--redmine <a class=" external" rel="external nofollow" href="http://127.0.0.1:3001/redmine" title="http://127.0.0.1:3001/redmine" target="_blank">http://127.0.0.1:3001/redmine</a>&quot; in the previous crontab line.</li> <li>You can check that everything works properly creating a project from the Redmine application and checking the /var/log/reposman.log file.</li>
+</ul>
+<p>Thanks to &quot;Jedbifa&quot; who posted a complete guide in the BitNami forums.</p></div></div></div></div>					<div class="br"></div>
+				</div>
+			</div>
+			
+						<div class="pageinfo">
+				<dl>
+									
+							
+											<dt>
+							Tag page  (<a href="/index.php?title=Special:Tags&pageId=144" class="disabled" onclick="return false;"  id="deki-page-tags-toggleview">Edit tags</a>)</span>						</dt>
+						<dd class="tags">
+							<div id="deki-page-tags"><ul class="tags no-tags"><li>No tags</li></ul></div> 
+						</dd>
+															
+										
+										
+										
+					<dt>Page statistics</dt>
+					<dd>24888 view(s), 49 edit(s) and 28982 character(s)<dd>
+				</dl>
+			</div>
+
+			<div class="comments pagemeta" id="anchor-comments">
+				<h2>Comments</h2>
+				<div id="comments"><div class="commentForm">You must <a href="/index.php?title=Special:Userlogin&returntotitle=Applications%2FBitNami+Redmine">login</a> to post a comment.</div></div>				<div class="br"></div>
+			</div>
+	
+			<div class="attachments pagemeta" id="anchor-files">
+				<p class="add disabled"><a href="#" title="Attach file" onclick="return false" class="disabled"><span></span>Attach file</a></p>
+				<h2>Attachments</h2>
+				<div class="br"></div>
+	
+				<div id="pageFiles"><div class="filescontent" id="attachFiles"><div class="table" id="attachTable"><table class="table" width="100%" cellspacing="0" cellpadding="0" border="0"><colgroup><col width="16"></col><col width="16"></col><col width=""></col><col width="80"></col><col width="145"></col><col width="115"></col><col width="75"></col></colgroup><tbody><tr><th class="col1" colspan="3">File</th><th class="col4">Size</th><th class="col5">Date</th><th class="col6">Attached by</th><th class="col7">&nbsp;</th></tr><tr class="bg1" id="deki-file-row-254"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png" class="filelink" title="Redmine-svn.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png" class="filelink" title="Redmine-svn.png">Redmine-svn.png</a><div><span id="" class="deki-file-description desctext">Redmine repository</span></div></td><td class="col4">25.49 kB</td><td class="col5">12:11, 4 Nov 2011</td><td class="col6"><a href="/User:Admin" class="link-user" rel="internal">Admin</a></td><td class="col7"><a href="#" id="deki-file-actions-254" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=254" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr></tbody></table></div></div></div>				<div class="br"></div>
+			</div>
+
+						<div class="pagemeta" id="anchor-gallery">
+ 				<div id="deki-image-gallery-lite"><table class="table" width="100%" cellspacing="0" cellpadding="0" border="0"><colgroup><col width="33%"></col><col width="33%"></col><col width="33%"></col></colgroup><tbody><tr class="bg1"><th class="col1" colspan="3">Images 1</th></tr><tr class="bg2"><td class="col1 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png?size=webview" title="Redmine-svn.png"><img src="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png?size=thumb" title="Redmine-svn.png" alt="Redmine repository" /></a><div class="information"><span class="description">Redmine repository</span><a href="http://wiki.bitnami.org/@api/deki/files/254/=Redmine-svn.png" title="View fullsize version">Redmine-svn.png</a></div></td><td class="col2">&nbsp;</td><td class="col3">&nbsp;</td></tr></tbody></table></div> 			</div>
+			
+					</div>
+		<div class="br"></div>
+	</div>
+	
+	<div class="bodyfooter">
+		<div class="spacer">&nbsp;</div>
+	</div>
+	
+	<div id="footer">
+		<div class="product">
+			<div class="poweredBy">Powered by <span class="product"><a href="http://www.mindtouch.com/" class="product" title="MindTouch Core v.10.1.0" target="_blank">MindTouch Core</a></span></div>		</div>
+		<div class="sitenav">
+			<ul>
+			<li class="ListRss"><a href="/Special:ListRss" title="RSS feeds"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="listrss" alt="" /></span><span class="text">RSS feeds</span></a></li><li class="Sitemap"><a href="/Special:Sitemap" title="Sitemap"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="sitemap" alt="" /></span><span class="text">Sitemap</span></a></li>			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="popups">
+	<div id="popupMessage"></div>
+		<div id="popupMessage"></div> 
+	<script type="text/javascript">var _endtime = new Date().getTime(); var _size = 62902;</script>
+
+	<div onclick="DWMenu.Bubble=true;" class="menu" id="menutools" style="display:none;">
+		<div class="header">&nbsp;</div>
+		<div class="body">
+			<ul>
+			<li class="Templatelist"><a href="/Template:" title="Templates"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="templatelist" alt="" /></span><span class="text">Templates</span></a></li><li class="Userlist"><a href="/User:" title="Users"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="userlist" alt="" /></span><span class="text">Users</span></a></li><li class="Popularpages"><a href="/Special:Popularpages" title="Popular pages"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="popularpages" alt="" /></span><span class="text">Popular pages</span></a></li><li class="deki-desktop-suite"><a href="http://www.mindtouch.com/redir/desktop-suite/" target="_blank" title="Desktop Suite"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="deki-desktop-suite" alt="" /></span><span class="text">Desktop Suite</span></a></li>			</ul>
+		</div>
+		<div class="footer">&nbsp;</div>
+	</div>
+
+	<div onclick="DWMenu.Bubble=true;" class="menu" id="menuoptions" style="display:none;">
+		<div class="header">&nbsp;</div>
+		<div class="body">
+			<ul>
+				<li class="pageEdit"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Edit page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="edit" alt="" /></span><span class="text">Edit page</span></a><li class="pageAdd"><a href="#" class="disabled disabled-login" onclick="DWMenu.Off('menuoptions');" title="New page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="add" alt="" /></span><span class="text">New page</span></a><li class="pagePdf"><a href="http://wiki.bitnami.org/@api/deki/pages/144/pdf" onclick="DWMenu.Off('menuoptions');" title="Save as PDF"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="pdf" alt="" /></span><span class="text">Save as PDF</span></a><li class="pageRestrict"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');" title="Restrict access"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="restrict" alt="" /></span><span class="text">Restrict access</span></a><li class="pageAttach"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Attach file"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attach" alt="" /></span><span class="text">Attach file</span></a><li class="pageEmail"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');" title="Email link"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="email" alt="" /></span><span class="text">Email link</span></a><li class="pageMove"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Move page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="move" alt="" /></span><span class="text">Move page</span></a><li class="pageDelete"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Delete page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="delete" alt="" /></span><span class="text">Delete page</span></a><li class="pageTags"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Tag"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="tags" alt="" /></span><span class="text">Tag</span></a><li class="pageProperties"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Set page properties"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="properties" alt="" /></span><span class="text">Set page properties</span></a><li class="pageSource"><a href="/index.php?title=Applications/BitNami_Redmine&action=source" onclick="DWMenu.Off('menuoptions');" title="View source"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="source" alt="" /></span><span class="text">View source</span></a><li class="pageWatch"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');" title="Watch page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="watch" alt="" /></span><span class="text">Watch page</span></a>			</ul>
+		</div>
+		<div class="footer">&nbsp;</div>
+	</div>
+
+	
+	<div onclick="DWMenu.Bubble=true;" class="menu" id="menuPageContent" style="display: none;">
+		<div class="header">&nbsp;</div>
+		<div class="body"><div class="pageToc"><h5>Table of contents</h5><div class="tocdata"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_change_the_default_URL_to_the_root.3f" rel="internal">How to change the default URL to the root?</a></li><li><span>4.</span> <a href="#How_to_create_a_full_backup_of_Redmine.3f" rel="internal">How to create a full backup of Redmine?</a></li><li><span>5.</span> <a href="#How_to_upgrade_Redmine.3f" rel="internal">How to upgrade Redmine?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Redmine.3f" rel="internal">How to install a plugin on Redmine?</a></li><li><span>7.</span> <a href="#How_to_install_the_Redmine_Ultraviolet_plugin.3f" rel="internal">How to install the Redmine Ultraviolet plugin?</a></li><li><span>8.</span> <a href="#How_to_configure_the_email_settings_of_Redmine.3f" rel="internal">How to configure the email settings of Redmine?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_configure_Redmine_with_Phusion_Passenger" rel="internal">How to configure Redmine with Phusion Passenger</a></li><li><span>11.</span> <a href="#How_to_change_the_default_URL_with_Phussion_Passenger" rel="internal">How to change the default URL with Phussion Passenger</a></li><li><span>12.</span> <a href="#How_to_see_the_Subversion_repository_from_Redmine_application_or_from_web_browser_directly.3f" rel="internal">How to see the Subversion repository from Redmine application or from web browser directly?</a></li><li><span>13.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Git" rel="internal">How to configure Redmine for advanced integration with Git</a></li><li><span>14.</span> <a href="#How_to_configure_Redmine_for_advanced_integration_with_Subversion" rel="internal">How to configure Redmine for advanced integration with Subversion</a></li></ol></div></div></div>
+		<div class="footer">&nbsp;</div>
+	</div>
+		
+			
+<div class="ui-msg-wrap" id="MTMessage" style="display: none;">
+	<div class="ui-msg ui-errormsg" id="MTMessageStyle">
+		<div class="ui-msg-opt">
+			<ul>
+				<li><a href="#" class="dismiss" onclick="return MTMessage.Hide();">dismiss message</a></li>
+				<li><a href="#" class="details" id="MTMessageDetailsLink" onclick="return MTMessage.ShowDetails(this);">view details</a></li>
+			</ul>
+			<div class="ui-msg-autoclose">
+				<span id="MTMessageUnpaused" style="display: inline;">Message will close by itself in <span id="MTMessageTimer"></span> seconds</span>
+				<span id="MTMessagePaused" style="display: none;">Message timer has been stopped</span>
+			</div>
+		</div>
+		<div class="ui-msg-header" id="MTMessageHeader"></div>
+		<div class="ui-msg-desc" id="MTMessageDesc"></div>
+		<div class="ui-msg-desc" id="MTMessageDetails" style="display: none;">
+			<p>Viewing Details:</p>
+		</div>
+	</div>
+</div><div id="menuFiller"></div><div id="bodyHeight"></div><script type="text/javascript">$(function() {var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");$.getScript(gaJsHost + "google-analytics.com/ga.js", function() {try {var pageTracker = _gat._getTracker("UA-1874455-2");pageTracker._trackPageview();} catch(e) {}});});</script>
+<!-- Served by ip-10-117-73-240 in 0.95 secs. -->
+</div>
+</body>
+ <script type="text/javascript">/*<![CDATA[*/
+$(document).ready(function () { 
+  var $tabs_index = 0;
+  $(".section_tab").each(function (){
+    if ($(this).attr("data-tab-added")) return;
+    $tabs_index++;
+    var tabs      = $('<div class="section_tabs"></div>').insertBefore($(this))
+    var tab_links = $("<ul></ul>").appendTo(tabs)
+    tab_index = 0;
+    var e = $(this);
+    var tab_content = false;
+
+    while (e.length != 0 && !e.is("h1,h2,h3,h4,.section_tabs_end")) {
+      var id = "section-tab" + $tabs_index + tab_index;
+      var next_e = e.next();
+      if ( e.is(".section_tab") ) {
+        tab_index++;
+        tab_content = $('<div id="'+id+'"></div>').appendTo(tabs);
+        $('<li><a href="#'+id+'">'+e.html()+'</a>').appendTo(tab_links);
+        e.attr("data-tab-added", true);
+        e.hide();
+      } else {
+        e.appendTo(tab_content)
+      }
+      e = next_e;
+    }
+    if (e.length != 0) { e.hide() }
+  });
+
+  try { $(".section_tabs").tabs() } catch(err) {} ; 
+});
+/*]]>*/</script></html>

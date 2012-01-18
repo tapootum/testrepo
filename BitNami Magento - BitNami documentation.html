@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" dir="ltr">
+<head>
+<title>BitNami Magento - BitNami documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" title="What's new feed" href="/index.php?title=Special:Recentchanges&amp;feed=rss" />
+<link rel="alternate" type="application/rss+xml" title="Page and subpages changes feed" href="/index.php?title=Special:Article&amp;type=feed&amp;feedtype=subpagechanges&amp;pageid=162" />
+<link rel="alternate" type="application/rss+xml" title="Page changes feed" href="/index.php?title=Special:Article&amp;type=feed&amp;pageid=162" />
+<meta name="generator" content="MindTouch Core" />
+<link rel="search" type="application/opensearchdescription+xml" title="BitNami documentation Search" href="/deki/gui/opensearch.php?type=description" /><link rel="stylesheet" type="text/css" media="screen" href="/skins/common/reset.css" /><link rel="stylesheet" type="text/css" media="screen" href="/skins/common/css.php" /> <!--[if IE 7]><style type="text/css">@import "/skins/common/_ie7.css";</style><![endif]--><!--[if IE 6]><style type="text/css">@import "/skins/common/_ie.css";</style><![endif]--><!--[if IE 7]><link href="/skins/deuce/lighty-blue/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 6]><link href="/skins/deuce/lighty-blue/ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="/skins/deuce/lighty-blue/css.php" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" media="print" href="/skins/common/print.css" /><link rel="stylesheet" type="text/css" media="print" href="/skins/deuce/print.css" />
+<script type="text/javascript">CKEDITOR_BASEPATH = "/deki/plugins/page_editor_ckeditor/ckeditor/";</script>
+<script type="text/javascript" src="/skins/common/js.php?perms=LOGIN,BROWSE,READ,SUBSCRIBE"></script>	<script type="text/javascript">
+
+		var aLt = aLt || [];aLt["attach-no-description"] = 'No description'; aLt["cancel"] = 'Cancel'; aLt["close"] = 'Close'; aLt["comment-delete"] = 'Are you sure you want to delete this comment?'; aLt["contentrating-title-popup"] = 'Thanks for your feedback'; aLt["error"] = 'Error'; aLt["error-permission-denied"] = 'Permission denied'; aLt["error-permission-details"] = 'Your account does not have sufficient permissions to perform that action.'; aLt["gallery-close"] = 'close'; aLt["gallery-next"] = 'next'; aLt["gallery-prev"] = 'prev'; aLt["internal-error"] = 'Sorry, but there was an internal problem - please try again soon.'; aLt["js-label_cancel"] = 'Cancel'; aLt["js-label_save"] = 'Save'; aLt["js-tooltip_cancel"] = 'Exit Without Saving Changes'; aLt["js-tooltip_save"] = 'Save and Exit (Alt+S)'; aLt["ldap-provide-credentials"] = 'Please provide external service login credentials.'; aLt["loading"] = 'Loading...'; aLt["menu-confirm-delete"] = 'Are you sure you want to delete this file?'; aLt["menu-delete-file"] = 'Delete'; aLt["menu-edit-description"] = 'Edit description'; aLt["menu-move-file"] = 'Move'; aLt["menu-previous-versions"] = 'Previous versions'; aLt["menu-view-original"] = 'View original'; aLt["ready"] = 'Ready'; aLt["remove-tag"] = 'Remove tag'; aLt["restore-tag"] = 'Restore tag'; aLt["adding-tags"] = 'Adding Tags...'; aLt["save"] = 'Save'; aLt["submit"] = 'Submit'; aLt["wikibits-attach-another"] = 'Attach another file'; aLt["wikibits-attach-file"] = 'Attach File'; aLt["wikibits-cant-attach-editing"] = 'Sorry, you can\'t attach files while editing a page. Please close the editor first.'; aLt["wikibits-edit-section"] = 'Edit section'; aLt["wikibits-remove-file"] = 'Remove file';  var wfMsg = wfMsg || function (key) { return aLt[key] ? aLt[key] : 'MISSING: ' + key; };
+	//hook in menu clicking events to the document's body
+	YAHOO.util.Event.addListener(document, "click", function () { DWMenu.BodyClick(); });
+	YAHOO.util.Event.onDOMReady(function () { new clientWindow });
+
+		
+
+			YAHOO.util.Event.onDOMReady(function() {
+			tb_init("a.lightbox, area.lightbox, input.lightbox, a[rel='awesomebox']");//pass where to apply thickbox
+		});
+	
+			YAHOO.util.Event.onDOMReady(function() {
+			MTComments.HookBehavior();
+		});
+		</script>
+
+<script type="text/javascript" src="http://wiki.bitnami.org/@api/deki/services/default/48/res/jquery2/jquery-ui.js"></script><link rel="stylesheet" href="http://wiki.bitnami.org/@api/deki/services/default/48/res/jquery2/themes/smoothness/ui.all.css" type="text/css" media="screen" /><script type="text/javascript" src="/deki/plugins/nav_pane/rgbcolor.js"></script>
+<script type="text/javascript" src="/deki/plugins/nav_pane/nav.js"></script>
+
+<script type="text/javascript">
+
+Deki.BaseHref = 'http://wiki.bitnami.org';
+Deki.PageId = 162;
+Deki.PageTitle = 'Applications/BitNami Magento';
+Deki.PageLanguageCode = 'en-us';
+Deki.FollowRedirects = 1;
+Deki.PathTpl = '/skins/deuce';
+Deki.PathSkin = '/skins/deuce/lighty-blue';
+Deki.PathCommon = '/skins/common';
+Deki.UserName = 'Anonymous';
+Deki.Today = '18 Jan 2012';
+Deki.UserIsAnonymous = true;
+Deki.EditorConfigToken = 'fb1bd39a';
+Deki.EditorStylesToken = '4c447ea7';
+Deki.PageEditable = false;
+</script>
+<script type="text/javascript">aLt["commercial-required"] = 'Gather feedback on your content with <strong>community scoring</strong> - these ratings weight results in adaptive search. Through curation analytics, ratings are used to highlight pages in need of attention. <a href="http://www.mindtouch.com/redir/mindtouch-tcs/">Learn more on enabling these capabilities with MindTouch 2010.</a>';aLt["login-required"] = 'You must be <a href="/index.php?title=Special:Userlogin&returntotitle=Applications%2FBitNami+Magento">logged in</a> to perform that action';</script><link href="/skins/common/custom_css.php" rel="stylesheet" type="text/css" /></head>
+<body class="yui-skin-sam">
+<noscript><div class="noscript">This application requires Javascript to be enabled.</div></noscript><div id="header">
+	<div class="wrap">
+		<div class="logo">
+			<a href="/"><img src="http://wiki.bitnami.org/@api/deki/site/logo.png" /></a>
+		</div>
+		<div class="search">
+			<form action="/Special:Search">
+				<fieldset>
+					<label for="searchInput">
+						<span class="text">Search:</span>
+					</label>
+					<input type="text" name="search" tabindex="1" class="search" id="searchInput" value="" />
+					<select name="ns"  id="" class="deki-search-namespaces"><option value="all">All pages</option><option value="main" selected="selected">Main pages</option></select><input type="hidden" value="Applications/BitNami_Magento" name="path" id="hidden-path" />					<button type="submit">Search</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="wrap">
+	<div id="sitenav">
+		<div class="site">
+			<ul>
+				<li class="home"><a href="/">Home</a></li>
+				<li class="mypage"><a href="/index.php?title=Special:Userlogin&returntomypage=y">My Page</a></li>
+				<li class="whatsnew"><a href="/Special:Recentchanges">Recent changes</a></li>
+								<li class="tools"><a href="#" onclick="return DWMenu.Position('menutools', this, 0, 0);"><span class="more">Tools</span></a></li>
+				<li class="help"><a href="http://www.mindtouch.com/redir/support-help/">Help</a></li>
+			</ul>
+		</div>
+		<div class="user">
+			<ul>
+							<li><a href="/index.php?title=Special:Userlogin&returntotitle=Applications%2FBitNami+Magento" class="login">Log in</a></li>
+						</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="bodyheader">
+		<div class="spacer">&nbsp;</div>
+	</div>	
+	
+	<div id="body">
+		<div class="nav">
+			<div id="siteNavTree"><div class="node dockedNode homeNode parentClosed" id="n22" c="n103" path=""><a href="http://wiki.bitnami.org/" title="BitNami documentation"><span>BitNami documentati...</span></a></div><div class="node dockedNode lastDocked parentClosed" id="n103" c="n249,n125,n154,n226,n162,n194,n196,n204,n144,n241,n177,n124" p="n22" path="Applications/" sd="0"><a href="http://wiki.bitnami.org/Applications" title="Applications"><span>Applications</span></a></div><div class="node childNode sibling" id="n249" p="n103" path="Applications/BitNami_Alfresco/"><a href="http://wiki.bitnami.org/Applications/BitNami_Alfresco" title="BitNami Alfresco"><span>BitNami Alfresco</span></a></div><div class="node childNode sibling parentClosed" id="n125" p="n103" path="Applications/BitNami_Drupal/" cd="0"><a href="http://wiki.bitnami.org/Applications/BitNami_Drupal" title="BitNami Drupal"><span>BitNami Drupal</span></a></div><div class="node childNode sibling parentClosed" id="n154" p="n103" path="Applications/BitNami_Joomla!/" cd="0"><a href="http://wiki.bitnami.org/Applications/BitNami_Joomla!" title="BitNami Joomla!"><span>BitNami Joomla!</span></a></div><div class="node childNode sibling" id="n226" p="n103" path="Applications/BitNami_LimeSurvey/"><a href="http://wiki.bitnami.org/Applications/BitNami_LimeSurvey" title="BitNami LimeSurvey"><span>BitNami LimeSurvey</span></a></div><div class="node childNode sibling selected" id="n162" p="n103" path="Applications/BitNami_Magento/"><a href="http://wiki.bitnami.org/Applications/BitNami_Magento" title="BitNami Magento"><span>BitNami Magento</span></a></div><div class="node childNode sibling" id="n194" p="n103" path="Applications/BitNami_OSQA/"><a href="http://wiki.bitnami.org/Applications/BitNami_OSQA" title="BitNami OSQA"><span>BitNami OSQA</span></a></div><div class="node childNode sibling" id="n196" p="n103" path="Applications/BitNami_Piwik/"><a href="http://wiki.bitnami.org/Applications/BitNami_Piwik" title="BitNami Piwik"><span>BitNami Piwik</span></a></div><div class="node childNode sibling" id="n204" p="n103" path="Applications/BitNami_Pootle/"><a href="http://wiki.bitnami.org/Applications/BitNami_Pootle" title="BitNami Pootle"><span>BitNami Pootle</span></a></div><div class="node childNode sibling" id="n144" p="n103" path="Applications/BitNami_Redmine/"><a href="http://wiki.bitnami.org/Applications/BitNami_Redmine" title="BitNami Redmine"><span>BitNami Redmine</span></a></div><div class="node childNode sibling" id="n241" p="n103" path="Applications/BitNami_SugarCRM/"><a href="http://wiki.bitnami.org/Applications/BitNami_SugarCRM" title="BitNami SugarCRM"><span>BitNami SugarCRM</span></a></div><div class="node childNode sibling" id="n177" p="n103" path="Applications/BitNami_Trac/"><a href="http://wiki.bitnami.org/Applications/BitNami_Trac" title="BitNami Trac"><span>BitNami Trac</span></a></div><div class="node childNode sibling parentClosed" id="n124" p="n103" path="Applications/BitNami_Wordpress/" cd="0"><a href="http://wiki.bitnami.org/Applications/BitNami_Wordpress" title="BitNami Wordpress"><span>BitNami Wordpress</span></a></div></div><script type="text/javascript">var navMaxWidth = 1600;YAHOO.util.Event.onAvailable("siteNavTree", ((typeof Deki.nav != "undefined") ? Deki.nav.init : null), Deki.nav, true);</script>		</div>
+		<div class="body">
+			<div class="pagebar">
+				<div class="options">
+					<ul>
+						<li class="pageedit"><a href="#" title="Edit page" onclick="return false" class="disabled"><span></span>Edit page</a></li>
+						<li class="pagecreate"><a href="#" title="New page" class="disabled disabled-login"><span></span>New page</a></li>
+						<li class="pagemore last"><a href="#" onclick="return DWMenu.Position('menuoptions', this, 0, 0);"><span class="more">More</span></a></li>
+					</ul>
+				</div>
+					
+				<div class="info">
+					<dl>
+						<dd class="pagemain"><a href="/Applications/BitNami_Magento" class="active" title="View page">View page</a></dd>
+						<dd class="pagetalk"><a href="/Talk:Applications/BitNami_Magento" title="Talk page" onclick="" class="inactive"><span></span>Talk page</a></dd>
+													<dd class="last pagealerts"><div id="deki-page-alerts" class="disabled">
+				<div class="toggle">
+					<a href="javascript:void(0);" class="off">
+						<span>Page Notifications</span>
+						<span class="status">Off</span>
+					</a>
+				</div></div></dd>
+											</dl>
+				</div>
+								<div class="clear"></div>
+			</div>
+			
+				
+				<div class="breadcrumbs hideforedit">
+					<div class="pagemetalinks">
+						<ul>
+							<li class="pagetoc"><a href="#" onclick="Deki.$('#pagetoc').toggle();return false;">Table of contents</a></li>
+						</ul>
+					</div>
+														 				<div class="hierarchy">
+			 					<ol class="dw-hierarchy deki-hierarchy"><li class="first"><a href="http://wiki.bitnami.org/" class="deki-ns">BitNami documentation</a></li>
+<li><a href="http://wiki.bitnami.org/Applications" class="deki-ns">Applications</a></li>
+<li class="last"><a href="http://wiki.bitnami.org/Applications/BitNami_Magento" class="deki-ns current">BitNami Magento</a></li></ol>			 				</div>
+		 						 					 			<div class="br"></div>
+				</div>
+						
+									 			
+			<div class="content">
+			
+				<div class="toc" id="pagetoc" style="display:none;">
+					<div class="pageToc"><h5>Table of contents</h5><div class="tocdata"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_create_a_full_backup_of_Magento.3f" rel="internal">How to create a full backup of Magento?</a></li><li><span>4.</span> <a href="#How_to_upgrade_Magento.3f" rel="internal">How to upgrade Magento?</a></li><li><span>5.</span> <a href="#Where_is_the_administration_interface_of_Magento.3f" rel="internal">Where is the administration interface of Magento?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Magento.3f" rel="internal">How to install a plugin on Magento?</a></li><li><span>7.</span> <a href="#What_is_my_Magento_encryption_key.3f" rel="internal">What is my Magento encryption key?</a></li><li><span>8.</span> <a href="#How_do_I_set_up_Magento_to_send_emails_through_my_Gmail.2fGoogle_Apps_account.3f" rel="internal">How do I set up Magento to send emails through my Gmail/Google Apps account?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_debug_Magento_errors.3f" rel="internal">How to debug Magento errors?</a></li><li><span>11.</span> <a href="#How_to_increase_the_allowed_size_of_the_uploaded_files.3f" rel="internal">How to increase the allowed size of the uploaded files?</a></li><li><span>12.</span> <a href="#How_do_I_set_up_Beetailer.3f" rel="internal">How do I set up Beetailer?</a></li><li><span>13.</span> <a href="#How_do_I_protect_my_application_with_a_password.3f" rel="internal">How do I protect my application with a password?</a></li></ol></div></div>				</div>
+								<div class="title">
+					
+					<h1 id="title">
+										BitNami Magento					
+										</h1>
+
+										<div class="modified hideforedit">
+						Modified <a href="/index.php?title=Applications/BitNami_Magento&action=history" title="09:15, 14 Jul 2011">09:15, 14 Jul 2011</a> by <a href="/User:Admin" class="link-user" rel="internal">Admin</a> <span class="pagehistory">| <a href="/index.php?title=Applications/BitNami_Magento&action=history" class="" title="Page History">Page History</a></span>
+					</div>
+										
+				</div>
+								
+				<div id="sessionMsg"><div class="inner"><ul></ul></div></div>				
+				<div class="text">
+					<div id="page-top"><div id="pageToc"><div class="pageToc"><h5>Table of contents</h5><div class="tocdata"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_create_a_full_backup_of_Magento.3f" rel="internal">How to create a full backup of Magento?</a></li><li><span>4.</span> <a href="#How_to_upgrade_Magento.3f" rel="internal">How to upgrade Magento?</a></li><li><span>5.</span> <a href="#Where_is_the_administration_interface_of_Magento.3f" rel="internal">Where is the administration interface of Magento?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Magento.3f" rel="internal">How to install a plugin on Magento?</a></li><li><span>7.</span> <a href="#What_is_my_Magento_encryption_key.3f" rel="internal">What is my Magento encryption key?</a></li><li><span>8.</span> <a href="#How_do_I_set_up_Magento_to_send_emails_through_my_Gmail.2fGoogle_Apps_account.3f" rel="internal">How do I set up Magento to send emails through my Gmail/Google Apps account?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_debug_Magento_errors.3f" rel="internal">How to debug Magento errors?</a></li><li><span>11.</span> <a href="#How_to_increase_the_allowed_size_of_the_uploaded_files.3f" rel="internal">How to increase the allowed size of the uploaded files?</a></li><li><span>12.</span> <a href="#How_do_I_set_up_Beetailer.3f" rel="internal">How do I set up Beetailer?</a></li><li><span>13.</span> <a href="#How_do_I_protect_my_application_with_a_password.3f" rel="internal">How do I protect my application with a password?</a></li></ol></div></div></div><div id="topic"><div id="pageText"><p><div class="wiki-toc"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_create_a_full_backup_of_Magento.3f" rel="internal">How to create a full backup of Magento?</a></li><li><span>4.</span> <a href="#How_to_upgrade_Magento.3f" rel="internal">How to upgrade Magento?</a></li><li><span>5.</span> <a href="#Where_is_the_administration_interface_of_Magento.3f" rel="internal">Where is the administration interface of Magento?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Magento.3f" rel="internal">How to install a plugin on Magento?</a></li><li><span>7.</span> <a href="#What_is_my_Magento_encryption_key.3f" rel="internal">What is my Magento encryption key?</a></li><li><span>8.</span> <a href="#How_do_I_set_up_Magento_to_send_emails_through_my_Gmail.2fGoogle_Apps_account.3f" rel="internal">How do I set up Magento to send emails through my Gmail/Google Apps account?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_debug_Magento_errors.3f" rel="internal">How to debug Magento errors?</a></li><li><span>11.</span> <a href="#How_to_increase_the_allowed_size_of_the_uploaded_files.3f" rel="internal">How to increase the allowed size of the uploaded files?</a></li><li><span>12.</span> <a href="#How_do_I_set_up_Beetailer.3f" rel="internal">How do I set up Beetailer?</a></li><li><span>13.</span> <a href="#How_do_I_protect_my_application_with_a_password.3f" rel="internal">How do I protect my application with a password?</a></li></ol></div></p>
+<p>Magento is a feature-rich, professional open-source e-commerce solution that offers merchants complete flexibility and control over the look, content, and functionality of their online store.</p>
+<p style="display: inline !important; "><span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; line-height: normal; font-size: medium; "><span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; line-height: normal; font-size: medium; ">&nbsp;</span></span></p>
+<p>Please, take a look to the <a title="Native Installers Quick Start Guide" rel="internal" href="http://wiki.bitnami.org/Native_Installers_Quick_Start_Guide">Quick Start Guide</a> to know the basic use of this Stack.</p>
+<div id="section_1"><span id="How_to_start.2fstop_the_servers.3f"></span><h4 class="editable">How to start/stop the servers?</h4>
+<p>
+<p>The Stacks include a graphical tool to manage the servers easily. You can find the &quot;manager-windows.exe&quot;, &quot;manager-osx&quot; or &quot;manager-linux&quot; tool in the installation directory. Using this tool, you can Start, Stop or Restart the servers and check the log files.</p>
+<p>If you prefer, you can use the &quot;ctlscript.sh&quot; utility from the command line. This script is in the installation directory.</p>
+<p><img align="left" alt="linux_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/11/=linux_platform.png" /> On Linux:</p>
+<p>&nbsp;</p>
+<pre>$ cd <em>installdir</em>
+$ ./ctlscript.sh start
+</pre>
+<p><img align="left" alt="win_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/12/=win_platform.png" /> On Windows: Start -&gt; BitNami <em>application</em> Stack -&gt; Services -&gt; Start servers</p>
+<p>&nbsp;</p>
+<p><img align="left" alt="mac_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/13/=mac_platform.png" /></p>
+<p>On OS X: You can use the &quot;ctlscript.sh&quot; utility from a Terminal.</p>
+<p>&nbsp;</p>
+<pre>host:~ user$ cd /Applications/<em>application-version</em>
+host:~ user$ ./ctlscript.sh start
+</pre>
+<p>You get more info about this at &nbsp;<a title="Native Installers Quick Start Guide#How_can_I_start_or_stop_the_servers.3f" rel="internal" href="http://wiki.bitnami.org/Native_Installers_Quick_Start_Guide#How_can_I_start_or_stop_the_servers.3f">Native Installers Quick Start Guide#How_can_I_start_or_stop_the_servers.3f</a></p></p>
+</div><div id="section_2"><span id="How_to_change_the_default_URL.3f"></span><h4 class="editable">How to change the default URL?</h4>
+<p>
+<p>An easy approach to have your application in the root URL is to uncomment the following lines in your application configuration file /<em>installdir</em>/apps/your_application/conf/your_application.conf. If you do not see these lines you can add them at the end of the file. Notice that &quot;your_application&quot; could be wordpress, joomla, drupal, etc.</p>
+<pre># Uncomment the following lines to see your application in the root
+# of your URL. This is not compatible with more than one application.
+RewriteEngine On                                                                                  
+RewriteRule ^/$ /your_application/ [PT]
+</pre>
+<p>Using this configuration and restarting the Apache server you can see your initial page of your application in the root URL.</p>
+<p>Another option is to configure your application to run in the root URL directly. The details are described below.</p>
+<div class="platform_tabs"> <p>
+<div class="section_tab">Native Installer</div></p> <p>The default Apache document root directory is /<em>installdir</em>/apache2/htdocs folder. You can change the document root in the /<em>installdir</em>/apache2/conf/httpd.conf file:</p> <pre>...
+#
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+DocumentRoot &quot;/<em>installdir</em>/apache2/htdocs&quot;
+...
+#
+# This should be changed to whatever you set DocumentRoot to.
+#
+&lt;Directory &quot;/<em>installdir</em>/apache2/htdocs&quot;&gt;
+...
+#Include /<em>installdir</em>/apps/<em>your_application</em>/conf/<em>your_application</em>.conf
+...
+</pre> <p>If you want to change the default URL from <a class=" external" rel="external nofollow" href="http://your_domain/your_application" title="http://your_domain/your_application" target="_blank">http://your_domain/your_application</a> to <a class=" external" rel="external nofollow" href="http://your_domain" title="http://your_domain" target="_blank">http://your_domain</a>, you should modify the &quot;DocumentRoot&quot; and &quot;Directory&quot; lines&nbsp; in the httpd.conf file to point to the application &quot;htdocs&quot; folder. It is also necessary to comment the &quot;Include&quot; option. You should replace it &quot;your_application&quot; with drupal, wordpress, joomla or your own application.</p> <pre>...
+# 
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+DocumentRoot &quot;/<em>installdir</em>/apps/your_application/htdocs&quot;
+...
+# 
+# This should be changed to whatever you set DocumentRoot to.
+# 
+&lt;Directory &quot;/<em>installdir</em>/apps/your_application/htdocs&quot;&gt;
+...
+#Include /<em>installdir</em>/apps/<em>your_application</em>/conf/<span style="font-style: italic;">your_application</span>.conf
+...
+</pre> <p>Some applications also require changes in their configuration files or in the database.</p> <p>
+<div class="section_tab">Virtual Machine</div></p> <p>The default Apache document root directory is /opt/bitnami/apache2/htdocs folder. You can change the document root in the /opt/bitnami/apache2/conf/httpd.conf file.</p> <pre>$ sudo nano /opt/bitnami/apache2/conf/httpd.conf</pre> <p>and edit the following lines:</p> <pre>...
+# 
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+# 
+DocumentRoot &quot;/opt/bitnami/apache2/htdocs&quot;
+...
+# 
+# This should be changed to whatever you set DocumentRoot to.
+#
+&lt;Directory &quot;/opt/bitnami/apache2/htdocs&quot;&gt;
+...
+#Include /opt/bitnami/apps/y<em>our_application</em>/conf/<em>your_application</em>.conf
+...
+</pre> <p>If you want to change the default URL from <a class=" external" rel="external nofollow" href="http://your_domain/your_application" title="http://your_domain/your_application" target="_blank">http://your_domain/your_application</a> to <a class=" external" rel="external nofollow" href="http://your_domain" title="http://your_domain" target="_blank">http://your_domain</a>, you should modify the &quot;DocumentRoot&quot; and &quot;Directory&quot; lines&nbsp; in the httpd.conf file to point to the application &quot;htdocs&quot; folder. It is also necessary to comment the &quot;Include&quot; option. You should replace it &quot;your_application&quot; with drupal, wordpress, joomla or your own application.</p> <pre>...
+#
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+# 
+DocumentRoot &quot;/opt/bitnami/apps/your_application/htdocs&quot;
+...
+# 
+# This should be changed to whatever you set DocumentRoot to.
+# 
+&lt;Directory &quot;/opt/bitnami/apps/your_application/htdocs&quot;&gt;
+...
+#Include /opt/bitnami/apps/<em>your_application</em>/conf/<em>your_application</em>.conf
+...
+</pre> <p>Some applications also require changes in their configuration files or in the database.</p> <p>
+<div class="section_tab">Cloud Image/BitNami Hosting</div></p> <p>The default Apache document root directory is /opt/bitnami/apache2/htdocs folder. You can change the document root in the /opt/bitnami/apache2/conf/httpd.conf file.</p> <pre>$ sudo nano /opt/bitnami/apache2/conf/httpd.conf
+</pre> <p>You can also edit this file from your favorite FTP program. For instance, if you are using winSCP to connect to your instance you can do the following for edit files as root user. You can click on &quot;Advanced options&quot; -&gt; &quot;Environment&quot; -&gt; &quot;SCP/Shell&quot; -&gt; &quot;sudo su -&quot;. Please note that you have to choose SCP protocol in the main WinSCP session window.</p> <p><img alt="" class="internal" style="width: 520px; height: 369px;" src="http://wiki.bitnami.org/@api/deki/files/253/=winSCP-sudo.png" /></p> <p>These are the exact lines that you should modify.</p> <pre>...
+# 
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+# 
+DocumentRoot &quot;/opt/bitnami/apache2/htdocs&quot;
+...
+# 
+# This should be changed to whatever you set DocumentRoot to.
+# 
+&lt;Directory &quot;/opt/bitnami/apache2/htdocs&quot;&gt;
+...
+#Include /opt/bitnami/apps/y<em>our_application</em>/conf/<em>your_application</em>.conf
+...
+</pre> <p>If you want to change the default URL from <a class=" external" rel="external nofollow" href="http://your_domain/your_application" title="http://your_domain/your_application" target="_blank">http://your_domain/your_application</a> to <a class=" external" rel="external nofollow" href="http://your_domain" title="http://your_domain" target="_blank">http://your_domain</a>, you should modify the &quot;DocumentRoot&quot; and &quot;Directory&quot; lines&nbsp; in the httpd.conf file to point to the application &quot;htdocs&quot; folder. It is also necessary to comment the &quot;Include&quot; option. You should replace it &quot;your_application&quot; with drupal, wordpress, joomla or your own application.</p> <pre>...
+# 
+# DocumentRoot: The directory out of which you will serve your 
+# documents. By default, all requests are taken from this directory, but 
+# symbolic links and aliases may be used to point to other locations.
+# 
+DocumentRoot &quot;/opt/bitnami/apps/your_application/htdocs&quot;
+...
+# 
+# This should be changed to whatever you set DocumentRoot to. 
+# 
+&lt;Directory &quot;/opt/bitnami/apps/your_application/htdocs&quot;&gt;
+...
+#Include /opt/bitnami/apps/<em>your_application</em>/conf/<em>your_application</em>.conf
+...
+</pre> <p><div class="section_tabs_end">Tabs end</div></p> <div>&nbsp;</div>
+</div></p>
+<p>Magento also saves the URL in the database. If you have changed the URL or you are trying to access from a different machine and Magento does not work, you have to modify the domain name or the URL you should run the following command to modify the database:</p>
+<pre>$ mysql -u root -p -e &quot;USE bitnami_magento; UPDATE core_config_data SET value ='http://<strong>NEW_IP</strong>/magento/' WHERE core_config_data.config_id ='3';&quot;
+</pre>
+<p>Virtual Appliances and AMI images include a tool called &quot;updateip&quot; which updates the IP automatically during boot. You can also configure Magento using this tool:</p>
+<pre>$ /opt/bitnami/updateip --machine_hostname <strong>NEW_IP
+</strong></pre>
+<p>If you have configured Magento to use an static domain name or IP, you&nbsp;<strong>should remove</strong>&nbsp;the &quot;/<em>installdir</em>/updateip&quot; file.</p>
+</div><div id="section_3"><span id="How_to_create_a_full_backup_of_Magento.3f"></span><h4 class="editable">How to create a full backup of Magento?</h4>
+<p>
+<p>Because BitNami stacks are self-contained, the simplest option for performing your backups is to copy or compress the BitNami Stack installation directory. To do so in a safe manner, you will need to stop all servers, so this method may not be appropriate if you have people accessing the application continously.</p>
+<p><img align="left" alt="linux_platform.png" class="internal lwrap" style="" src="http://wiki.bitnami.org/@api/deki/files/11/=linux_platform.png" /> On Linux and OS X:<img align="left" alt="mac_platform.png" class="internal lwrap" src="http://wiki.bitnami.org/@api/deki/files/13/=mac_platform.png" /></p>
+<pre>
+$ cd <em>installdir</em>
+$ ./ctlscript.sh stop
+$ cp -r <em>installdir</em> <em>application</em>-backup
+</pre>
+<p>Or you can create a tarball:</p>
+<pre>$ tar -czvf <em>application</em>-backup.tar.gz <em>installdir
+</em></pre>
+<p>Or a zip file:</p>
+<pre>$ zip -r <em>application</em>-backup.zip <em>installdir</em>/*</pre>
+<p>To restore this backup you only need to uncompress the backup in the same location. It is important to use the same path that was used when the stack was originally installed.</p>
+<p>For example if you have a backup in a Red Hat machine, you can copy it to an Ubuntu Linux machine (a different distro!) in the same location. Then start the servers and that&rsquo;s all.</p>
+<pre>$ cd <em>installdir</em>
+$ ./ctlscript.sh start
+</pre>
+<p><img align="left" alt="win_platform.png" class="internal lwrap" src="http://wiki.bitnami.org/@api/deki/files/12/=win_platform.png" /> On Windows:</p>
+<p>On Windows, you should follow the same process. Stop the servers using the shortcuts and copy the whole installation directory. To restore the system, copy the directory to a different Windows machine in the same location and follow these steps from a command prompt:</p>
+<pre>$ cd <em>installdir</em>
+$ serviceinstall.bat INSTALL
+</pre>
+<br />
+<p>You can access your BitNami Application at the usual <span class="caps">URL</span>.</p>
+<p>If you want to create only a database backup, check the following link&nbsp;<a title="/Components/MySQL#How_to_create_a_database_backup.3f" rel="internal" href="http://wiki.bitnami.org/Components/MySQL#How_to_create_a_database_backup.3f">/Components/MySQL#How_to_create_a_database_backup</a>.</p></p>
+</div><div id="section_4"><span id="How_to_upgrade_Magento.3f"></span><h4 class="editable">How to upgrade Magento?</h4>
+<p>
+<p>It is strongly recommended that you create a backup before starting the update process. If you have important data, it is advisable that you create and try to restore a backup to ensure that everything works properly.</p>
+<p>There are two different ways to upgrade your application.</p>
+<ol> <li>If you want to upgrade the application and all Stack components PHP, Ruby, MySQL, Apache&hellip; You can follow the steps described at <a title="Native_Installers_Quick_Start_Guide#How_to_upgrade_the_full_Stack_migrating_the_data?.3f" rel="internal" href="http://wiki.bitnami.org/Native_Installers_Quick_Start_Guide#How_to_upgrade_the_full_Stack_migrating_the_data?.3f">How to upgrade the full Stack migrating the data?</a></li> <li>In case you only want to upgrade the application code without modifying any other Stack components,&nbsp; you should follow the guide which is in the application page itself.</li>
+</ol>
+</p>
+</div><div id="section_5"><span id="Where_is_the_administration_interface_of_Magento.3f"></span><h4 class="editable">Where is the administration interface of Magento?</h4>
+<div> <p>The admin panel is located at <a class=" external" rel="external nofollow" href="http://your_domain/magento/index.php/admin" title="http://your_domain/magento/index.php/admin" target="_blank">http://your_domain/magento/index.php/admin</a></p> <div id="section_6"><span id="How_to_install_a_plugin_on_Magento.3f"></span><h4 class="editable">How to install a plugin on Magento?</h4>
+<div> <p><span style="font-size: 14px;"><span style="font-family: Tahoma,Geneva,sans-serif;"><font class="Apple-style-span" color="#000000">Open Magento's administration panel (<a class=" external" rel="external nofollow" href="http://your_domain/magento/index.php/admin" title="http://your_domain/magento/index.php/admin" target="_blank">http://your_domain/magento/index.php/admin</a>) and go to System &gt; Magento Connect &gt; Magento Connect Manager.</font></span></span></p> <p><span style="font-size: 14px;"><span style="font-family: Tahoma,Geneva,sans-serif;"><font class="Apple-style-span" color="#000000"><span class="Apple-style-span" style="line-height: 24px;">Paste the extensions' key (available on <a class="external" title="http://connect.magentocommerce.com/" rel="external nofollow" href="http://connect.magentocommerce.com/" target="_blank">Magento Connect</a>) and click install.</span></font></span></span></p>
+</div></div></div>
+<div> <div> <div id="section_7"><span id="What_is_my_Magento_encryption_key.3f"></span><h4 class="editable">What is my Magento encryption key?</h4> <p>Your encryption key is located at /installdir/apps/magento/conf/magento_info.txt and is randomly generated during the install process. You will need it to restore backups.</p> </div></div> <div> <div> <div id="section_8"><span id="How_do_I_set_up_Magento_to_send_emails_through_my_Gmail.2fGoogle_Apps_account.3f"></span><h4 class="editable">How do I set up Magento to send emails through my Gmail/Google Apps account?</h4> <p>You will need to configure your Magento installation to be able to send emails from it. When you finish this tutorial you will be able to send and receive emails from your customers (receipts, customer support...), you will also be able to send these emails from a number of customized departments (&quot;Sales&quot; and &quot;Customer Support&quot;, for example) and your customers will not know that the mail comes from a Gmail account.</p> <p>The first step is to install a free extension called&nbsp;<a class="external" title="http://www.magentocommerce.com/magento-connect/ASchroder/extension/1865/aschroder.com-smtp-pro" rel="external nofollow" href="http://www.magentocommerce.com/magento-connect/ASchroder/extension/1865/aschroder.com-smtp-pro" target="_blank">ASchroder SMTP Pro</a>. Open your Magento admin panel&nbsp;(<a class="external" title="http://your_server/index.php/admin/" rel="external nofollow" href="http://your_server/index.php/admin/" target="_blank">http://your_server/index.php/admin/</a>) and go to System &gt; Magento Connect &gt; Magento Connect Manager:</p> <p><a title="step1.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/103/=step1.png"><img alt="step1.png" class="internal default" src="http://wiki.bitnami.org/@api/deki/files/108/=step1.png" /></a></p> <p>Supply your username and password and log in:</p> <p><a title="step2.png" rel="internal" href="http://wiki.bitnami.org/step2.png"><img alt="step2.png" class="internal default" src="http://wiki.bitnami.org/@api/deki/files/109/=step2.png" /></a></p> <p>Copy and paste the extension key into the text field (&quot;<span>http://connect20.magentocommerce.com/community/ASchroder_SMTPPro</span>&quot;, without quotes)&nbsp;and click install.</p> <p><a title="step3.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/110/=step3.png"><img alt="step3.png" class="internal default" style="width: 808px; height: 746px;" src="http://wiki.bitnami.org/@api/deki/files/110/=step3.png" /></a></p> <p>Magento Connect will now fetch the extension information. Click Proceed to continue.</p> <p><a title="step4.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/111/=step4.png"><img alt="step4.png" class="internal default" style="width: 788px; height: 832px;" src="http://wiki.bitnami.org/@api/deki/files/111/=step4.png" /></a></p> <p>At the bottom of the screen you will see a log of the install process. When the process is over, check the output for error messages and click Refresh to continue.</p> <p><a title="step5.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/112/=step5.png"><img alt="step5.png" class="internal default" style="width: 720px; height: 394px;" src="http://wiki.bitnami.org/@api/deki/files/112/=step5.png" /></a></p> <p>The extension will now appear in the extension list.</p> <p><a title="step6.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/113/=step6.png"><img alt="step6.png" class="internal default" style="width: 804px; height: 802px;" src="http://wiki.bitnami.org/@api/deki/files/113/=step6.png" /></a></p> <p>Open the Administration panel again (<a class="external" title="http://your_server/index.php/admin/" rel="external nofollow" href="http://your_server/index.php/admin/" target="_blank">http://your_server/index.php/admin/</a>) and go to System &gt; Configuration.</p> <p><a title="step7.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/114/=step7.png"><img alt="step7.png" class="internal default" style="width: 504px; height: 460px;" src="http://wiki.bitnami.org/@api/deki/files/114/=step7.png?size=webview" /></a></p> <p>To configure your store email adresses, look in the left side of the page for a navigation frame like the one below. Click the section named &quot;Store email addresses&quot;.</p> <p><a title="step8.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/115/=step8.png"><img alt="step8.png" class="internal default" style="width: 220px; height: 453px;" src="http://wiki.bitnami.org/@api/deki/files/115/=step8.png?size=webview" /></a></p> <p>Enter the names of the departments that you have and the emails addresses associated with them. These need to be real email accounts, as these addresses will be the ones your customers will see. Click on &quot;Save Config&quot; when you are done.</p> <p><a title="step9.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/116/=step9.png"><img alt="step9.png" class="internal default" style="width: 700px; height: 370px;" src="http://wiki.bitnami.org/@api/deki/files/116/=step9.png" /></a></p> <p>Next step is to configure Magento to send all store email through your Gmail/Google Apps account. Look in the navigation section again and find the section called &quot;System&quot;.</p> <p><a title="step10.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/117/=step10.png"><img alt="step10.png" class="internal default" style="width: 207px; height: 481px;" src="http://wiki.bitnami.org/@api/deki/files/117/=step10.png?size=webview" /></a></p> <p>Inside &quot;SMTP Pro Email General Settings&quot;, choose &quot;Google Apps/Gmail&quot; as your extension option and change &quot;Use Store Email Addresses for Reply-to&quot; to yes. You can also set &quot;Log all messages&quot; to yes if you would like to save all sent emails to the Magento email log. This setting does not affect the emails on your inbox.</p> <p>Also, inside &quot;SMTP Pro Email Google Apps/Gmail Settings&quot; you have to enter your Gmail account information email and password. Click on &quot;Save Config&quot; when you are done.</p> <p><a title="step11.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/118/=step11.png"><img alt="step11.png" class="internal default" style="width: 900px; height: 465px;" src="http://wiki.bitnami.org/@api/deki/files/118/=step11.png" /></a></p> <p>To test that everything is working properly, locate a button labeled &quot;Run Self Test&quot; in the above screen. If you click it, a test email will be sent to your account. You can check the email log at any time at System &gt; Tools &gt; Email log.</p> <p><a title="step12.png" rel="internal" href="http://wiki.bitnami.org/@api/deki/files/119/=step12.png"><img alt="step12.png" class="internal default" style="width: 277px; height: 429px;" src="http://wiki.bitnami.org/@api/deki/files/119/=step12.png" /></a></p> <div> <div> <div> <div id="section_9"><span id="How_to_enable_SSL.3f"></span><h4 class="editable">How to enable SSL?</h4> <p>You can see how to configure Apache to enable SSL connections at <a title="Components/Apache#How_to_enable_SSL_to_access_through_https.3f" rel="internal" href="http://wiki.bitnami.org/Components/Apache#How_to_enable_SSL_to_access_through_https.3f">How to set up SSL to access through https?</a></p> </div></div> </div> </div> </div></div> </div>
+</div>
+<div id="section_10"><span id="How_to_debug_Magento_errors.3f"></span><h4 class="editable">How to debug Magento errors?</h4>
+<p>
+<p>Once Apache starts, it will create two log files, the <strong>access_log</strong> and the <strong>error_log</strong><em> /installdir</em>/apache2/logs directory. You can change these files to see the exact error in the application.</p>
+</p>
+<p>
+<p>The main MySQL log file is created at /<em>installdir</em>/mysql/data/<strong>mysqld.log</strong> file.</p></p>
+</div><div id="section_11"><span id="How_to_increase_the_allowed_size_of_the_uploaded_files.3f"></span><h4 class="editable">How to increase the allowed size of the uploaded files?</h4>
+<p>
+<p>You can modify the following option in the &quot;php.ini&quot; file to increase the allowed size for uploads:</p>
+<pre>; Maximum size of POST data that PHP will accept.
+post_max_size = 16M
+
+...
+
+; Maximum allowed size for uploaded files.
+upload_max_filesize = 16M
+</pre></p>
+</div><div id="section_12"><span id="How_do_I_set_up_Beetailer.3f"></span><h4 class="editable">How do I set up Beetailer?</h4>
+<p><span class="attribute-value">Beetailer is a service that allows you to integrate your existing online store with Facebook, allowing you to display your products so Facebook users can discover, comment, share, and purchase them. <a class=" external" rel="external nofollow" href="http://beetailer.com" title="http://beetailer.com" target="_blank">http://beetailer.com</a></span></p>
+<p>First of all, you will need to have a Magento installation with a publicly accessible IP. Then go to the admin panel (<a class=" external" rel="external nofollow" href="http://your_domain/magento/index.php/admin" title="http://your_domain/magento/index.php/admin" target="_blank">http://your_domain/magento/index.php/admin</a>) and click on the &quot;Facebook Store&quot; tab. Follow the onscreen instructions.</p>
+</div><div id="section_13"><span id="How_do_I_protect_my_application_with_a_password.3f"></span><h4 class="editable">How do I protect my application with a password?</h4>
+<p>
+<p>To request a username and a password when accessing your application, follow these steps:</p>
+<p>1. Run the htpasswd utility</p>
+<pre>$ sudo /<em>installdir</em>/apache2/bin/htpasswd -c /installdir/apache2/yourapplicationname_users username</pre>
+<div>&nbsp;</div>
+<div>2. Add the following to /installdir/apps/yourapplication/conf/yourapplication.conf, between &lt;Directory&gt; and &lt;/Directory&gt;</div>
+<div><span id="cke_bm_140S" style="display: none; ">&nbsp;</span></div>
+<div> <pre>AuthType Basic
+AuthName yourapplication
+AuthUserFile &quot;/installdir/apache2/yourapplication_name&quot;
+Require valid-user
+</pre>
+</div>
+<div>&nbsp;</div>
+<div> <p style="display: inline !important; "><span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; ">3. Restart the Apache server:</span></p>
+</div>
+<pre>$ sudo /<em>installdir</em>/ctlscript.sh restart apache</pre>
+<div>&nbsp;</div>
+<div>If you want to change the password, run the htpasswd utility without the -c switch. Like this:</div>
+<div> <pre>$ sudo /<em>installdir</em>/apache2/bin/htpasswd /installdir/apache2/yourapplicationname_users username</pre>
+</div></p></div></div></div></div></div>					<div class="br"></div>
+				</div>
+			</div>
+			
+						<div class="pageinfo">
+				<dl>
+									
+							
+											<dt>
+							Tag page  (<a href="/index.php?title=Special:Tags&pageId=162" class="disabled" onclick="return false;"  id="deki-page-tags-toggleview">Edit tags</a>)</span>						</dt>
+						<dd class="tags">
+							<div id="deki-page-tags"><ul class="tags no-tags"><li>No tags</li></ul></div> 
+						</dd>
+															
+										
+										
+										
+					<dt>Page statistics</dt>
+					<dd>5010 view(s), 42 edit(s) and 11074 character(s)<dd>
+				</dl>
+			</div>
+
+			<div class="comments pagemeta" id="anchor-comments">
+				<h2>Comments</h2>
+				<div id="comments"><div class="commentForm">You must <a href="/index.php?title=Special:Userlogin&returntotitle=Applications%2FBitNami+Magento">login</a> to post a comment.</div></div>				<div class="br"></div>
+			</div>
+	
+			<div class="attachments pagemeta" id="anchor-files">
+				<p class="add disabled"><a href="#" title="Attach file" onclick="return false" class="disabled"><span></span>Attach file</a></p>
+				<h2>Attachments</h2>
+				<div class="br"></div>
+	
+				<div id="pageFiles"><div class="filescontent" id="attachFiles"><div class="table" id="attachTable"><table class="table" width="100%" cellspacing="0" cellpadding="0" border="0"><colgroup><col width="16"></col><col width="16"></col><col width=""></col><col width="80"></col><col width="145"></col><col width="115"></col><col width="75"></col></colgroup><tbody><tr><th class="col1" colspan="3">File</th><th class="col4">Size</th><th class="col5">Date</th><th class="col6">Attached by</th><th class="col7">&nbsp;</th></tr><tr class="bg1" id="deki-file-row-108"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/108/=step1.png" class="filelink" title="step1.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/108/=step1.png" class="filelink" title="step1.png">step1.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">32.39 kB</td><td class="col5">15:48, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-108" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=108" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg2" id="deki-file-row-117"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/117/=step10.png" class="filelink" title="step10.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/117/=step10.png" class="filelink" title="step10.png">step10.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">16.52 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-117" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=117" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg1" id="deki-file-row-118"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/118/=step11.png" class="filelink" title="step11.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/118/=step11.png" class="filelink" title="step11.png">step11.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">141.96 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-118" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=118" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg2" id="deki-file-row-119"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/119/=step12.png" class="filelink" title="step12.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/119/=step12.png" class="filelink" title="step12.png">step12.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">17.65 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-119" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=119" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg1" id="deki-file-row-109"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/109/=step2.png" class="filelink" title="step2.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/109/=step2.png" class="filelink" title="step2.png">step2.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">9.51 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-109" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=109" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg2" id="deki-file-row-110"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/110/=step3.png" class="filelink" title="step3.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/110/=step3.png" class="filelink" title="step3.png">step3.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">61.6 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-110" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=110" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg1" id="deki-file-row-111"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/111/=step4.png" class="filelink" title="step4.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/111/=step4.png" class="filelink" title="step4.png">step4.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">71.63 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-111" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=111" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg2" id="deki-file-row-112"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/112/=step5.png" class="filelink" title="step5.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/112/=step5.png" class="filelink" title="step5.png">step5.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">18 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-112" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=112" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg1" id="deki-file-row-113"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/113/=step6.png" class="filelink" title="step6.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/113/=step6.png" class="filelink" title="step6.png">step6.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">67.3 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-113" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=113" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg2" id="deki-file-row-114"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/114/=step7.png" class="filelink" title="step7.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/114/=step7.png" class="filelink" title="step7.png">step7.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">26.42 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-114" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=114" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg1" id="deki-file-row-115"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/115/=step8.png" class="filelink" title="step8.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/115/=step8.png" class="filelink" title="step8.png">step8.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">18.24 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-115" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=115" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr><tr class="bg2" id="deki-file-row-116"><td class="col1">&nbsp;</td><td class="col2"><a href="http://wiki.bitnami.org/@api/deki/files/116/=step9.png" class="filelink" title="step9.png"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="mt-ext-png" alt="" /></span></a></td><td class="col3"><a href="http://wiki.bitnami.org/@api/deki/files/116/=step9.png" class="filelink" title="step9.png">step9.png</a><div><span id="" class="deki-file-description desctext nodescription">No description</span></div></td><td class="col4">127.12 kB</td><td class="col5">15:49, 30 Jun 2011</td><td class="col6"><a href="/User:josue" class="link-user" rel="internal">josue</a></td><td class="col7"><a href="#" id="deki-file-actions-116" class="deki-file-actions downarrow actionmenu disabled">Actions</a><ul class="deki-file-menu dmenu disabled"><li class="menu-item new quickpopup disabled"><a href="http://wiki.bitnami.org/index.php?title=Special:AttachNewVersion&file_id=116" title="Attach new version"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Attach new version</span></a></li><li class="menu-item description disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachedit" alt="" /></span><span class="label">Edit description</span></a></li><li class="menu-item move disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachmove" alt="" /></span><span class="label">Move/rename</span></a></li><li class="menu-item delete disabled"><a href="#"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attachdel" alt="" /></span><span class="label">Delete</span></a></li></ul></td></tr></tbody></table></div></div></div>				<div class="br"></div>
+			</div>
+
+						<div class="pagemeta" id="anchor-gallery">
+ 				<div id="deki-image-gallery-lite"><table class="table" width="100%" cellspacing="0" cellpadding="0" border="0"><colgroup><col width="33%"></col><col width="33%"></col><col width="33%"></col></colgroup><tbody><tr class="bg1"><th class="col1" colspan="3">Images 12</th></tr><tr class="bg2"><td class="col1 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/108/=step1.png?size=webview" title="step1.png"><img src="http://wiki.bitnami.org/@api/deki/files/108/=step1.png?size=thumb" title="step1.png" alt="step1.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/108/=step1.png" title="View fullsize version">step1.png</a></div></td><td class="col2 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/117/=step10.png?size=webview" title="step10.png"><img src="http://wiki.bitnami.org/@api/deki/files/117/=step10.png?size=thumb" title="step10.png" alt="step10.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/117/=step10.png" title="View fullsize version">step10.png</a></div></td><td class="col3 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/118/=step11.png?size=webview" title="step11.png"><img src="http://wiki.bitnami.org/@api/deki/files/118/=step11.png?size=thumb" title="step11.png" alt="step11.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/118/=step11.png" title="View fullsize version">step11.png</a></div></td></tr><tr class="bg1"><td class="col1 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/119/=step12.png?size=webview" title="step12.png"><img src="http://wiki.bitnami.org/@api/deki/files/119/=step12.png?size=thumb" title="step12.png" alt="step12.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/119/=step12.png" title="View fullsize version">step12.png</a></div></td><td class="col2 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/109/=step2.png?size=webview" title="step2.png"><img src="http://wiki.bitnami.org/@api/deki/files/109/=step2.png?size=thumb" title="step2.png" alt="step2.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/109/=step2.png" title="View fullsize version">step2.png</a></div></td><td class="col3 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/110/=step3.png?size=webview" title="step3.png"><img src="http://wiki.bitnami.org/@api/deki/files/110/=step3.png?size=thumb" title="step3.png" alt="step3.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/110/=step3.png" title="View fullsize version">step3.png</a></div></td></tr><tr class="bg2"><td class="col1 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/111/=step4.png?size=webview" title="step4.png"><img src="http://wiki.bitnami.org/@api/deki/files/111/=step4.png?size=thumb" title="step4.png" alt="step4.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/111/=step4.png" title="View fullsize version">step4.png</a></div></td><td class="col2 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/112/=step5.png?size=webview" title="step5.png"><img src="http://wiki.bitnami.org/@api/deki/files/112/=step5.png?size=thumb" title="step5.png" alt="step5.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/112/=step5.png" title="View fullsize version">step5.png</a></div></td><td class="col3 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/113/=step6.png?size=webview" title="step6.png"><img src="http://wiki.bitnami.org/@api/deki/files/113/=step6.png?size=thumb" title="step6.png" alt="step6.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/113/=step6.png" title="View fullsize version">step6.png</a></div></td></tr><tr class="bg1"><td class="col1 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/114/=step7.png?size=webview" title="step7.png"><img src="http://wiki.bitnami.org/@api/deki/files/114/=step7.png?size=thumb" title="step7.png" alt="step7.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/114/=step7.png" title="View fullsize version">step7.png</a></div></td><td class="col2 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/115/=step8.png?size=webview" title="step8.png"><img src="http://wiki.bitnami.org/@api/deki/files/115/=step8.png?size=thumb" title="step8.png" alt="step8.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/115/=step8.png" title="View fullsize version">step8.png</a></div></td><td class="col3 image"><a rel="image-gallery-lite" class="lightbox" href="http://wiki.bitnami.org/@api/deki/files/116/=step9.png?size=webview" title="step9.png"><img src="http://wiki.bitnami.org/@api/deki/files/116/=step9.png?size=thumb" title="step9.png" alt="step9.png" /></a><div class="information"><a href="http://wiki.bitnami.org/@api/deki/files/116/=step9.png" title="View fullsize version">step9.png</a></div></td></tr></tbody></table></div> 			</div>
+			
+					</div>
+		<div class="br"></div>
+	</div>
+	
+	<div class="bodyfooter">
+		<div class="spacer">&nbsp;</div>
+	</div>
+	
+	<div id="footer">
+		<div class="product">
+			<div class="poweredBy">Powered by <span class="product"><a href="http://www.mindtouch.com/" class="product" title="MindTouch Core v.10.1.0" target="_blank">MindTouch Core</a></span></div>		</div>
+		<div class="sitenav">
+			<ul>
+			<li class="ListRss"><a href="/Special:ListRss" title="RSS feeds"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="listrss" alt="" /></span><span class="text">RSS feeds</span></a></li><li class="Sitemap"><a href="/Special:Sitemap" title="Sitemap"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="sitemap" alt="" /></span><span class="text">Sitemap</span></a></li>			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="popups">
+	<div id="popupMessage"></div>
+		<div id="popupMessage"></div> 
+	<script type="text/javascript">var _endtime = new Date().getTime(); var _size = 76295;</script>
+
+	<div onclick="DWMenu.Bubble=true;" class="menu" id="menutools" style="display:none;">
+		<div class="header">&nbsp;</div>
+		<div class="body">
+			<ul>
+			<li class="Templatelist"><a href="/Template:" title="Templates"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="templatelist" alt="" /></span><span class="text">Templates</span></a></li><li class="Userlist"><a href="/User:" title="Users"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="userlist" alt="" /></span><span class="text">Users</span></a></li><li class="Popularpages"><a href="/Special:Popularpages" title="Popular pages"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="popularpages" alt="" /></span><span class="text">Popular pages</span></a></li><li class="deki-desktop-suite"><a href="http://www.mindtouch.com/redir/desktop-suite/" target="_blank" title="Desktop Suite"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="deki-desktop-suite" alt="" /></span><span class="text">Desktop Suite</span></a></li>			</ul>
+		</div>
+		<div class="footer">&nbsp;</div>
+	</div>
+
+	<div onclick="DWMenu.Bubble=true;" class="menu" id="menuoptions" style="display:none;">
+		<div class="header">&nbsp;</div>
+		<div class="body">
+			<ul>
+				<li class="pageEdit"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Edit page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="edit" alt="" /></span><span class="text">Edit page</span></a><li class="pageAdd"><a href="#" class="disabled disabled-login" onclick="DWMenu.Off('menuoptions');" title="New page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="add" alt="" /></span><span class="text">New page</span></a><li class="pagePdf"><a href="http://wiki.bitnami.org/@api/deki/pages/162/pdf" onclick="DWMenu.Off('menuoptions');" title="Save as PDF"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="pdf" alt="" /></span><span class="text">Save as PDF</span></a><li class="pageRestrict"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');" title="Restrict access"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="restrict" alt="" /></span><span class="text">Restrict access</span></a><li class="pageAttach"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Attach file"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="attach" alt="" /></span><span class="text">Attach file</span></a><li class="pageEmail"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');" title="Email link"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="email" alt="" /></span><span class="text">Email link</span></a><li class="pageMove"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Move page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="move" alt="" /></span><span class="text">Move page</span></a><li class="pageDelete"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Delete page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="delete" alt="" /></span><span class="text">Delete page</span></a><li class="pageTags"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Tag"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="tags" alt="" /></span><span class="text">Tag</span></a><li class="pageProperties"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');return false" title="Set page properties"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="properties" alt="" /></span><span class="text">Set page properties</span></a><li class="pageSource"><a href="/index.php?title=Applications/BitNami_Magento&action=source" onclick="DWMenu.Off('menuoptions');" title="View source"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="source" alt="" /></span><span class="text">View source</span></a><li class="pageWatch"><a href="#" class="disabled" onclick="DWMenu.Off('menuoptions');" title="Watch page"><span class="icon"><img src="/skins/common/icons/icon-trans.gif" class="watch" alt="" /></span><span class="text">Watch page</span></a>			</ul>
+		</div>
+		<div class="footer">&nbsp;</div>
+	</div>
+
+	
+	<div onclick="DWMenu.Bubble=true;" class="menu" id="menuPageContent" style="display: none;">
+		<div class="header">&nbsp;</div>
+		<div class="body"><div class="pageToc"><h5>Table of contents</h5><div class="tocdata"><ol style="list-style-type:none; margin-left:0px; padding-left:0px;"><li><span>1.</span> <a href="#How_to_start.2fstop_the_servers.3f" rel="internal">How to start/stop the servers?</a></li><li><span>2.</span> <a href="#How_to_change_the_default_URL.3f" rel="internal">How to change the default URL?</a></li><li><span>3.</span> <a href="#How_to_create_a_full_backup_of_Magento.3f" rel="internal">How to create a full backup of Magento?</a></li><li><span>4.</span> <a href="#How_to_upgrade_Magento.3f" rel="internal">How to upgrade Magento?</a></li><li><span>5.</span> <a href="#Where_is_the_administration_interface_of_Magento.3f" rel="internal">Where is the administration interface of Magento?</a></li><li><span>6.</span> <a href="#How_to_install_a_plugin_on_Magento.3f" rel="internal">How to install a plugin on Magento?</a></li><li><span>7.</span> <a href="#What_is_my_Magento_encryption_key.3f" rel="internal">What is my Magento encryption key?</a></li><li><span>8.</span> <a href="#How_do_I_set_up_Magento_to_send_emails_through_my_Gmail.2fGoogle_Apps_account.3f" rel="internal">How do I set up Magento to send emails through my Gmail/Google Apps account?</a></li><li><span>9.</span> <a href="#How_to_enable_SSL.3f" rel="internal">How to enable SSL?</a></li><li><span>10.</span> <a href="#How_to_debug_Magento_errors.3f" rel="internal">How to debug Magento errors?</a></li><li><span>11.</span> <a href="#How_to_increase_the_allowed_size_of_the_uploaded_files.3f" rel="internal">How to increase the allowed size of the uploaded files?</a></li><li><span>12.</span> <a href="#How_do_I_set_up_Beetailer.3f" rel="internal">How do I set up Beetailer?</a></li><li><span>13.</span> <a href="#How_do_I_protect_my_application_with_a_password.3f" rel="internal">How do I protect my application with a password?</a></li></ol></div></div></div>
+		<div class="footer">&nbsp;</div>
+	</div>
+		
+			
+<div class="ui-msg-wrap" id="MTMessage" style="display: none;">
+	<div class="ui-msg ui-errormsg" id="MTMessageStyle">
+		<div class="ui-msg-opt">
+			<ul>
+				<li><a href="#" class="dismiss" onclick="return MTMessage.Hide();">dismiss message</a></li>
+				<li><a href="#" class="details" id="MTMessageDetailsLink" onclick="return MTMessage.ShowDetails(this);">view details</a></li>
+			</ul>
+			<div class="ui-msg-autoclose">
+				<span id="MTMessageUnpaused" style="display: inline;">Message will close by itself in <span id="MTMessageTimer"></span> seconds</span>
+				<span id="MTMessagePaused" style="display: none;">Message timer has been stopped</span>
+			</div>
+		</div>
+		<div class="ui-msg-header" id="MTMessageHeader"></div>
+		<div class="ui-msg-desc" id="MTMessageDesc"></div>
+		<div class="ui-msg-desc" id="MTMessageDetails" style="display: none;">
+			<p>Viewing Details:</p>
+		</div>
+	</div>
+</div><div id="menuFiller"></div><div id="bodyHeight"></div><script type="text/javascript">$(function() {var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");$.getScript(gaJsHost + "google-analytics.com/ga.js", function() {try {var pageTracker = _gat._getTracker("UA-1874455-2");pageTracker._trackPageview();} catch(e) {}});});</script>
+<!-- Served by ip-10-117-73-240 in 1.59 secs. -->
+</div>
+</body>
+ <script type="text/javascript">/*<![CDATA[*/
+$(document).ready(function () { 
+  var $tabs_index = 0;
+  $(".section_tab").each(function (){
+    if ($(this).attr("data-tab-added")) return;
+    $tabs_index++;
+    var tabs      = $('<div class="section_tabs"></div>').insertBefore($(this))
+    var tab_links = $("<ul></ul>").appendTo(tabs)
+    tab_index = 0;
+    var e = $(this);
+    var tab_content = false;
+
+    while (e.length != 0 && !e.is("h1,h2,h3,h4,.section_tabs_end")) {
+      var id = "section-tab" + $tabs_index + tab_index;
+      var next_e = e.next();
+      if ( e.is(".section_tab") ) {
+        tab_index++;
+        tab_content = $('<div id="'+id+'"></div>').appendTo(tabs);
+        $('<li><a href="#'+id+'">'+e.html()+'</a>').appendTo(tab_links);
+        e.attr("data-tab-added", true);
+        e.hide();
+      } else {
+        e.appendTo(tab_content)
+      }
+      e = next_e;
+    }
+    if (e.length != 0) { e.hide() }
+  });
+
+  try { $(".section_tabs").tabs() } catch(err) {} ; 
+});
+/*]]>*/</script></html>
