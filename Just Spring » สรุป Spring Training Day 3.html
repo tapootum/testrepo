@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+	<title>Just Spring &raquo; สรุป Spring Training Day 3</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://spring66.com/blogs/?feed=rss2" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://spring66.com/blogs/?feed=comments-rss2" />
+	<link rel="pingback" href="http://spring66.com/blogs/xmlrpc.php" />
+
+	<!-- style START -->
+	<!-- default style -->
+	<style type="text/css" media="screen">@import url( http://spring66.com/blogs/wp-content/themes/inove/style.css );</style>
+	<!-- for translations -->
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://spring66.com/blogs/wp-content/themes/inove/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	<!-- style END -->
+
+	<!-- script START -->
+	<script type="text/javascript" src="http://spring66.com/blogs/wp-content/themes/inove/js/base.js"></script>
+	<script type="text/javascript" src="http://spring66.com/blogs/wp-content/themes/inove/js/menu.js"></script>
+	<!-- script END -->
+
+	<link rel="alternate" type="application/rss+xml" title="Just Spring &raquo; สรุป Spring Training Day 3 Comments Feed" href="http://spring66.com/blogs/?feed=rss2&#038;page_id=463" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://spring66.com/blogs/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://spring66.com/blogs/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Spring66 Wiki' href='http://spring66.com/blogs/?page_id=222' />
+<link rel='next' title='Enterprise Wiki' href='http://spring66.com/blogs/?page_id=875' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='http://spring66.com/blogs/?page_id=463' />
+<link rel='shortlink' href='http://wp.me/PMlyl-7t' />
+
+			<link rel="stylesheet" type="text/css" href="http://spring66.com/blogs/wp-content/plugins/openid_bck/files/openid.css?ver=svn-47054" />	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<link type="text/css" rel="stylesheet" href="http://spring66.com/blogs/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/shCore.css"></link>
+	<link type="text/css" rel="stylesheet" href="http://spring66.com/blogs/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/shThemeEmacs.css"></link>
+</head>
+
+
+<body>
+<!-- wrap START -->
+<div id="wrap">
+
+<!-- container START -->
+<div id="container"  >
+
+<!-- header START -->
+<div id="header">
+
+	<!-- banner START -->
+		<!-- banner END -->
+
+	<div id="caption">
+		<h1 id="title"><a href="http://spring66.com/blogs/">Just Spring</a></h1>
+		<div id="tagline">แหล่งรวมข่าวสารสปริงเฟรมเวิร์คสำหรับชาวไทย</div>
+	</div>
+
+	<div class="fixed"></div>
+</div>
+<!-- header END -->
+
+<!-- navigation START -->
+<div id="navigation">
+	<!-- menus START -->
+	<ul id="menus">
+		<li class="page_item"><a class="home" title="Home" href="http://spring66.com/blogs/">Home</a></li>
+		<li class="page_item page-item-2"><a href="http://spring66.com/blogs/?page_id=2">เกี่ยวกับสปริงหกหก</a></li>
+<li class="page_item page-item-875"><a href="http://spring66.com/blogs/?page_id=875">Enterprise Wiki</a></li>
+<li class="page_item page-item-463 current_page_item"><a href="http://spring66.com/blogs/?page_id=463">สรุป Spring Training Day 3</a></li>
+<li class="page_item page-item-222"><a href="http://spring66.com/blogs/?page_id=222">Spring66 Wiki</a></li>
+		<li><a class="lastmenu" href="javascript:void(0);"></a></li>
+	</ul>
+	<!-- menus END -->
+
+	<!-- searchbox START -->
+	<div id="searchbox">
+					<form action="http://spring66.com/blogs" method="get">
+				<div class="content">
+					<input type="text" class="textfield" name="s" size="24" value="" />
+					<input type="submit" class="button" value="" />
+				</div>
+			</form>
+			</div>
+<script type="text/javascript">
+//<![CDATA[
+	var searchbox = MGJS.$("searchbox");
+	var searchtxt = MGJS.getElementsByClassName("textfield", "input", searchbox)[0];
+	var searchbtn = MGJS.getElementsByClassName("button", "input", searchbox)[0];
+	var tiptext = "Type text to search here...";
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+		searchtxt.className += " searchtip";
+		searchtxt.value = tiptext;
+	}
+	searchtxt.onfocus = function(e) {
+		if(searchtxt.value == tiptext) {
+			searchtxt.value = "";
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+		}
+	}
+	searchtxt.onblur = function(e) {
+		if(searchtxt.value == "") {
+			searchtxt.className += " searchtip";
+			searchtxt.value = tiptext;
+		}
+	}
+	searchbtn.onclick = function(e) {
+		if(searchtxt.value == "" || searchtxt.value == tiptext) {
+			return false;
+		}
+	}
+//]]>
+</script>
+	<!-- searchbox END -->
+
+	<div class="fixed"></div>
+</div>
+<!-- navigation END -->
+
+<!-- content START -->
+<div id="content">
+
+	<!-- main START -->
+	<div id="main">
+
+<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					
+	<div class="post" id="post-463">
+		<h2>สรุป Spring Training Day 3</h2>
+		<div class="info">
+			<span class="date">February 1st, 2011</span>
+										<span class="addcomment"><a href="#respond">Leave a comment</a></span>
+				<span class="comments"><a href="#comments">Go to comments</a></span>
+						<div class="fixed"></div>
+		</div>
+		<div class="content">
+			<div class='wpfblike' style='height: 40px;'><fb:like href='http://spring66.com/blogs/?page_id=463' layout='default' show_faces='false' width='400' action='like' colorscheme='light' send='false' /></div><p>Spring Training Day 3</p>
+<p>(<strong><span style="color: #ff0000;">Slide ครั</span></strong>บ <a href="http://spring66.com/blogs/wp-content/uploads/2009/11/SpringTransaction.ppt">SpringTransaction</a> , <a href="http://spring66.com/blogs/wp-content/uploads/2009/11/สปริงเฟรมเวิร์ค3.0.ppt">สปริงเฟรมเวิร์ค3.0</a> )<br />
+ผ่านพ้นไปสำหรับ Spring Training Day 3 เมื่อวันอาทิตย์ที่ 22/11/2009 โดยที่รอบนี้ก็เหมือนรอบที่แล้วคือลุ้นเรื่องสถานที่จนสัปดาห์สุดท้าย แล้วตอนแรกคิดว่าต้องเลื่อนออกไปแต่สุดท้ายก้ได้ @b_architect เข้ามาช่วยชีวืตไว้<br />
+โดยการขอสถานที่ที่ KT-ZMICO ให้ต้องขอขอบคุณอีกครับ เพราะนอกจากสถานที่แล้วเรายังได้ขนมและเครื่องดื่มอีกต่างหากทำให้งานดูดีขึ้นมาทันใด<br />
+สำหรับงานในครั้งนี้ ผมโดยส่วนตัวรู้สึกว่าราบรื่นกว่าสองครั้งก่อนมากพอสมควร เนื่องจากเราได้แก้ปัญหาหลักๆไปสองข้อคือ</p>
+<p>1. Development Environment ถึงแม้ครั้งที่แล้วเราจะใช้ MAVEN เข้ามช่วยแต่ก็ยังช่วยได้ไม่ดีเพราะยังมีปัญหาที่คาดไม่ถึงอีกหลายเรื่องเช่น Database Server ที่ทุกคนใช้นั้น Set มาไม่เหมือนกันทำให้มีปัญหาตอน Test ว่าบางคน Data ไม่เข้า<br />
+บางคนสร้างตารางไม่ได้ งานนี้เลยบังคับใช้ Virtual Box ที่ทางทีมงานเตรียมไว้ให้เลย ตามคำแนะนำของ @pphetra และมันก็แก้ปัญหาไปได้เยอะมากทีเดียวเพราะทุกคนใช้ของเหมือนกันหมด ทำให้ทุกคน focus ที่การเขียนโปรแกรมได้เต็มที่<br />
+และ TA ก็ไม่ต้องมานั่งแก้ปัญหาบ้าบอนอกเรื่องเหมือนคราวที่แล้ว</p>
+<p>2. เรื่อง Technology ที่ใช้ สองครั้งที่แล้วเราพยายามโชว์เทพด้วยการใช้งาน Hibernate และ JPA คือมันเทพจริงๆแต่สำหรับคนที่ไม่เคยใช้มันมาก่อน ผลที่ได้ออกมาคือโลกแตกครับ ทีมงานต้องพบกับ error พิศดารที่เราไม่เคยเจอกันมาก่อน และแน่นอน<br />
+หลอนนนนนนน คราวนี้เราเลยเปลี่ยนแนวไปใช้ Spring JDBC และผลที่ได้คิองานดูตรงไปตรงมา ไม่ต้องอธิบายอะไรมาก คนสอนมีความมั่นใจว่าจะไม่หน้าแตกบ่อยจนเกินไป</p>
+<p>แต่ปัญหาที่เรายังแก้ไม่ได้คือเนื้อหาตอนเช้าอาจจะมากเกินไปทำให้ไปเบียดบังเรื่อง AOP และ Transaction ให้ตกไปช่วงบ่ายและนั่นหมายความว่าเรื่อง SpringMVC เราก็ยังคงเริ่มตอนบ่ายสี่เหมือนเดิม ==&#8221; ทำให้ต้องทำ Lab แห้งกันไปเสียเยอะ</p>
+<p><strong><span style="text-decoration: underline;">ขอบบคุณ</span></strong></p>
+<ol>
+<li>TA ทุกท่าน @boyone, @somkiat, @yashimaexteen, @9tae, @nuboat ไม่มี TA งานนี้ไม่เกิดครับ</li>
+<li>@siros_s ที่มาช่วยสอนเรื่องที่ยากและสำคัญที่สุดใน spring คือ AOP, Transaction</li>
+<li>@b_architect ที่หาสถานที่ให้ครับพร้อมอำนวยความสะดวกทุกอย่าง</li>
+<li>นักเรียนทุกท่าน</li>
+</ol>
+<p><strong><span style="text-decoration: underline;">แผนสำหรับ spring training day 4</span></strong><br />
+ตอนนี้ยังต้องสุ่มเสียงจากนักเรียนก่อนว่า<br />
+1. ยังอยากให้สอน Basic แบบนี้อีกหรือไม่<br />
+2. ถ้าไม่ก็สอน Module อื่นๆของ Spring ไปเลยเช่น Spring Security, Spring Integration, Spring Batch, Spring Web Flow</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; border: 0px initial initial;" title="15532_1245308207436_1071302528_776205_96480_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245308207436_1071302528_776205_96480_n.jpg" alt="15532_1245308207436_1071302528_776205_96480_n" width="604" height="455" /></p>
+<p><img class="aligncenter size-full wp-image-465" title="15532_1245308527444_1071302528_776208_3521196_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245308527444_1071302528_776208_3521196_n.jpg" alt="15532_1245308527444_1071302528_776208_3521196_n" width="604" height="455" /><br />
+<img class="aligncenter size-full wp-image-467" title="15532_1245309167460_1071302528_776214_6815457_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245309167460_1071302528_776214_6815457_n.jpg" alt="15532_1245309167460_1071302528_776214_6815457_n" width="604" height="455" /></p>
+<p><img class="aligncenter size-full wp-image-468" title="15532_1245309287463_1071302528_776215_426796_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245309287463_1071302528_776215_426796_n.jpg" alt="15532_1245309287463_1071302528_776215_426796_n" width="604" height="455" /></p>
+<p><img class="aligncenter size-full wp-image-469" title="15532_1245309567470_1071302528_776218_6096697_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245309567470_1071302528_776218_6096697_n.jpg" alt="15532_1245309567470_1071302528_776218_6096697_n" width="604" height="455" /></p>
+<p><img class="aligncenter size-full wp-image-470" title="15532_1245309847477_1071302528_776220_6685487_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245309847477_1071302528_776220_6685487_n.jpg" alt="15532_1245309847477_1071302528_776220_6685487_n" width="604" height="455" /></p>
+<p><img class="aligncenter size-full wp-image-471" title="15532_1245310207486_1071302528_776223_5859526_n" src="http://spring66.com/blogs/wp-content/uploads/2009/11/15532_1245310207486_1071302528_776223_5859526_n.jpg" alt="15532_1245310207486_1071302528_776223_5859526_n" width="604" height="455" /></p>
+			<div class="fixed"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://spring66.com/blogs/wp-content/themes/inove/js/comment.js"></script>
+
+
+
+<div id="comments">
+
+<div id="cmtswitcher">
+			<a id="commenttab" class="curtab" href="javascript:void(0);" onclick="MGJS.switchTab('thecomments,commentnavi', 'thetrackbacks', 'commenttab', 'curtab', 'trackbacktab', 'tab');">Comments (11)</a>
+		<a id="trackbacktab" class="tab" href="javascript:void(0);" onclick="MGJS.switchTab('thetrackbacks', 'thecomments,commentnavi', 'trackbacktab', 'curtab', 'commenttab', 'tab');">Trackbacks (0)</a>
+				<span class="addcomment"><a href="#respond">Leave a comment</a></span>
+				<span class="addtrackback"><a href="http://spring66.com/blogs/wp-trackback.php?p=463">Trackback</a></span>
+		<div class="fixed"></div>
+</div>
+
+<div id="commentlist">
+	<!-- comments START -->
+	<ol id="thecomments">
+		<li class="comment regularcomment" id="comment-303">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://1.gravatar.com/avatar/57b0a5b2ed09861a60163f0703c60b4b?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<a id="commentauthor-303" class="url" href="http://iporsut.wordpress.com/" rel="external nofollow">
+				
+				Weerasak Chongnguluam
+									</a>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 14:57					 | <a href="#comment-303">#1</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-303', 'comment-303', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-303', 'comment-303', 'commentbody-303', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-303">
+					<p>เนื้อหาเหมาะกับเวลาดีแล้วครับ ตัวอย่างไม่ซับซ้อนเกินไป จะน้อยเกินไปหน่อยก็ตรง SpringMVC</p>
+<p>ตรง Transaction กับ AOP Slide ทำได้เข้าใจง่ายและเคลียร์มากๆครับ<br />
+คราวหน้าขอเสนอเป็นพวก Spring Web Flow, Spring Security และก็การทำ REST ครับ</p>
+<p>สุดท้าย ของคุณ พี่ @roofimon พี่ @siros_s และ TA ทุกคนครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-304">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://1.gravatar.com/avatar/b8e8ae9cf6173234e20f9374185a4e45?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<span id="commentauthor-304">
+				
+				Torphan11
+									</span>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 15:14					 | <a href="#comment-304">#2</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-304', 'comment-304', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-304', 'comment-304', 'commentbody-304', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-304">
+					<p>คราวหน้าขอเสนอเป็นพวก Spring Web Flow, Spring Security และก็การทำ REST ครับ</p>
+<p>สุดท้าย ของคุณ พี่ @roofimon พี่ @siros_s และ TA ทุกคนครับ</p>
+<p>ไป 3 ครั้งได้ความรู้ทุกครั้ง 555+</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-305">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32' class='avatar avatar-32 photo avatar-default' height='32' width='32' />			</div>
+			<div class="name">
+									<a id="commentauthor-305" class="url" href="https://www.google.com/accounts/o8/id?id=AItOawkyi6V7GeCvF-z9tKFfK3GuusHn9qS5mT4" rel="external nofollow">
+				
+				https://www.google.com/accounts/o8/id?id=AItOawkyi6V7GeCvF-z9tKFfK3GuusHn9qS5mT4
+									</a>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 16:32					 | <a href="#comment-305">#3</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-305', 'comment-305', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-305', 'comment-305', 'commentbody-305', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-305">
+					<p>เนื้อหา : เหมาะสมดีครับ ทำให้เห็นภาพชัดเจนมากๆ ในการเอา Spring ไป implement กับงานจริงๆ แต่ผู้เรียนเหมือนกับว่าต้องรู้เรื่อง Spring มาก่อน อย่างน้อยก็เรื่องใช้ Application Context เป็นก่อนไม่งั้นไปแล้ว งง แน่ๆ แต่อย่างที่พี่ @roofimon บอกที่สอนครั้งนี้เป็นแค่การแนะแนวทางที่ดีในการเริ่มต้น Spring ทำให้ไปศึกษาต่อเพิ่มเติมแล้วเห็นภาพ ชัดเจนขึ้น ทำให้ผมรู้ว่า Spring เอามาแทน EJB ได้ยังไง</p>
+<p>ผู้สอน : สอนได้ดีอธิบายเห็นภาพชัดเจน และยกตัวอย่างประกอบเพื่อเป็นแนวคิดไปต่อยอดได้ โดยเฉพาะ AOP งงกับมามันมาตั้งนานพี่ @siros_s อธิบายได้หมดจดจริงๆ ขอบคุณครับ</p>
+<p>TA : ผมไม่เคยไปครั้งที่ 1 กับ 2 มาก่อนเลยไม่รู้ว่าครั้งแรกๆมีปัญหายังไงเรื่องการจัดเตรียม resource แต่ครั้งนี้ซึ่งเป็นครั้งแรกของผม ผมประทับใจครับ TA เตรียมตัวมาอย่างดี และตอบคำถามกับผู้สงสัยได้อย่างดี ขอบคุณครับ</p>
+<p>สถานที่ : เหมาะสมดีครับ เดินทางสะดวก มีปลั๊กสำหรับเสียบ laptop พอเหมาะ มีกาแฟ ขนมให้กินด้วย ต้องขอบคุณพี่ @b_architect มากครับ แต่หนาวเกินไป 555+</p>
+<p>สุดท้ายนี้ขอขอบคุณพี่ๆทุกคนครับที่เสียสละเวลามาสอนให้ ขอบคุณครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-306">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://0.gravatar.com/avatar/28c010f0ffafd32b3d0c83a88437befb?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<span id="commentauthor-306">
+				
+				somsaktk33
+									</span>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 18:47					 | <a href="#comment-306">#4</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-306', 'comment-306', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-306', 'comment-306', 'commentbody-306', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-306">
+					<p>ขอบคุณ คุณ@roofimon คุณ@siros_s และ TA ทุกๆท่านครับ</p>
+<p>แนะนำให้ข้าม design pattern ไปครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-307">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://1.gravatar.com/avatar/15c6a48929cec4f920d1d9d8470832f0?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<span id="commentauthor-307">
+				
+				jsoft
+									</span>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 19:56					 | <a href="#comment-307">#5</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-307', 'comment-307', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-307', 'comment-307', 'commentbody-307', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-307">
+					<p>เนื้อหาเหมาะสมดีครับ การอธิบายของคุณ @roofimon ดีมากครับเข้าใจง่ายดีครับ สำหรับ AOP นั้นผมเข้าใจมาขึ้นเลยครับ จากที่แต่ก่อน งง เป็นไก่ตาแตกเมื่ออ่านผ่าน ภาษาอังกฤษ(อ่อนแอ) ของผมเอง ส่วนอื่นๆที่ผมแอบสนใจ อยากให้มีก็คือ Spring Web Flow, Spring Security ครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-308">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://0.gravatar.com/avatar/0de80e7524de9c8af13b84f64cbe72b1?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<span id="commentauthor-308">
+				
+				Complexity
+									</span>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 22:23					 | <a href="#comment-308">#6</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-308', 'comment-308', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-308', 'comment-308', 'commentbody-308', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-308">
+					<p>ขอบคุณผู้จัดเตรียมงานทุกท่านครับ ที่ได้จัดการอบรมดีๆแบบนี้ขึ้นมา</p>
+<p>ได้ความรู้ใหม่ๆเพียบทีเดียวครับ ส่วนงานครั้งต่อไปก็เอาเป็นเนื้อหาใหม่ต่อไปเลยก็ได้ครับ</p>
+<p>ขอขอบคุณทุกท่านอีกทีครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-309">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://0.gravatar.com/avatar/23db42ad758c691c5e099f0ac78c7296?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<span id="commentauthor-309">
+				
+				poweron
+									</span>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 23rd, 2009 at 23:35					 | <a href="#comment-309">#7</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-309', 'comment-309', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-309', 'comment-309', 'commentbody-309', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-309">
+					<p>ขอบคุณทุกท่านที่ให้ความรู้เป็นวิทยาทานครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-310">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32' class='avatar avatar-32 photo avatar-default' height='32' width='32' />			</div>
+			<div class="name">
+									<a id="commentauthor-310" class="url" href="http://ppat.myopenid.com/" rel="external nofollow">
+				
+				http://ppat.myopenid.com/
+									</a>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 24th, 2009 at 06:28					 | <a href="#comment-310">#8</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-310', 'comment-310', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-310', 'comment-310', 'commentbody-310', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-310">
+					<p>ขอบคุณพี่ๆทุกท่านครับ ได้ความรู้เยอะมากมาย</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-311">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://1.gravatar.com/avatar/36c0a8f017926cab4a68b0a80b30b015?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<a id="commentauthor-311" class="url" href="http://tavee.wordpress.com/" rel="external nofollow">
+				
+				taveek
+									</a>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 24th, 2009 at 11:18					 | <a href="#comment-311">#9</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-311', 'comment-311', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-311', 'comment-311', 'commentbody-311', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-311">
+					<p>ขอบคุณ @roofimon, @siros_s และ TA ทุกๆ ท่านที่ทำให้มีงานนี้ขึ้นมา ผมจึงได้มีโอกาสทบทวนความรู้ เกี่ยวกับ spring และได้ทำความเข้าใจในหลายๆ จุดที่เคยมองข้ามไป แต่งานนี้ทำให้เรื่อง AOP กระจ่างวาบซะที หลังจากที่มืดๆ ทึมๆ มานาน นั่งอ่านเอง ไม่ได้เท่านี้แน่ๆ งานนี้จัดได้ดีมากครับ แต่ห้องอาจจะดูเล็กไป สำหรับจำนวนคนที่แอบมาโดยไม่ได้ลงทะเบียน(อย่างผม)มีเยอะพอดู แต่ถึงห้องจะเล็กและคนเยอะมาก ห้องกลับหนาวมาก ^o^</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-312">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://1.gravatar.com/avatar/fad8e24c8b6e4ec5f615256ca2d70166?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<a id="commentauthor-312" class="url" href="http://yarmong.wordpress.com/" rel="external nofollow">
+				
+				Supachai R.
+									</a>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				November 25th, 2009 at 08:08					 | <a href="#comment-312">#10</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-312', 'comment-312', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-312', 'comment-312', 'commentbody-312', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-312">
+					<p>ขอบคุณพี่ @roofimon พี่ siros_s และพี่ๆ TA ทุกท่านครับ ถ้ามีอีกครั้งหน้าขอไปร่วมฟังอีกเช่นเคยครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	<li class="comment regularcomment" id="comment-324">
+		<div class="author">
+			<div class="pic">
+				<img alt='' src='http://0.gravatar.com/avatar/abdb77c91b26588bde9b26e4b03d1f07?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />			</div>
+			<div class="name">
+									<a id="commentauthor-324" class="url" href="http://f1rst.wordpress.com/" rel="external nofollow">
+				
+				F1RST
+									</a>
+							</div>
+		</div>
+
+		<div class="info">
+			<div class="date">
+				December 16th, 2009 at 17:19					 | <a href="#comment-324">#11</a>
+			</div>
+			<div class="act">
+				<a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-324', 'comment-324', 'comment');">Reply</a> | 
+				<a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-324', 'comment-324', 'commentbody-324', 'comment');">Quote</a>
+							</div>
+			<div class="fixed"></div>
+			<div class="content">
+				
+				<div id="commentbody-324">
+					<p>อยากไปแต่ไม่ได้ไปครับ</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li>
+	</ol>
+	<!-- comments END -->
+
+
+	<!-- trackbacks START -->
+			<ol id="thetrackbacks">
+							<li class="messagebox">
+					No trackbacks yet.				</li>
+
+					</ol>
+		<div class="fixed"></div>
+	<!-- trackbacks END -->
+</div>
+
+</div>
+
+	<div id="comment_login" class="messagebox">
+				You must be <a href="http://spring66.com/blogs/wp-login.php">logged in</a> to post a comment.	</div>
+
+
+
+	</div>
+	<!-- main END -->
+
+	
+<!-- sidebar START -->
+<div id="sidebar">
+
+<!-- sidebar north START -->
+<div id="northsidebar" class="sidebar">
+
+	<!-- feeds -->
+	<div class="widget widget_feeds">
+		<div class="content">
+			<div id="subscribe">
+				<a rel="external nofollow" id="feedrss" title="Subscribe to this blog..." href="http://spring66.com/blogs/?feed=rss2"><abbr title="Really Simple Syndication">RSS</abbr></a>
+							</div>
+						<div class="fixed"></div>
+		</div>
+	</div>
+
+	<!-- showcase -->
+	
+<div id="text-3" class="widget widget_text">			<div class="textwidget"><a href="http://www.oseda.or.th"><img src="http://www.wordpress.in.th/wp-content/themes/pimkam/images/ad-oseda.png"></img></a></div>
+		</div><div id="statpress" class="widget widget_statpress"><h3>StatPress</h3>Visits today: 95
+Top Browser: Firefox 3
+</div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h3>Recent Posts</h3>		<ul>
+		<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+							<li><a href="http://spring66.com/blogs/?p=1088" title="Spring Roo 1.2">Spring Roo 1.2</a></li>
+				<li><a href="http://spring66.com/blogs/?p=1083" title="Micro Cloud Foundry">Micro Cloud Foundry</a></li>
+				<li><a href="http://spring66.com/blogs/?p=1063" title="เข้าใจ AMQ โปรโตคอลที่ถูกใช้โดย RabbitMQ">เข้าใจ AMQ โปรโตคอลที่ถูกใช้โดย RabbitMQ</a></li>
+				<li><a href="http://spring66.com/blogs/?p=960" title="Spring + GWT + Maven (Part1)">Spring + GWT + Maven (Part1)</a></li>
+				<li><a href="http://spring66.com/blogs/?p=996" title="ทำ Log ใน Spring ด้วย Log4j และ SpringAOP">ทำ Log ใน Spring ด้วย Log4j และ SpringAOP</a></li>
+				</ul>
+		</div><div id="recent-comments-3" class="widget widget_recent_comments"><h3>Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><a href='http://www.roofimon.com' rel='external nofollow' class='url'>roofimon</a> on <a href="http://spring66.com/blogs/?p=593&#038;cpage=1#comment-543">REST Architecture เบื้องต้น</a></li><li class="recentcomments">sinapam on <a href="http://spring66.com/blogs/?p=593&#038;cpage=1#comment-542">REST Architecture เบื้องต้น</a></li><li class="recentcomments">Flukeky on <a href="http://spring66.com/blogs/?p=980&#038;cpage=1#comment-514">Graph Database (Neo4J)</a></li><li class="recentcomments">panthephin on <a href="http://spring66.com/blogs/?p=996&#038;cpage=1#comment-512">ทำ Log ใน Spring ด้วย Log4j และ SpringAOP</a></li><li class="recentcomments">champillon on <a href="http://spring66.com/blogs/?p=918&#038;cpage=1#comment-509">Service-Oriented Architecture and Enterprise Architecture Part1</a></li></ul></div><div id="calendar-2" class="widget widget_calendar"><h3>&nbsp;</h3><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>January 2012</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://spring66.com/blogs/?m=201112" title="View posts for December 2011">&laquo; Dec</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="6" class="pad">&nbsp;</td><td>1</td>
+	</tr>
+	<tr>
+		<td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+	</tr>
+	<tr>
+		<td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+	</tr>
+	<tr>
+		<td>16</td><td>17</td><td id="today">18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+	</tr>
+	<tr>
+		<td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+	</tr>
+	<tr>
+		<td>30</td><td>31</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></div><div id="archives-3" class="widget widget_archive"><h3>Archives</h3>		<ul>
+			<li><a href='http://spring66.com/blogs/?m=201112' title='December 2011'>December 2011</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201108' title='August 2011'>August 2011</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201106' title='June 2011'>June 2011</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201103' title='March 2011'>March 2011</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201102' title='February 2011'>February 2011</a>&nbsp;(2)</li>
+	<li><a href='http://spring66.com/blogs/?m=201012' title='December 2010'>December 2010</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201011' title='November 2010'>November 2010</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201010' title='October 2010'>October 2010</a>&nbsp;(2)</li>
+	<li><a href='http://spring66.com/blogs/?m=201009' title='September 2010'>September 2010</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201008' title='August 2010'>August 2010</a>&nbsp;(2)</li>
+	<li><a href='http://spring66.com/blogs/?m=201007' title='July 2010'>July 2010</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=201006' title='June 2010'>June 2010</a>&nbsp;(4)</li>
+	<li><a href='http://spring66.com/blogs/?m=201005' title='May 2010'>May 2010</a>&nbsp;(4)</li>
+	<li><a href='http://spring66.com/blogs/?m=201004' title='April 2010'>April 2010</a>&nbsp;(5)</li>
+	<li><a href='http://spring66.com/blogs/?m=201003' title='March 2010'>March 2010</a>&nbsp;(4)</li>
+	<li><a href='http://spring66.com/blogs/?m=201002' title='February 2010'>February 2010</a>&nbsp;(3)</li>
+	<li><a href='http://spring66.com/blogs/?m=201001' title='January 2010'>January 2010</a>&nbsp;(9)</li>
+	<li><a href='http://spring66.com/blogs/?m=200912' title='December 2009'>December 2009</a>&nbsp;(1)</li>
+	<li><a href='http://spring66.com/blogs/?m=200911' title='November 2009'>November 2009</a>&nbsp;(3)</li>
+	<li><a href='http://spring66.com/blogs/?m=200910' title='October 2009'>October 2009</a>&nbsp;(5)</li>
+	<li><a href='http://spring66.com/blogs/?m=200908' title='August 2009'>August 2009</a>&nbsp;(5)</li>
+	<li><a href='http://spring66.com/blogs/?m=200907' title='July 2009'>July 2009</a>&nbsp;(7)</li>
+	<li><a href='http://spring66.com/blogs/?m=200906' title='June 2009'>June 2009</a>&nbsp;(7)</li>
+	<li><a href='http://spring66.com/blogs/?m=200905' title='May 2009'>May 2009</a>&nbsp;(8)</li>
+	<li><a href='http://spring66.com/blogs/?m=200903' title='March 2009'>March 2009</a>&nbsp;(6)</li>
+	<li><a href='http://spring66.com/blogs/?m=200902' title='February 2009'>February 2009</a>&nbsp;(5)</li>
+	<li><a href='http://spring66.com/blogs/?m=200901' title='January 2009'>January 2009</a>&nbsp;(20)</li>
+		</ul>
+</div><div id="linkcat-2" class="widget widget_links"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.grails66.com" title="The search is over, super fast web development framework">Grails แห่งประเทศไทย</a></li>
+<li><a href="http://www.welovebug.com" title="Software Testing Blog">คนรัก Bug</a></li>
+
+	</ul>
+</div>
+<div id="tag_cloud-3" class="widget widget_tag_cloud"><h3>Tags</h3><div class="tagcloud"><a href='http://spring66.com/blogs/?tag=acquire' class='tag-link-42' title='2 topics' style='font-size: 11.1111111111pt;'>acquire</a>
+<a href='http://spring66.com/blogs/?tag=certificate' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>certificate</a>
+<a href='http://spring66.com/blogs/?tag=cloud' class='tag-link-71' title='4 topics' style='font-size: 14.9135802469pt;'>cloud</a>
+<a href='http://spring66.com/blogs/?tag=coldfusion' class='tag-link-16' title='2 topics' style='font-size: 11.1111111111pt;'>coldfusion</a>
+<a href='http://spring66.com/blogs/?tag=dao-ibatis' class='tag-link-25' title='2 topics' style='font-size: 11.1111111111pt;'>DAO Ibatis</a>
+<a href='http://spring66.com/blogs/?tag=datasource-database' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>datasource database</a>
+<a href='http://spring66.com/blogs/?tag=di' class='tag-link-11' title='3 topics' style='font-size: 13.1851851852pt;'>DI</a>
+<a href='http://spring66.com/blogs/?tag=dynamicblock' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>DynamicBlock</a>
+<a href='http://spring66.com/blogs/?tag=eai' class='tag-link-19' title='2 topics' style='font-size: 11.1111111111pt;'>EAI</a>
+<a href='http://spring66.com/blogs/?tag=ehcache' class='tag-link-65' title='2 topics' style='font-size: 11.1111111111pt;'>EhCache</a>
+<a href='http://spring66.com/blogs/?tag=flex' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>flex</a>
+<a href='http://spring66.com/blogs/?tag=grails' class='tag-link-13' title='1 topic' style='font-size: 8pt;'>grails</a>
+<a href='http://spring66.com/blogs/?tag=groovy' class='tag-link-12' title='1 topic' style='font-size: 8pt;'>groovy</a>
+<a href='http://spring66.com/blogs/?tag=gwt' class='tag-link-113' title='2 topics' style='font-size: 11.1111111111pt;'>GWT</a>
+<a href='http://spring66.com/blogs/?tag=hibernate3-tutorial' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>hibernate3 tutorial</a>
+<a href='http://spring66.com/blogs/?tag=ibatis' class='tag-link-27' title='1 topic' style='font-size: 8pt;'>iBatis</a>
+<a href='http://spring66.com/blogs/?tag=integration' class='tag-link-20' title='4 topics' style='font-size: 14.9135802469pt;'>Integration</a>
+<a href='http://spring66.com/blogs/?tag=ioc' class='tag-link-10' title='4 topics' style='font-size: 14.9135802469pt;'>IOC</a>
+<a href='http://spring66.com/blogs/?tag=javarebel' class='tag-link-40' title='2 topics' style='font-size: 11.1111111111pt;'>javarebel</a>
+<a href='http://spring66.com/blogs/?tag=json' class='tag-link-32' title='2 topics' style='font-size: 11.1111111111pt;'>JSON</a>
+<a href='http://spring66.com/blogs/?tag=maven' class='tag-link-9' title='5 topics' style='font-size: 16.2962962963pt;'>maven</a>
+<a href='http://spring66.com/blogs/?tag=osgi' class='tag-link-48' title='4 topics' style='font-size: 14.9135802469pt;'>OSGi</a>
+<a href='http://spring66.com/blogs/?tag=products' class='tag-link-4' title='1 topic' style='font-size: 8pt;'>products</a>
+<a href='http://spring66.com/blogs/?tag=rabbitmq' class='tag-link-108' title='2 topics' style='font-size: 11.1111111111pt;'>RabbitMQ</a>
+<a href='http://spring66.com/blogs/?tag=rest' class='tag-link-88' title='2 topics' style='font-size: 11.1111111111pt;'>REST</a>
+<a href='http://spring66.com/blogs/?tag=restful' class='tag-link-77' title='8 topics' style='font-size: 19.2345679012pt;'>RESTFul</a>
+<a href='http://spring66.com/blogs/?tag=rmi' class='tag-link-68' title='2 topics' style='font-size: 11.1111111111pt;'>rmi</a>
+<a href='http://spring66.com/blogs/?tag=roo' class='tag-link-84' title='4 topics' style='font-size: 14.9135802469pt;'>roo</a>
+<a href='http://spring66.com/blogs/?tag=service-layer' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>service layer</a>
+<a href='http://spring66.com/blogs/?tag=soa' class='tag-link-90' title='2 topics' style='font-size: 11.1111111111pt;'>SOA</a>
+<a href='http://spring66.com/blogs/?tag=spring' class='tag-link-3' title='12 topics' style='font-size: 22pt;'>spring</a>
+<a href='http://spring66.com/blogs/?tag=spring3' class='tag-link-17' title='4 topics' style='font-size: 14.9135802469pt;'>spring3</a>
+<a href='http://spring66.com/blogs/?tag=spring-batch' class='tag-link-30' title='2 topics' style='font-size: 11.1111111111pt;'>Spring Batch</a>
+<a href='http://spring66.com/blogs/?tag=spring-java-config' class='tag-link-18' title='2 topics' style='font-size: 11.1111111111pt;'>Spring Java Config</a>
+<a href='http://spring66.com/blogs/?tag=spring-maven' class='tag-link-21' title='3 topics' style='font-size: 13.1851851852pt;'>spring maven</a>
+<a href='http://spring66.com/blogs/?tag=springmvc' class='tag-link-31' title='7 topics' style='font-size: 18.3703703704pt;'>springMvc</a>
+<a href='http://spring66.com/blogs/?tag=springmvc-3' class='tag-link-96' title='2 topics' style='font-size: 11.1111111111pt;'>SpringMVC 3</a>
+<a href='http://spring66.com/blogs/?tag=springpython' class='tag-link-53' title='2 topics' style='font-size: 11.1111111111pt;'>SpringPython</a>
+<a href='http://spring66.com/blogs/?tag=spring-roo' class='tag-link-85' title='4 topics' style='font-size: 14.9135802469pt;'>Spring Roo</a>
+<a href='http://spring66.com/blogs/?tag=swiz' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>swiz</a>
+<a href='http://spring66.com/blogs/?tag=tc-server' class='tag-link-79' title='2 topics' style='font-size: 11.1111111111pt;'>tc server</a>
+<a href='http://spring66.com/blogs/?tag=test' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>test</a>
+<a href='http://spring66.com/blogs/?tag=training' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>training</a>
+<a href='http://spring66.com/blogs/?tag=training2' class='tag-link-59' title='2 topics' style='font-size: 11.1111111111pt;'>training2</a>
+<a href='http://spring66.com/blogs/?tag=tutorial' class='tag-link-8' title='3 topics' style='font-size: 13.1851851852pt;'>tutorial</a></div>
+</div></div>
+<!-- sidebar north END -->
+
+<div id="centersidebar">
+
+	<!-- sidebar east START -->
+	<div id="eastsidebar" class="sidebar">
+	
+		<!-- categories -->
+		<div class="widget widget_categories">
+			<h3>Categories</h3>
+			<ul>
+					<li class="cat-item cat-item-46"><a href="http://spring66.com/blogs/?cat=46" title="View all posts filed under case study">case study</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://spring66.com/blogs/?cat=6" title="View all posts filed under general information">general information</a>
+</li>
+	<li class="cat-item cat-item-82"><a href="http://spring66.com/blogs/?cat=82" title="View all posts filed under how to">how to</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://spring66.com/blogs/?cat=7" title="View all posts filed under news">news</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://spring66.com/blogs/?cat=5" title="View all posts filed under tutorial series">tutorial series</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://spring66.com/blogs/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+			</ul>
+		</div>
+
+		</div>
+	<!-- sidebar east END -->
+
+	<!-- sidebar west START -->
+	<div id="westsidebar" class="sidebar">
+	
+		<!-- blogroll -->
+		<div class="widget widget_links">
+			<h3>Blogroll</h3>
+			<ul>
+				<li><a href="http://www.grails66.com" title="The search is over, super fast web development framework">Grails แห่งประเทศไทย</a></li>
+<li><a href="http://www.welovebug.com" title="Software Testing Blog">คนรัก Bug</a></li>
+			</ul>
+		</div>
+
+		</div>
+	<!-- sidebar west END -->
+	<div class="fixed"></div>
+</div>
+
+<!-- sidebar south START -->
+<div id="southsidebar" class="sidebar">
+
+	<!-- archives -->
+	<div class="widget">
+		<h3>Archives</h3>
+					<ul>
+					<li><a href='http://spring66.com/blogs/?m=201112' title='December 2011'>December 2011</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201108' title='August 2011'>August 2011</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='http://spring66.com/blogs/?m=200901' title='January 2009'>January 2009</a></li>
+			</ul>
+			</div>
+
+	<!-- meta -->
+	<div class="widget">
+		<h3>Meta</h3>
+		<ul>
+			<li><a href="http://spring66.com/blogs/wp-login.php?action=register">Register</a></li>			<li><a href="http://spring66.com/blogs/wp-login.php">Log in</a></li>
+		</ul>
+	</div>
+
+</div>
+<!-- sidebar south END -->
+
+</div>
+<!-- sidebar END -->
+	<div class="fixed"></div>
+</div>
+<!-- content END -->
+
+<!-- footer START -->
+<div id="footer">
+	<a id="gotop" href="#" onclick="MGJS.goTop();return false;">Top</a>
+	<a id="powered" href="http://wordpress.org/">WordPress</a>
+	<div id="copyright">
+		Copyright &copy; 2009-2011 Just Spring	</div>
+	<div id="themeinfo">
+		Theme by <a href="http://www.neoease.com/">NeoEase</a>. Valid <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS 3</a>.	</div>
+</div>
+<!-- footer END -->
+
+</div>
+<!-- container END -->
+</div>
+<!-- wrap END -->
+
+<script type='text/javascript' src='http://spring66.com/blogs/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://spring66.com/blogs/wp-content/plugins/openid_bck/files/jquery.textnode.js?ver=svn-47054'></script>
+<script type='text/javascript' src='http://spring66.com/blogs/wp-content/plugins/openid_bck/files/jquery.xpath.js?ver=svn-47054'></script>
+<script type='text/javascript' src='http://spring66.com/blogs/wp-content/plugins/openid_bck/files/openid.js?ver=svn-47054'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201203.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'11522597',v:'ext',post:'463'});
+var load_cmc = function(){linktracker_init(11522597,463,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+
+<!-- SyntaxHighlighter Stuff -->
+<script type="text/javascript" src="http://spring66.com/blogs/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/src/shCore.js"></script>
+<script type="text/javascript">
+	SyntaxHighlighter.all();
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,2807 @@
+<!DOCTYPE html>
+<html b:version='2' class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<!--SYNTAX HIGHLIGHTER BEGINS-->
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'></script>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js' type='text/javascript'></script>
+<script language='javascript'>
+        SyntaxHighlighter.config.bloggerMode = true;
+        SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+        SyntaxHighlighter.all();
+      </script>
+<!--SYNTAX HIGHLIGHTER ENDS-->
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(b,i,d){d=void 0!=d?d:(new Date).getTime();this.t[b]=[d,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;a.chrome&&a.chrome.csi&&(g=Math.floor(a.chrome.csi().pageT));null==g&&a.gtbExternal&&(g=a.gtbExternal.pageT());null==g&&a.external&&(g=a.external.pageT);g&&(a.jstiming.pt=g)}catch(h){};a.tickAboveFold=function(b){var e=0;if(b.offsetParent){do e+=b.offsetTop;while(b=b.offsetParent)}b=e;750>=b&&a.jstiming.load.tick("aft")};var j=!1;function k(){j||(j=!0,a.jstiming.load.tick("firstScrollTime"))}a.addEventListener?a.addEventListener("scroll",k,!1):a.attachEvent("onscroll",k);
+ })();</script>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.leknarm.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://www.leknarm.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="leknarm&#39;s blog - Atom" href="http://www.leknarm.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="leknarm&#39;s blog - RSS" href="http://www.leknarm.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="leknarm&#39;s blog - Atom" href="http://www.blogger.com/feeds/57392424587537905/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=57392424587537905" />
+<link rel="me" href="https://plus.google.com/105761820717326472079/about" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+<!--[if IE]><script type="text/javascript" src="http://www.blogger.com/static/v1/jsbin/1211808609-ieretrofit.js"></script>
+<![endif]-->
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>leknarm's blog</title>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/1756804974-widget_css_2_bundle.css' />
+<link type="text/css" rel="stylesheet" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=57392424587537905&zx=9c2bbffc-4fe5-41f2-85ff-6eaea6598ba2"/>
+<style type="text/css">
+#navbar-iframe { display:block }
+</style>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Awesome Inc.
+Designer: Tina Chen
+URL:      tinachen.org
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#ffffff"/>
+<Group description="Page" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.background.color" description="Background Color" type="color" default="#000000"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Links" selector=".main-inner">
+<Variable name="link.color" description="Link Color" type="color" default="#888888"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#444444"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#cccccc"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Title Font" type="font"
+default="normal bold 40px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#333333" />
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="description.text.color" description="Text Color" type="color"
+default="#333333" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#333333"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#333333"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#141414"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#444444"/>
+<Variable name="tabs.border.color" description="Border Color" type="color" default="#aab123"/>
+</Group>
+<Group description="Date Header" selector=".main-inner .widget h2.date-header, .main-inner .widget h2.date-header span">
+<Variable name="date.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="date.border.color" description="Border Color" type="color" default="#aab123"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, h4, h3.post-title a">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal bold 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="post.title.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Post Background" selector=".post">
+<Variable name="post.background.color" description="Background Color" type="color" default="#fefdfa" />
+<Variable name="post.border.color" description="Border Color" type="color" default="#aab123" />
+<Variable name="post.border.bevel.color" description="Bevel Color" type="color" default="#aab123"/>
+</Group>
+<Group description="Gadget Title" selector="h2">
+<Variable name="widget.title.font" description="Font" type="font"
+default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Gadget Text" selector=".sidebar .widget">
+<Variable name="widget.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.text.color" description="Text Color" type="color" default="#333333"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#666666"/>
+</Group>
+<Group description="Gadget Links" selector=".sidebar .widget">
+<Variable name="widget.link.color" description="Link Color" type="color" default="#d52a33"/>
+<Variable name="widget.link.visited.color" description="Visited Color" type="color" default="#7d181e"/>
+<Variable name="widget.link.hover.color" description="Hover Color" type="color" default="#d52a33"/>
+</Group>
+<Group description="Gadget Background" selector=".sidebar .widget">
+<Variable name="widget.background.color" description="Background Color" type="color" default="#141414"/>
+<Variable name="widget.border.color" description="Border Color" type="color" default="#222222"/>
+<Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="#000000"/>
+</Group>
+<Group description="Sidebar Background" selector=".column-left-inner .column-right-inner">
+<Variable name="widget.outer.background.color" description="Background Color" type="color" default="transparent" />
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="transparent"/>
+</Group>
+<Group description="Feed" selector=".blog-feeds">
+<Variable name="feed.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Feed Links" selector=".blog-feeds">
+<Variable name="feed.link.color" description="Link Color" type="color" default="#d52a33"/>
+<Variable name="feed.link.visited.color" description="Visited Color" type="color" default="#7d181e"/>
+<Variable name="feed.link.hover.color" description="Hover Color" type="color" default="#d52a33"/>
+</Group>
+<Group description="Pager" selector=".blog-pager">
+<Variable name="pager.background.color" description="Background Color" type="color" default="#fefdfa" />
+</Group>
+<Group description="Footer" selector=".footer-outer">
+<Variable name="footer.background.color" description="Background Color" type="color" default="#fefdfa" />
+<Variable name="footer.text.color" description="Text Color" type="color" default="#333333" />
+</Group>
+<Variable name="title.shadow.spread" description="Title Shadow" type="length" default="-1px"/>
+<Variable name="body.background" description="Body Background" type="background"
+color="#fcfbf5"
+default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="none"/>
+<Variable name="body.background.size" description="Body Background Size" type="string" default="auto"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="none"/>
+<Variable name="header.background.gradient" description="Header Background Gradient" type="url" default="none" />
+<Variable name="header.padding.top" description="Header Top Padding" type="length" default="22px" />
+<Variable name="header.margin.top" description="Header Top Margin" type="length" default="0" />
+<Variable name="header.margin.bottom" description="Header Bottom Margin" type="length" default="0" />
+<Variable name="widget.padding.top" description="Widget Padding Top" type="length" default="8px" />
+<Variable name="widget.padding.side" description="Widget Padding Side" type="length" default="15px" />
+<Variable name="widget.outer.margin.top" description="Widget Top Margin" type="length" default="0" />
+<Variable name="widget.outer.background.gradient" description="Gradient" type="url" default="none" />
+<Variable name="widget.border.radius" description="Gadget Border Radius" type="length" default="0" />
+<Variable name="outer.shadow.spread" description="Outer Shadow Size" type="length" default="0" />
+<Variable name="date.header.border.radius.top" description="Date Header Border Radius Top" type="length" default="0" />
+<Variable name="date.header.position" description="Date Header Position" type="length" default="15px" />
+<Variable name="date.space" description="Date Space" type="length" default="30px" />
+<Variable name="date.position" description="Date Float" type="string" default="static" />
+<Variable name="date.padding.bottom" description="Date Padding Bottom" type="length" default="0" />
+<Variable name="date.border.size" description="Date Border Size" type="length" default="0" />
+<Variable name="date.background" description="Date Background" type="background" color="transparent"
+default="$(color) none no-repeat scroll top left" />
+<Variable name="date.first.border.radius.top" description="Date First top radius" type="length" default="5px" />
+<Variable name="date.last.space.bottom" description="Date Last Space Bottom" type="length"
+default="20px" />
+<Variable name="date.last.border.radius.bottom" description="Date Last bottom radius" type="length" default="5px" />
+<Variable name="post.first.padding.top" description="First Post Padding Top" type="length" default="0" />
+<Variable name="image.shadow.spread" description="Image Shadow Size" type="length" default="0"/>
+<Variable name="image.border.radius" description="Image Border Radius" type="length" default="0"/>
+<Variable name="separator.outdent" description="Separator Outdent" type="length" default="15px" />
+<Variable name="title.separator.border.size" description="Widget Title Border Size" type="length" default="1px" />
+<Variable name="list.separator.border.size" description="List Separator Border Size" type="length" default="1px" />
+<Variable name="shadow.spread" description="Shadow Size" type="length" default="0"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+<Variable name="date.side" description="Side where date header is placed" type="string" default="right"/>
+<Variable name="pager.border.radius.top" description="Pager Border Top Radius" type="length" default="5px" />
+<Variable name="pager.space.top" description="Pager Top Space" type="length" default="1em" />
+<Variable name="footer.background.gradient" description="Background Gradient" type="url" default="none" />
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string"
+default="auto"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+background: #fcfbf5 none repeat scroll top left;
+}
+html body .content-outer {
+min-width: 0;
+max-width: 100%;
+width: 100%;
+}
+a:link {
+text-decoration: none;
+color: #d52a33;
+}
+a:visited {
+text-decoration: none;
+color: #7d181e;
+}
+a:hover {
+text-decoration: underline;
+color: #d52a33;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 276px;
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+/* Columns
+----------------------------------------------- */
+.content-inner {
+padding: 0;
+}
+.header-inner .section {
+margin: 0 16px;
+}
+.tabs-inner .section {
+margin: 0 16px;
+}
+.main-inner {
+padding-top: 30px;
+}
+.main-inner .column-center-inner,
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+padding: 0 5px;
+}
+*+html body .main-inner .column-center-inner {
+margin-top: -30px;
+}
+#layout .main-inner .column-center-inner {
+margin-top: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+margin: 0 0 0 0;
+background: transparent none repeat scroll 0 0;
+}
+.Header h1 {
+font: normal normal 48px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #333333;
+text-shadow: 0 0 -1px #000000;
+}
+.Header h1 a {
+color: #333333;
+}
+.Header .description {
+font: normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #908d6a;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 0;
+padding-right: 0;
+margin-bottom: 0;
+}
+.header-inner .Header .titlewrapper {
+padding-top: 22px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-outer {
+overflow: hidden;
+position: relative;
+background: #b3ca88 url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat scroll 0 0;
+}
+#layout .tabs-outer {
+overflow: visible;
+}
+.tabs-cap-top, .tabs-cap-bottom {
+position: absolute;
+width: 100%;
+border-top: 1px solid #908d6a;
+}
+.tabs-cap-bottom {
+bottom: 0;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+margin: 0;
+padding: .6em 1.5em;
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+border-top: 1px solid #908d6a;
+border-bottom: 1px solid #908d6a;
+border-left: 1px solid #908d6a;
+}
+.tabs-inner .widget li:last-child a {
+border-right: 1px solid #908d6a;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+background: #63704b url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat-x scroll 0 -100px;
+color: #ffffff;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+}
+/* Widgets
+----------------------------------------------- */
+.main-inner .section {
+margin: 0 27px;
+padding: 0;
+}
+.main-inner .column-left-outer,
+.main-inner .column-right-outer {
+margin-top: 0;
+}
+#layout .main-inner .column-left-outer,
+#layout .main-inner .column-right-outer {
+margin-top: 0;
+}
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+background: transparent none repeat 0 0;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+#layout .main-inner .column-left-inner,
+#layout .main-inner .column-right-inner {
+margin-top: 0;
+}
+.sidebar .widget {
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+}
+.sidebar .widget a:link {
+color: #d52a33;
+}
+.sidebar .widget a:visited {
+color: #7d181e;
+}
+.sidebar .widget a:hover {
+color: #d52a33;
+}
+.sidebar .widget h2 {
+text-shadow: 0 0 -1px #000000;
+}
+.main-inner .widget {
+background-color: #fefdfa;
+border: 1px solid #aab123;
+padding: 0 15px 15px;
+margin: 20px -16px;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+.main-inner .widget h2 {
+margin: 0 -0;
+padding: .6em 0 .5em;
+border-bottom: 1px solid transparent;
+}
+.footer-inner .widget h2 {
+padding: 0 0 .4em;
+border-bottom: 1px solid transparent;
+}
+.main-inner .widget h2 + div, .footer-inner .widget h2 + div {
+border-top: 1px solid #aab123;
+padding-top: 8px;
+}
+.main-inner .widget .widget-content {
+margin: 0 -0;
+padding: 7px 0 0;
+}
+.main-inner .widget ul, .main-inner .widget #ArchiveList ul.flat {
+margin: -8px -15px 0;
+padding: 0;
+list-style: none;
+}
+.main-inner .widget #ArchiveList {
+margin: -8px 0 0;
+}
+.main-inner .widget ul li, .main-inner .widget #ArchiveList ul.flat li {
+padding: .5em 15px;
+text-indent: 0;
+color: #666666;
+border-top: 0 solid #aab123;
+border-bottom: 1px solid transparent;
+}
+.main-inner .widget #ArchiveList ul li {
+padding-top: .25em;
+padding-bottom: .25em;
+}
+.main-inner .widget ul li:first-child, .main-inner .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.main-inner .widget ul li:last-child, .main-inner .widget #ArchiveList ul.flat li:last-child {
+border-bottom: none;
+}
+.post-body {
+position: relative;
+}
+.main-inner .widget .post-body ul {
+padding: 0 2.5em;
+margin: .5em 0;
+list-style: disc;
+}
+.main-inner .widget .post-body ul li {
+padding: 0.25em 0;
+margin-bottom: .25em;
+color: #333333;
+border: none;
+}
+.footer-inner .widget ul {
+padding: 0;
+list-style: none;
+}
+.widget .zippy {
+color: #666666;
+}
+/* Posts
+----------------------------------------------- */
+body .main-inner .Blog {
+padding: 0;
+margin-bottom: 1em;
+background-color: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.main-inner .section:last-child .Blog:last-child {
+padding: 0;
+margin-bottom: 1em;
+}
+.main-inner .widget h2.date-header {
+margin: 0 -15px 1px;
+padding: 0 0 0 0;
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #908d6a;
+background: transparent none no-repeat scroll top left;
+border-top: 0 solid #aab123;
+border-bottom: 1px solid transparent;
+-moz-border-radius-topleft: 0;
+-moz-border-radius-topright: 0;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+position: static;
+bottom: 100%;
+right: 15px;
+text-shadow: 0 0 -1px #000000;
+}
+.main-inner .widget h2.date-header span {
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+display: block;
+padding: .5em 15px;
+border-left: 0 solid #aab123;
+border-right: 0 solid #aab123;
+}
+.date-outer {
+position: relative;
+margin: 30px 0 20px;
+padding: 0 15px;
+background-color: #fefdfa;
+border: 1px solid #aab123;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+.date-outer:first-child {
+margin-top: 0;
+}
+.date-outer:last-child {
+margin-bottom: 20px;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-goog-ms-border-bottom-left-radius: 5px;
+-goog-ms-border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.date-posts {
+margin: 0 -0;
+padding: 0 0;
+clear: both;
+}
+.post-outer, .inline-ad {
+border-top: 1px solid #aab123;
+margin: 0 -0;
+padding: 15px 0;
+}
+.post-outer {
+padding-bottom: 10px;
+}
+.post-outer:first-child {
+padding-top: 0;
+border-top: none;
+}
+.post-outer:last-child, .inline-ad:last-child {
+border-bottom: none;
+}
+.post-body {
+position: relative;
+}
+.post-body img {
+padding: 8px;
+background: #ffffff;
+border: 1px solid #cccccc;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+h3.post-title, h4 {
+font: normal normal 22px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #d52a33;
+}
+h3.post-title a {
+font: normal normal 22px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #d52a33;
+}
+h3.post-title a:hover {
+color: #d52a33;
+text-decoration: underline;
+}
+.post-header {
+margin: 0 0 1em;
+}
+.post-body {
+line-height: 1.4;
+}
+.post-outer h2 {
+color: #333333;
+}
+.post-footer {
+margin: 1.5em 0 0;
+}
+#blog-pager {
+padding: 15px;
+font-size: 120%;
+background-color: #fefdfa;
+border: 1px solid #aab123;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius-topright: 5px;
+margin-top: 1em;
+}
+.blog-feeds, .post-feeds {
+margin: 1em 0;
+text-align: center;
+color: #333333;
+}
+.blog-feeds a, .post-feeds a {
+color: #d52a33;
+}
+.blog-feeds a:visited, .post-feeds a:visited {
+color: #7d181e;
+}
+.blog-feeds a:hover, .post-feeds a:hover {
+color: #d52a33;
+}
+.post-outer .comments {
+margin-top: 2em;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #908d6a;
+border-bottom: 1px solid #908d6a;
+}
+.comments .continue {
+border-top: 2px solid #908d6a;
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+margin: -20px 0 -1px;
+padding: 20px 0 0;
+color: #333333;
+overflow: hidden;
+}
+.footer-fauxborder-left {
+border-top: 1px solid #aab123;
+background: #fefdfa none repeat scroll 0 0;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+margin: 0 -20px;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+*+html body.mobile .main-inner .column-center-inner {
+margin-top: 0;
+}
+.mobile .main-inner .widget {
+padding: 0 0 15px;
+}
+.mobile .main-inner .widget h2 + div,
+.mobile .footer-inner .widget h2 + div {
+border-top: none;
+padding-top: 0;
+}
+.mobile .footer-inner .widget h2 {
+padding: 0.5em 0;
+border-bottom: none;
+}
+.mobile .main-inner .widget .widget-content {
+margin: 0;
+padding: 7px 0 0;
+}
+.mobile .main-inner .widget ul,
+.mobile .main-inner .widget #ArchiveList ul.flat {
+margin: 0 -15px 0;
+}
+.mobile .main-inner .widget h2.date-header {
+right: 0;
+}
+.mobile .date-header span {
+padding: 0.4em 0;
+}
+.mobile .date-outer:first-child {
+margin-bottom: 0;
+border: 1px solid #aab123;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.mobile .date-outer {
+border-color: #aab123;
+border-width: 0 1px 1px;
+}
+.mobile .date-outer:last-child {
+margin-bottom: 0;
+}
+.mobile .main-inner {
+padding: 0;
+}
+.mobile .header-inner .section {
+margin: 0;
+}
+.mobile .blog-posts {
+padding: 0 10px;
+}
+.mobile .post-outer, .mobile .inline-ad {
+padding: 5px 0;
+}
+.mobile .tabs-inner .section {
+margin: 0 10px;
+}
+.mobile .main-inner .widget h2 {
+margin: 0;
+padding: 0;
+}
+.mobile .main-inner .widget h2.date-header span {
+padding: 0;
+}
+.mobile .main-inner .widget .widget-content {
+margin: 0;
+padding: 7px 0 0;
+}
+.mobile #blog-pager {
+border: 1px solid transparent;
+background: #fefdfa none repeat scroll 0 0;
+}
+.mobile .main-inner .column-left-inner,
+.mobile .main-inner .column-right-inner {
+background: transparent none repeat 0 0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+-goog-ms-box-shadow: none;
+box-shadow: none;
+}
+.mobile .date-posts {
+margin: 0;
+padding: 0;
+}
+.mobile .footer-fauxborder-left {
+margin: 0;
+border-top: inherit;
+}
+.mobile .main-inner .section:last-child .Blog:last-child {
+margin-bottom: 0;
+}
+.mobile-index-contents {
+color: #333333;
+}
+.mobile .mobile-link-button {
+background: #d52a33 url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat scroll 0 0;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: transparent;
+border-top: 1px solid;
+border-color: #908d6a;
+color: #333333;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #908d6a;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 930px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 930px;
+max-width: 930px;
+_width: 930px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 360px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 360px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("360px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 360px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 360px;
+margin-right: -360px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">(function(){var a;var b=navigator.userAgent;a=-1!=b.indexOf("Mobile")&&-1!=b.indexOf("WebKit")&&-1==b.indexOf("iPad")?!0:-1!=b.indexOf("Opera Mini")?!0:!1;if(a){var c;a:{var d=window.location.href,e=d.split("?");switch(e.length){case 1:c=d+"?m=1";break a;case 2:c=0<=e[1].search("(^|&)m=")?null:d+"&m=1";break a;default:c=null}}c&&window.location.replace(c)};})();
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=57392424587537905&amp;blogName=leknarm&#39;s+blog&amp;publishMode=PUBLISH_MODE_HOSTED&amp;navbarType=LIGHT&amp;layoutType=LAYOUTS&amp;searchRoot=http://www.leknarm.com/search&amp;blogLocale=th_TH&amp;homepageUrl=http://www.leknarm.com/&amp;vt=-2010688422045166981" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+leknarm's blog
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'></div>
+<div class='tabs section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>ว&#3633;นพ&#3640;ธท&#3637;&#3656; 9 พฤศจ&#3636;กายน พ.ศ. 2554</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='1563432128524993777'></a>
+<h3 class='post-title entry-title'>
+<a href='http://www.leknarm.com/2011/11/cron-web-application-spring-quartz.html'>ทำ Cron บน Web Application ง&#3656;ายๆ ด&#3657;วย Spring + Quartz</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-1563432128524993777'>
+บน Linux เวลาต&#3657;องการท&#3637;&#3656;จะร&#3633;นโปรแกรม หร&#3639;อ Script โดยต&#3633;&#3657;งเวลาให&#3657;ร&#3633;น ท&#3640;กๆ เช&#3657;าหร&#3639;อท&#3640;กๆ ช&#3633;&#3656;วโมงคงทำได&#3657;ไม&#3656;ยากเพราะบน Linux ม&#3637; <a href="http://en.wikipedia.org/wiki/Cron">Cron</a> อย&#3641;&#3656; แต&#3656;ถ&#3657;าต&#3657;องการ Schedule ร&#3633;นโปรแกรมบน Windows คงต&#3657;องใช&#3657; <a href="http://en.wikipedia.org/wiki/Windows_Task_Scheduler">Windows Task Scheduler</a>&nbsp;แต&#3656;ถ&#3657;าต&#3657;องการร&#3633;น Cron บน Web Application ล&#3656;ะจะต&#3657;องทำย&#3633;งไง?<br />
+สำหร&#3633;บ Java น&#3633;&#3657;นม&#3637; Library สำหร&#3633;บจ&#3633;ดการ Schedule อย&#3641;&#3656;ช&#3639;&#3656;อว&#3656;า <a href="http://quartz-scheduler.org/">Quartz</a>&nbsp;เอาไว&#3657;จ&#3633;ดการ Schedule ต&#3656;างๆ ใน Application ได&#3657;<br />
+แต&#3656;เน&#3639;&#3656;องด&#3657;วยถ&#3657;าใช&#3657; Quartz อย&#3656;างเด&#3637;ยวม&#3633;นคงไม&#3656;หล&#3656;อเท&#3656;าไร ด&#3633;งน&#3633;&#3657;นเราจ&#3638;งต&#3657;องเอามา Integrate ก&#3633;บ Spring ซะเพราะหลายคนส&#3656;วนใหญ&#3656;ก&#3655;ใช&#3657;งาน Spring ก&#3633;นอย&#3641;&#3656;แล&#3657;ว<br />
+ก&#3656;อนอ&#3639;&#3656;นเรามาด&#3641; dependency ก&#3633;นก&#3656;อนคร&#3633;บว&#3656;าจะใช&#3657; Quartz ก&#3633;บ Spring น&#3633;&#3657;นต&#3657;องใช&#3657;อะไรบ&#3657;าง<br />
+<br />
+pom.xml
+<br />
+<br />
+<pre class="brush:xml">&lt;dependencies&gt;
+
+ &lt;dependency&gt;
+          &lt;groupid&gt;opensymphony&lt;/groupid&gt;
+   &lt;artifactid&gt;quartz&lt;/artifactid&gt;
+   &lt;version&gt;1.6.3&lt;/version&gt;
+ &lt;/dependency&gt;
+ 
+ &lt;dependency&gt;
+   &lt;groupid&gt;commons-collections&lt;/groupid&gt;
+   &lt;artifactid&gt;commons-collections&lt;/artifactid&gt;
+   &lt;version&gt;3.2.1&lt;/version&gt;
+ &lt;/dependency&gt;
+ 
+ &lt;dependency&gt;
+  &lt;groupid&gt;org.springframework&lt;/groupid&gt;
+  &lt;artifactid&gt;spring&lt;/artifactid&gt;
+  &lt;version&gt;3.0.5.RELEASE&lt;/version&gt;
+ &lt;/dependency&gt;
+ 
+ &lt;dependency&gt;
+  &lt;groupid&gt;org.springframework&lt;/groupid&gt;
+  &lt;artifactid&gt;spring-web&lt;/artifactid&gt;
+  &lt;version&gt;3.0.5.RELEASE&lt;/version&gt;
+ &lt;/dependency&gt;
+ 
+  &lt;/dependencies&gt;
+</pre>
+<pre class="brush:xml"></pre>
+จากน&#3633;&#3657;นให&#3657;สร&#3657;างไฟล&#3660;ท&#3637;&#3656;เราต&#3657;องการจะร&#3633;นเป&#3655;น Schedule
+<br />
+<br />
+HelloQuartz.java<br />
+<br />
+<pre class="brush:java">public class HelloQuartz {
+    public void hello() {
+        System.out.println("hello quartz");
+    }
+}
+</pre>
+เม&#3639;&#3656;อม&#3637;องค&#3660;ประกอบครบแล&#3657;ว เราก&#3655;มา config applicationContext.xml ก&#3633;น
+
+applicationContext.xml
+
+<br />
+<br />
+<pre class="brush:xml">&lt;bean id="helloQuartz" class="com.example.scheduler.HelloQuartz" /&gt;
+ 
+ &lt;bean id="helloJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean"&gt;
+  &lt;property name="targetObject" ref="helloQuartz" /&gt;
+  &lt;property name="targetMethod" value="hello" /&gt;
+ &lt;/bean&gt;
+ 
+ &lt;bean id="helloJob" class="org.springframework.scheduling.quartz.CronTriggerBean"&gt;
+  &lt;property name="jobDetail" ref="helloJobDetail" /&gt;
+  &lt;property name="cronExpression" value="0/5 * * * * ?" /&gt;
+ &lt;/bean&gt;
+ 
+ &lt;bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean"&gt;
+  &lt;property name="triggers"&gt;
+   &lt;list&gt;
+    &lt;ref bean="helloJob" /&gt;
+   &lt;/list&gt;
+  &lt;/property&gt;
+ &lt;/bean&gt;
+</pre>
+จาก code ด&#3657;านบน เรากำหนดให&#3657; bean ท&#3637;&#3656;ต&#3657;องการร&#3633;นเป&#3655;น HelloQuartz และกำหนด method ท&#3637;&#3656;จะร&#3633;นให&#3657;เป&#3655;น hello แล&#3657;วส&#3633;&#3656;งร&#3633;นท&#3640;กๆ 5 ว&#3636;นาท&#3637; ซ&#3638;&#3656;งเราสามารถกำหนด expression ได&#3657;ตาม pattern ของ <a href="http://en.wikipedia.org/wiki/Cron">Cron</a>&nbsp;คร&#3633;บ
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn'>Tantai Thanakanok</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://www.leknarm.com/2011/11/cron-web-application-spring-quartz.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-11-09T13:41:00+07:00'>13:41</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://www.leknarm.com/2011/11/cron-web-application-spring-quartz.html#comment-form' onclick=''>0
+comments</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-578826122'>
+<a href='http://www.blogger.com/post-edit.g?blogID=57392424587537905&postID=1563432128524993777&from=pencil' title='แก้ไขบทความ'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=1563432128524993777&target=email' target='_blank' title='ส่งอีเมลข้อมูลนี้'><span class='share-button-link-text'>ส&#3656;งอ&#3637;เมลข&#3657;อม&#3641;ลน&#3637;&#3657;</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=1563432128524993777&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=1563432128524993777&target=twitter' target='_blank' title='แบ่งปันไปที่ Twitter'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=1563432128524993777&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='แบ่งปันไปที่ Facebook'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Facebook</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger' href='http://www.leknarm.com/2011/11/cron-web-application-spring-quartz.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+tags
+<a href='http://www.leknarm.com/search/label/cron' rel='tag'>cron</a>,
+<a href='http://www.leknarm.com/search/label/java' rel='tag'>java</a>,
+<a href='http://www.leknarm.com/search/label/quartz' rel='tag'>quartz</a>,
+<a href='http://www.leknarm.com/search/label/schedule' rel='tag'>schedule</a>,
+<a href='http://www.leknarm.com/search/label/spring' rel='tag'>spring</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end(name=default) -->
+<div class='inline-ad'>
+<script type="text/javascript"><!--
+google_ad_client="pub-8440459609812871";
+google_ad_host="pub-1556223355139109";
+google_ad_width=300;
+google_ad_height=250;
+google_ad_format="300x250_as";
+google_ad_type="text_image";
+google_ad_host_channel="0001";
+google_color_border="FCFBF5";
+google_color_bg="FCFBF5";
+google_color_link="D52A33";
+google_color_url="908D6A";
+google_color_text="333333";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- google_ad_section_start -->
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>ว&#3633;นพฤห&#3633;สบด&#3637;ท&#3637;&#3656; 27 ต&#3640;ลาคม พ.ศ. 2554</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='7629325313257580461'></a>
+<h3 class='post-title entry-title'>
+<a href='http://www.leknarm.com/2011/10/failed-to-add-host-to-list-of-known.html'>แก&#3657;ป&#3633;ญหา Failed to add the host to the list of known hosts ใน cygwin</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-7629325313257580461'>
+บน cygwin เวลาเราจะ ssh ไปท&#3637;&#3656;อ&#3639;&#3656;นแล&#3657;วเก&#3636;ด warning "Failed to add the host to the list of known hosts (/home/[username]/.ssh/known_hosts)." น&#3633;&#3657;นเน&#3639;&#3656;องมาจากใน windows เราไม&#3656;ม&#3637; folder home อย&#3641;&#3656;แต&#3656; home ของเราจะอย&#3641;&#3656;ท&#3637;&#3656; /cygdrive/c/Users/[username] แทนคร&#3633;บ<br />
+<br />
+<div>
+ว&#3636;ธ&#3637;แก&#3657;ไข เราต&#3657;องไปแก&#3657;ไขไฟล&#3660;ท&#3637;&#3656;บอก path ว&#3656;า home เราอย&#3641;&#3656;ท&#3637;&#3656; /cygdrive/c/Users/[username] โดยให&#3657;ไปแก&#3657;ไขท&#3637;&#3656;ไฟล&#3660;
+<br />
+<br /></div>
+<code>C:\path\to\cygwin\etc\passwd</code><br />
+<code><br /></code><br />
+<div>
+โดยเปล&#3637;&#3656;ยน text ภายในไฟล&#3660;จาก /home/[username]  เป&#3655;น /cygdrive/c/Users/[username] แทน จากน&#3633;&#3657;นให&#3657;ลอง ssh ใหม&#3656;จะเห&#3655;นว&#3656;าสามารถ ssh ได&#3657;แล&#3657;วโดยไม&#3656;เต&#3639;อน warning ด&#3633;งกล&#3656;าว
+<br />
+<br /></div>
+<div>
+ท&#3637;&#3656;มา - <a href="http://ekawas.blogspot.com/2007/03/solving-pesky-ssh-issues-in-cygwin.html">http://ekawas.blogspot.com</a>
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn'>Tantai Thanakanok</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://www.leknarm.com/2011/10/failed-to-add-host-to-list-of-known.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-10-27T10:42:00+07:00'>10:42</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://www.leknarm.com/2011/10/failed-to-add-host-to-list-of-known.html#comment-form' onclick=''>0
+comments</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-578826122'>
+<a href='http://www.blogger.com/post-edit.g?blogID=57392424587537905&postID=7629325313257580461&from=pencil' title='แก้ไขบทความ'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7629325313257580461&target=email' target='_blank' title='ส่งอีเมลข้อมูลนี้'><span class='share-button-link-text'>ส&#3656;งอ&#3637;เมลข&#3657;อม&#3641;ลน&#3637;&#3657;</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7629325313257580461&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7629325313257580461&target=twitter' target='_blank' title='แบ่งปันไปที่ Twitter'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7629325313257580461&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='แบ่งปันไปที่ Facebook'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Facebook</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger' href='http://www.leknarm.com/2011/10/failed-to-add-host-to-list-of-known.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>ว&#3633;นพ&#3640;ธท&#3637;&#3656; 31 ส&#3636;งหาคม พ.ศ. 2554</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='7693639155756513954'></a>
+<h3 class='post-title entry-title'>
+<a href='http://www.leknarm.com/2011/08/install-gitorious-ubuntu-1004-lts.html'>Install Gitorious บน Ubuntu 10.04 LTS</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-7693639155756513954'>
+<b>ก&#3656;อนอ&#3639;&#3656;นต&#3657;องต&#3636;ดต&#3633;&#3657;ง package ท&#3637;&#3656;จำเป&#3655;นก&#3656;อน</b><br />
+<pre class="brush:bash">apt-get install -y build-essential apache2 apache2-dev libapache2-mod-xsendfile git-core git-doc mysql-server mysql-client libmysqlclient15-dev phpmyadmin ruby-dev rubygems libopenssl-ruby libdbd-mysql-ruby libmysql-ruby libexpat-dev libcurl4-openssl-dev postfix apg geoip-bin libgeoip1 libgeoip-dev imagemagick libmagick++-dev libpcre3 libpcre3-dev zlib1g zlib1g-dev zip unzip libyaml-dev libonig-dev memcached irb aspell libaspell-dev aspell-en
+</pre><b>update gem ให&#3657;เป&#3655;น version ล&#3656;าส&#3640;ดเพราะว&#3656;าม&#3637; default gem version ต&#3656;ำเก&#3636;นไป</b><br />
+<pre class="brush:bash">gem install rubygems-update
+cd /var/lib/gems/1.8/bin
+./update_rubygems
+</pre><b>ต&#3636;ดต&#3633;&#3657;ง ruby gems ท&#3637;&#3656;ต&#3657;องจำเป&#3655;น</b><br />
+<pre class="brush:bash">gem install -b --no-ri --no-rdoc rmagick chronic geoip daemons hoe echoe ruby-yadis ruby-openid mime-types diff-lcs json ruby-hmac rake stompserver passenger rails raspell
+gem install -b --no-ri --no-rdoc -v 1.0.1 rack
+gem install -b --no-ri --no-rdoc -v 1.3.1.1 rdiscount
+gem install -b --no-ri --no-rdoc -v 1.1 stomp
+</pre><b>ทำ symlinks ให&#3657;ก&#3633;บ ruby</b><br />
+<pre class="brush:bash">ln -s /usr/bin/ruby1.8 /usr/bin/ruby
+</pre><b>ต&#3636;ดต&#3633;&#3657;ง Sphinx</b><br />
+<pre class="brush:bash">mkdir src
+cd src
+wget http://sphinxsearch.com/downloads/sphinx-0.9.8.1.tar.gz
+tar -xvzf sphinx-0.9.8.1.tar.gz
+cd sphinx-0.9.8.1/
+./configure --prefix=/usr &amp;&amp; make all
+sudo make install
+</pre><b>clone Gitorious</b><br />
+<pre class="brush:bash">mkdir -p /var/www/gitorious.osdev.co.th
+chmod ugo+rwx /var/www/gitorious.osdev.co.th
+cd /var/www/gitorious.osdev.co.th/
+git clone git://gitorious.org/gitorious/mainline.git gitorious
+</pre><b><span class="Apple-style-span" style="font-size: large;">Configure Services</span></b><br />
+<br />
+<b>สร&#3657;าง init script ไฟล&#3660; git-daemon</b><br />
+<pre class="brush:bash">vim /etc/init.d/git-daemon
+</pre><pre class="brush:bash">#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          Gitorious GIT-Daemon
+# Required-Start:
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: GIT-Daemon server daemon
+# Description:       Starts the GIT-Daemon needed by Gitorious
+### END INIT INFO
+
+# Author: Fabio Akita fabioakita@gmail.com
+
+RETVAL=0
+PROG="git-daemon"
+GITORIOUS_ROOT=/var/www/gitorious.osdev.co.th/gitorious
+GIT_DAEMON="/usr/bin/ruby $GITORIOUS_ROOT/script/git-daemon -d"
+LOCK_FILE=/var/lock/git-daemon
+PID_FILE=$GITORIOUS_ROOT/tmp/pids/git-daemon.pid
+
+do_check_pid() {
+if [ -f $PID_FILE ]; then
+PID=`cat $PID_FILE`
+RUNNING=`ps --pid $PID | wc -l`
+else
+PID=0
+RUNNING=0
+fi
+}
+
+runlevel=`runlevel | awk '{print $2}'`
+
+start()
+{
+do_check_pid
+if [ $RUNNING != 2 ] ; then
+echo -n "Starting $PROG: "
+/bin/su - git -c "$GIT_DAEMON"
+sleep 10
+if [ -f $PID_FILE ] ; then
+echo "success"
+RETVAL=0
+else
+echo "failure"
+RETVAL=1
+fi
+else
+echo -n "$PROG already running"
+RETVAL=1
+fi
+[ "$RETVAL" = 0 ] &amp;&amp; touch $LOCK_FILE
+echo
+}
+
+stop()
+{
+do_check_pid
+echo -n "Stopping $PROG: "
+if [ $RUNNING != 2 ] ; then
+echo -n "Stopping $PROG"
+else
+PROGPID=`cat $PID_FILE`
+kill -TERM $PROGPID
+fi
+RETVAL=0
+# if we are in halt or reboot runlevel kill all running sessions
+# so the TCP connections are closed cleanly
+if [ "x$runlevel" = x0 -o "x$runlevel" = x6 ] ; then
+PROGPID=`cat $PID_FILE`
+kill -9 $PROGPID &gt; /dev/null
+fi
+[ "$RETVAL" = 0 ] &amp;&amp; rm -f $LOCK_FILE &amp;&amp; rm -f $PID_FILE
+echo
+}
+
+case "$1" in
+start)
+start
+;;
+stop)
+stop
+;;
+restart)
+stop
+start
+;;
+condrestart)
+if [ -f $LOCK_FILE ] ; then
+if [ "$RETVAL" = 0 ] ; then
+stop
+# avoid race
+sleep 10
+start
+fi
+fi
+;;
+*)
+echo $"Usage: $0 {start|stop|restart|condrestart}"
+RETVAL=1
+esac
+exit $RETVAL
+</pre><b>สร&#3657;าง init script ไฟล&#3660; git-ultrasphinx</b><br />
+<pre class="brush:bash">vim /etc/init.d/git-ultrasphinx
+</pre><pre class="brush:bash">#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          Gitorious Ultrasphinx
+# Required-Start:
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Ultrasphinx daemon
+# Description:       Starts the Ultrasphinx daemons needed by Gitorious
+### END INIT INFO
+
+# Author: Fabio Akita fabioakita@gmail.com
+
+RETVAL=0
+GITORIOUS_ROOT=/var/www/gitorious.osdev.co.th/gitorious
+
+START_CMD="cd $GITORIOUS_ROOT &amp;&amp; rake ultrasphinx:daemon:start RAILS_ENV=production"
+STOP_CMD="cd $GITORIOUS_ROOT &amp;&amp; rake ultrasphinx:daemon:stop RAILS_ENV=production"
+RESTART_CMD="cd $GITORIOUS_ROOT &amp;&amp; rake ultrasphinx:daemon:restart RAILS_ENV=production"
+STATUS_CMD="cd $GITORIOUS_ROOT &amp;&amp; rake ultrasphinx:daemon:status RAILS_ENV=production"
+LOCK_FILE=/var/lock/git-ultrasphinx
+PID_FILE=$GITORIOUS_ROOT/db/sphinx/log/searchd.pid
+
+case "$1" in
+start)
+echo `date` " Starting git-ultrasphinx" &gt;&gt; "$GITORIOUS_ROOT/log/git-ultrasphinx.log"
+/bin/su -- git -c "$START_CMD"
+;;
+stop)
+echo `date`" Stopping git-ultrasphinx" &gt;&gt; "$GITORIOUS_ROOT/log/git-ultrasphinx.log"
+/bin/su -- git -c "$STOP_CMD"
+;;
+status)
+echo `date`" Status For  git-ultrasphinx" &gt;&gt; "$GITORIOUS_ROOT/log/git-ultrasphinx.log"
+/bin/su -- git -c "$STATUS_CMD"
+;;
+restart)
+echo `date`" ReStarting git-ultrasphinx" &gt;&gt; "$GITORIOUS_ROOT/log/git-ultrasphinx.log"
+/bin/su -- git -c "$RESTART_CMD"
+;;
+*)
+echo $"Usage: $0 {start|stop|restart|status}"
+RETVAL=1
+esac
+exit $RETVAL
+</pre><b>สร&#3657;าง init script ไฟล&#3660; git-poller</b><br />
+<pre class="brush:bash">vim /etc/init.d/git-poller
+</pre><pre class="brush:bash">#!/bin/sh
+# Start/stop the git poller
+#
+### BEGIN INIT INFO
+# Provides: git-poller
+# Required-Start: stomp
+# Required-Stop:
+# Default-Start: 2 3 4 5
+# Default-Stop: 1
+# Short-Description: Gitorious poller
+# Description: Gitorious poller
+### END INIT INFO
+
+GITORIOUS_ROOT=/var/www/gitorious.osdev.co.th/gitorious
+echo  `date` " Starting git-poller" &gt;&gt; "$GITORIOUS_ROOT/log/git-poller.log"
+/bin/su -- git -c " cd $GITORIOUS_ROOT; RAILS_ENV=production script/poller $@"
+
+</pre><b>สร&#3657;าง init script ไฟล&#3660; stomp</b><br />
+<pre class="brush:bash">vim /etc/init.d/stomp</pre><pre class="brush:bash">#!/bin/sh
+# Start/stop the stompserver
+# WATCH THE LINE WRAPPING BELOW
+### BEGIN INIT INFO
+# Provides: stomp
+# Required-Start: $local_fs $remote_fs $network $syslog
+# Required-Stop:
+# Default-Start: 2 3 4 5
+# Default-Stop: 1
+# Short-Description: Stomp
+# Description: Stomp
+### END INIT INFO
+test -f /usr/bin/stompserver || exit 0
+. /lib/lsb/init-functions
+case $1 in
+start) log_daemon_msg Starting stompserver stompserver
+start-stop-daemon --start --name stompserver --startas /usr/bin/stompserver \
+--background --user git
+log_end_msg $?
+;;
+stop) log_daemon_msg Stopping stompserver stompserver
+start-stop-daemon --stop --name stompserver
+log_end_msg $?
+;;
+restart) log_daemon_msg Restarting stompserver stompserver
+start-stop-daemon --stop --retry 5 --name stompserver
+start-stop-daemon --start --name stompserver --startas /usr/bin/stompserver \
+--background --user git
+log_end_msg $?
+;;
+status)
+status_of_proc /usr/bin/stompserver stompserver &amp;&amp; exit 0 || exit $?
+;;
+*) log_action_msg Usage: /etc/init.d/stomp {start|stop|restart|status}
+exit 2
+;;
+esac
+exit 0
+</pre><b>copy ไฟล&#3660;จาก gitorious ultrasphinx plugin ไปไว&#3657;ท&#3637;&#3656; aspell library</b><br />
+<pre class="brush:bash">cp /var/www/gitorious.osdev.co.th/gitorious/vendor/plugins/ultrasphinx/examples/ap.multi /usr/lib/aspell/
+</pre><b>สร&#3657;าง gitorious logrotate file</b><br />
+<pre class="brush:bash">vim /etc/logrotate.d/gitorious
+</pre>โดยม&#3637; content <br />
+<pre class="brush:bash">/var/www/gitorious.osdev.co.th/gitorious/log/*log {
+missingok
+notifempty
+sharedscripts
+postrotate
+/etc/init.d/git-daemon restart &gt; /dev/null 2&gt;/dev/null || true
+/etc/init.d/git-ultrasphinx restart &gt; /dev/null 2&gt;/dev/null || true
+/bin/touch /var/www/gitorious.osdev.co.th/gitorious/tmp/restart.txt &gt; /dev/null 2&gt;/dev/null || true
+endscript
+}
+</pre><b>สร&#3657;าง git system user</b><br />
+<pre class="brush:bash">adduser --system --home /home/git/ --group --shell /bin/bash g
+chown -R git:git /home/git
+passwd git #ใส&#3656; password ตามต&#3657;องการ
+sudo usermod -a -G git www-data
+sudo chown -R git:git /var/www/gitorious.osdev.co.th
+</pre><b>set init script ให&#3657;ร&#3633;นเม&#3639;&#3656;อ start up</b><br />
+<pre class="brush:bash">cd /var/www/gitorious.osdev.co.th/gitorious
+chown -R git:git config/environment.rb script/poller log tmp
+chmod -R g+w config/environment.rb script/poller log tmp
+chmod ug+x script/poller
+
+chown git:git /etc/init.d/git-ultrasphinx
+chown git:git /etc/init.d/git-daemon
+chown git:git /etc/init.d/stomp
+chown git:git /etc/init.d/git-poller
+chmod 755 /etc/init.d/git-ultrasphinx
+chmod 755 /etc/init.d/git-daemon
+chmod 755 /etc/init.d/stomp
+chmod 755 /etc/init.d/git-poller
+update-rc.d stomp defaults
+update-rc.d git-daemon defaults
+update-rc.d git-ultrasphinx defaults
+update-rc.d git-poller defaults
+</pre><b><span class="Apple-style-span" style="font-size: large;"> Config Apache2</span></b><br />
+<br />
+<b> ต&#3636;ดต&#3633;&#3657;ง passenger module สำหร&#3633;บ apache</b><br />
+<pre class="brush:bash">/var/lib/gems/1.8/bin/passenger-install-apache2-module
+</pre><b>สร&#3657;างไฟล&#3660; passenger.load สำหร&#3633;บ module ของ apache</b><br />
+<pre class="brush:bash">vim /etc/apache2/mods-available/passenger.load</pre>โดยม&#3637; content (ส&#3656;วนน&#3637;&#3657;อาจเปล&#3637;&#3656;ยนไปตาม passenger version)<br />
+<pre class="brush:bash">LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-3.0.8/ext/apache2/mod_passenger.so
+PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-3.0.8
+PassengerRuby /usr/bin/ruby1.8
+</pre><b>Enable module ท&#3637;&#3656;จำเป&#3655;น</b><br />
+<pre class="brush:bash">/usr/sbin/a2enmod passenger
+/usr/sbin/a2enmod rewrite
+/usr/sbin/a2enmod ssl
+</pre><b>Enable SSL site</b><br />
+<pre class="brush:bash">/usr/sbin/a2ensite default-ssl
+</pre><b>Restart Apache</b><br />
+<pre class="brush:bash">/etc/init.d/apache2 restart
+</pre><b>สร&#3657;าง site gitorious</b><br />
+<pre class="brush:bash">vim /etc/apache2/sites-available/gitorious</pre><pre class="brush:bash"><virtualhost *:80="">
+ServerName gitorious.osdev.co.th
+DocumentRoot /var/www/gitorious.bluequartz.net/gitorious/public
+
+# Enable X-SendFile for gitorious repo archiving to work
+XSendFile on
+XSendFileAllowAbove on
+
+# Possible values include: debug, info, notice, warn, error, crit,
+# alert, emerg.
+LogLevel warn
+#
+# The following directives define some format nicknames for use with
+# a CustomLog directive (see below).
+#
+LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
+LogFormat "%h %l %u %t \"%r\" %&gt;s %b" common
+LogFormat "%{Referer}i -&gt; %U" referer
+LogFormat "%{User-agent}i" agent
+
+CustomLog /var/log/apache2/gitorious_access.log combined
+TransferLog /var/log/apache2/gitorious_access.log
+ErrorLog /var/log/apache2/gitorious_error.log
+</virtualhost>
+</pre><b>สร&#3657;าง site gitorious-ssl</b><br />
+<pre class="brush:bash">vim /etc/apache2/sites-available/gitorious-ssl</pre><pre class="brush:bash"><ifmodule mod_ssl.c="">
+<virtualhost _default_:443="">
+SSLEngine on
+SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
+SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+BrowserMatch ".*MSIE.*" nokeepalive ssl-unclean-shutdown downgrade-1.0 force-response-1.0
+DocumentRoot /var/www/gitorious.osdev.co.th/gitorious/public
+
+# Possible values include: debug, info, notice, warn, error, crit,
+# alert, emerg.
+LogLevel warn
+#
+# The following directives define some format nicknames for use with
+# a CustomLog directive (see below).
+#
+LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
+LogFormat "%h %l %u %t \"%r\" %&gt;s %b" common
+LogFormat "%{Referer}i -&gt; %U" referer
+LogFormat "%{User-agent}i" agent
+
+CustomLog /var/log/apache2/gitorious_ssl_access.log combined
+TransferLog /var/log/apache2/gitorious_ssl_access.log
+ErrorLog /var/log/apache2/gitorious_ssl_error.log</virtualhost></ifmodule>
+</pre><b>Disable default SSL site และ enable the Gitorious sites</b><br />
+<pre class="brush:bash">/usr/sbin/a2dissite default
+/usr/sbin/a2dissite default-ssl
+/usr/sbin/a2ensite gitorious
+/usr/sbin/a2ensite gitorious-ssl
+</pre><b>สร&#3657;าง repository directory </b><br />
+<pre class="brush:bash">su git
+cd ~
+mkdir .ssh
+touch .ssh/authorized_keys
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
+mkdir repositories
+mkdir tarballs
+mkdir tarballs-work
+chmod ug+rwx repositories
+echo "export PATH=$PATH:/var/www/gitorious.osdev.co.th/gitorious/script" &gt; ~/.bashrc
+</pre><span class="Apple-style-span" style="font-size: large;"><b>Configure Gitorious</b></span><br />
+<div><pre class="brush:bash">cd /var/www/gitorious.osdev.co.th/gitorious
+mkdir tmp/pids
+cp config/database.sample.yml config/database.yml
+cp config/gitorious.sample.yml config/gitorious.yml
+cp config/broker.yml.example config/broker.yml
+</pre><b>แก&#3657;ไขไฟล&#3660; config/gitorious.yml</b><br />
+<pre class="brush:bash">vim /var/www/gitorious.osdev.co.th/gitorious/config/gitorious.yml
+</pre><pre class="brush:bash">#  Remove every section but production
+# Be sure if you paste a generated secret key using apg -m 64 that you clean up
+# any line breaks. The secret key that is pasted should be on a SINGLE line.
+production:
+
+# ให&#3657;ร&#3633;นคำส&#3633;&#3656;ง apg -m 64 แล&#3657;วนำผลล&#3633;พธ&#3660;ท&#3637;&#3656;ได&#3657;มา paste ท&#3637;&#3656; cookie_secret
+cookie_secret: urbecpajicEvpigdiOlqueDracpevyerbEmDecetsendeehurEjShucJox8Ojit4WaWrinyienderdalyaifugNeahatdashyunnamFucwerdolfyedyeactEjEajIb5IksEytkurewsEetAiwirtEkfedtheebyatNoganyoofBabikOcyemEshvovHasojTropsyengyegidzyggEdamCasdijHegdeasfudCovmenpobdywajcycsuchDabr2NadUlHighEisyoilmojliawgOdAcyimpifCaiWumtangEvzueshjajOtFuciddEbWhoivedesjetockVemOdEvnooquoncoapCaQuavnelkoijfudcatfezUlreylbUd
+
+# The path where git repositories are stored. The actual (bare) repositories resides
+# in repository_base_path/#{project.slug}/#{repository.name}.git/:
+repository_base_path: "/home/git/repositories"
+
+# Stuff that's in the html . custom stats javascript code etc
+extra_html_head_data:
+
+# System message that will appear on all pages if present
+system_message:
+
+# Port the ./script/gitorious script should use which should be
+# the same port that the web server is running on. In Some development
+# environments you may see 3000 for the value. For production
+# servers you should use the same port as your web server.
+gitorious_client_port: 80
+
+# Host the ./script/gitorious script should use:
+gitorious_client_host: gitorious.bluequartz.net
+
+# Host which is serving the gitorious app, eg "gitorious.org"
+gitorious_host: gitorious.bluequartz.net
+
+# System User which is running git daemon
+gitorious_user: git
+
+# Email spam on server errors to:
+# You probably want this during development or when you are trying to debug
+# an installation that is not working correctly.
+exception_notification_emails: mike.jackson@bluequartz.net
+
+# Mangle visible e-mail addresses (spam protection)
+mangle_email_addresses: true
+
+# Enable or Disable Public Mode (true) or Private Mode (false)
+public_mode: true
+
+# Define your locale
+locale: en
+
+# Where should we store generated tarballs?
+# (should be readable by webserver, since we tell it to send the file using X-Sendfile)
+archive_cache_dir: "/Users/git/tarballs"
+
+# Which directory should we work in when we generate tarballs, before moving
+# them to the above dir?
+archive_work_dir: "/Users/git/tarballs-work"
+
+# is it only site admins who can create new projects?
+only_site_admins_can_create_projects: false
+
+# Should we hide HTTP clone urls?
+hide_http_clone_urls: false
+
+# Is this gitorious.org? Read: should we have a very flashy homepage?
+is_gitorious_dot_org: false
+
+# Pick a default license
+#default_license: GNU Affero General Public License (AGPLv3)
+</pre><b>แก&#3657;ไขไฟล&#3660; config/database.yml</b><br />
+<pre class="brush:bash">vim /var/www/gitorious.osdev.co.th/gitorious/config/database.yml
+</pre><pre class="brush:bash"># Remove every section but production
+# Make sure the 'production' section is the following
+production:
+adapter: mysql
+database: gitorious
+username: git
+password: [secret]
+host: localhost
+encoding: utf8
+reconnect = true
+</pre><b>สร&#3657;าง SQL User</b><br />
+<pre class="brush:bash">su git
+mysql -uroot -p
+mysql&gt; CREATE USER 'git'@'localhost' IDENTIFIED BY '******';
+mysql&gt; GRANT ALL PRIVILEGES ON * . * TO  'git'@'localhost' IDENTIFIED BY  '******' WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+mysql&gt; GRANT ALL PRIVILEGES ON `gitorious` .* TO 'git'@'localhost';
+mysql&gt; quit
+</pre><b>Create the Gitorious Databases</b><br />
+ให&#3657;ใช&#3657; user root ไปท&#3637;&#3656; cd /var/www/gitorious.osdev.co.th/gitorious แล&#3657;วร&#3633;นคำส&#3633;&#3656;ง<br />
+<pre class="brush:bash">bundle install
+</pre>จากน&#3633;&#3657;นให&#3657;ใช&#3657; user git ร&#3633;นคำส&#3633;&#3656;ง<br />
+<pre class="brush:bash">su git
+cd /var/www/
+chmod go-w gitorious.osdev.co.th
+cd gitorious.osdev.co.th/gitorious
+vim Rakefile
+</pre>ให&#3657;เพ&#3636;&#3656;ม require 'thread' เข&#3657;าไปด&#3657;านบนส&#3640;ดของส&#3656;วน require<br />
+<pre class="brush:bash">bundle exec rake db:create RAILS_ENV=production
+bundle exec rake db:migrate RAILS_ENV=production
+</pre><b>สร&#3657;าง Gitorious Admin User</b><br />
+<pre class="brush:bash">cd /var/www/gitorious.osdev.co.th/gitorious
+vim vendor/rails/activesupport/lib/active_support.rb
+</pre>ให&#3657;เพ&#3636;&#3656;มส&#3656;วน require 'thread' เข&#3657;าไปด&#3657;านบนส&#3640;ดของส&#3656;วน require<br />
+<pre class="brush:bash">env RAILS_ENV=production /usr/bin/ruby1.8 script/create_admin
+</pre>ให&#3657;ใส&#3656; admin email และ password ท&#3637;&#3656;ต&#3657;องการ<br />
+<br />
+<span class="Apple-style-span" style="font-size: large;"><b> Configure Sphinx Search Daemon</b></span></div><div><pre class="brush:bash">vim /var/www/gitorious.osdev.co.th/gitorious/config/ultrasphinx/default.base
+</pre>แก&#3657;ไขในส&#3656;วน<br />
+<pre class="brush:bash"># Daemon options
+searchd
+{
+# What interface the search daemon should listen on and where to store its logs
+address = 0.0.0.0
+port = 3312
+.......
+</pre>ให&#3657;เป&#3655;น<br />
+<pre class="brush:bash"># Daemon options
+searchd
+{
+# What interface the search daemon should listen on and where to store its logs
+address = localhost
+port = 3312
+.......
+</pre><b>load configurations เข&#3657;าไปใน ruby files</b><br />
+<pre class="brush:bash">cd /var/www/gitorious.osdev.co.th/gitorious
+bundle exec rake ultrasphinx:bootstrap RAILS_ENV=production
+bundle exec rake ultrasphinx:spelling:build RAILS_ENV=production
+</pre><b>Set permissions อ&#3637;กคร&#3633;&#3657;งเพ&#3639;&#3656;อความช&#3633;วร&#3660;</b><br />
+<pre class="brush:bash">cd /var/www/gitorious.osdev.co.th/gitorious
+chown -R git:git config/environment.rb script/poller log tmp
+chmod -R g+w config/environment.rb script/poller log tmp
+chmod ug+x script/poller
+</pre><b>Setup Cron Job</b><br />
+<pre class="brush:bash">su git
+crontab -e
+* */1 * * * cd /var/www/gitorious.bluequartz.net/gitorious &amp;&amp; rake ultrasphinx:index RAILS_ENV=production
+</pre>reference&nbsp;<a href="http://www.bluequartz.net/projects/EIM_Segmentation/SCMService/html/gitorious___ubuntu__setup.html">http://www.bluequartz.net/</a></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn'>Tantai Thanakanok</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://www.leknarm.com/2011/08/install-gitorious-ubuntu-1004-lts.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-08-31T11:38:00+07:00'>11:38</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://www.leknarm.com/2011/08/install-gitorious-ubuntu-1004-lts.html#comment-form' onclick=''>0
+comments</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-578826122'>
+<a href='http://www.blogger.com/post-edit.g?blogID=57392424587537905&postID=7693639155756513954&from=pencil' title='แก้ไขบทความ'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7693639155756513954&target=email' target='_blank' title='ส่งอีเมลข้อมูลนี้'><span class='share-button-link-text'>ส&#3656;งอ&#3637;เมลข&#3657;อม&#3641;ลน&#3637;&#3657;</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7693639155756513954&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7693639155756513954&target=twitter' target='_blank' title='แบ่งปันไปที่ Twitter'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=7693639155756513954&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='แบ่งปันไปที่ Facebook'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Facebook</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger' href='http://www.leknarm.com/2011/08/install-gitorious-ubuntu-1004-lts.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+tags
+<a href='http://www.leknarm.com/search/label/git' rel='tag'>git</a>,
+<a href='http://www.leknarm.com/search/label/gitorious' rel='tag'>gitorious</a>,
+<a href='http://www.leknarm.com/search/label/ubuntu%2010.04' rel='tag'>ubuntu 10.04</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>ว&#3633;นจ&#3633;นทร&#3660;ท&#3637;&#3656; 18 กรกฎาคม พ.ศ. 2554</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='8967554828795370510'></a>
+<h3 class='post-title entry-title'>
+<a href='http://www.leknarm.com/2011/07/libreofficeopenofficeorg.html'>แปลงเลขอาราบ&#3636;กให&#3657;เป&#3655;นเลขไทยใน LibreOffice/OpenOffice.org</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-8967554828795370510'>
+จาก post <a href="http://www.leknarm.com/2010/10/openofficeorg-writer.html%20">http://www.leknarm.com/2010/10/openofficeorg-writer.html</a> ผมได&#3657;เข&#3637;ยนมาโครง&#3656;ายๆ และได&#3657;ทำเป&#3655;น extension ไว&#3657;ให&#3657;ลองเล&#3656;นก&#3633;นแล&#3657;ว แต&#3656;ว&#3656;าม&#3637; bug อย&#3641;&#3656;จำนวนมาก และจากงาน OpenOffice.org Codefest#9 ก&#3655;ได&#3657;ม&#3637;เพ&#3639;&#3656;อนๆ ช&#3656;วยก&#3633;นพ&#3633;ฒนา extension น&#3637;&#3657;จนสมบ&#3641;รณ&#3660;ข&#3638;&#3657;นมา<br />
+<br />
+แต&#3656;ระหว&#3656;างท&#3637;&#3656;ผมกำล&#3633;ง review และปร&#3633;บปร&#3640;ง extension อย&#3641;&#3656;น&#3633;&#3657;นก&#3655;ได&#3657;เก&#3636;ดเหต&#3640;การท&#3637;&#3656;ไม&#3656;คาดฝ&#3633;นข&#3638;&#3657;น ม&#3637;บ&#3640;คคลน&#3638;งเอา extension จาก post ท&#3637;&#3656;กล&#3656;าวมาเอาไป publish ท&#3637;&#3656; OpenOffice.org Extensions เฉยเลย <br />
+http://extensions.services.openoffice.org/en/project/thai-number-converter (ไม&#3656;ขอทำเป&#3655;น link นะคร&#3633;บเพราะ SEO) น&#3656;าเศร&#3657;าใจเป&#3655;นท&#3637;&#3656;ส&#3640;ด<br />
+<br />
+แต&#3656;ตอนน&#3637;&#3657;ทางท&#3637;มก&#3655;ได&#3657; publish extension ท&#3637;&#3656;แก&#3657;ไขและปร&#3633;บปร&#3640;งเร&#3637;ยบร&#3657;อยแล&#3657;วไว&#3657;ท&#3637;&#3656; <a href="http://extensions.services.openoffice.org/project/convertdigit">http://extensions.services.openoffice.org/project/convertdigit</a> ท&#3640;กท&#3656;านสามารถ download และทดลองใช&#3657;ได&#3657;เลยคร&#3633;บ หากม&#3637; bug หร&#3639;อ comment ในส&#3656;วนไหนสามารถ comment ได&#3657;ท&#3637;&#3656; extension หร&#3639;อท&#3637;&#3656; blog น&#3637;&#3657;ก&#3655;ได&#3657;คร&#3633;บ
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn'>Tantai Thanakanok</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://www.leknarm.com/2011/07/libreofficeopenofficeorg.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-07-18T22:33:00+07:00'>22:33</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://www.leknarm.com/2011/07/libreofficeopenofficeorg.html#comment-form' onclick=''>0
+comments</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-578826122'>
+<a href='http://www.blogger.com/post-edit.g?blogID=57392424587537905&postID=8967554828795370510&from=pencil' title='แก้ไขบทความ'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=8967554828795370510&target=email' target='_blank' title='ส่งอีเมลข้อมูลนี้'><span class='share-button-link-text'>ส&#3656;งอ&#3637;เมลข&#3657;อม&#3641;ลน&#3637;&#3657;</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=8967554828795370510&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=8967554828795370510&target=twitter' target='_blank' title='แบ่งปันไปที่ Twitter'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=8967554828795370510&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='แบ่งปันไปที่ Facebook'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Facebook</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger' href='http://www.leknarm.com/2011/07/libreofficeopenofficeorg.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+tags
+<a href='http://www.leknarm.com/search/label/convert' rel='tag'>convert</a>,
+<a href='http://www.leknarm.com/search/label/convert%20digit' rel='tag'>convert digit</a>,
+<a href='http://www.leknarm.com/search/label/convert%20thai%20number' rel='tag'>convert thai number</a>,
+<a href='http://www.leknarm.com/search/label/LibreOffice' rel='tag'>LibreOffice</a>,
+<a href='http://www.leknarm.com/search/label/OpenOffice' rel='tag'>OpenOffice</a>,
+<a href='http://www.leknarm.com/search/label/OpenOffice.org' rel='tag'>OpenOffice.org</a>,
+<a href='http://www.leknarm.com/search/label/Osdev' rel='tag'>Osdev</a>,
+<a href='http://www.leknarm.com/search/label/thai' rel='tag'>thai</a>,
+<a href='http://www.leknarm.com/search/label/%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%82' rel='tag'>แปลงเลข</a>,
+<a href='http://www.leknarm.com/search/label/%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B9%84%E0%B8%97%E0%B8%A2' rel='tag'>แปลงเลขไทย</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>ว&#3633;นพฤห&#3633;สบด&#3637;ท&#3637;&#3656; 19 พฤษภาคม พ.ศ. 2554</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='3866908081605744054'></a>
+<h3 class='post-title entry-title'>
+<a href='http://www.leknarm.com/2011/05/embedded-view-content-drupal.html'>การ embedded view ลงใน content บน drupal</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-3866908081605744054'>
+โจทย&#3660;ค&#3639;อต&#3657;องการแสดงผลของ view หลายๆ view ในหน&#3657;าเด&#3637;ยวจะทำอย&#3656;างไร?<br />
+<br />
+ก&#3656;อนอ&#3639;&#3656;นผมได&#3657;ลองหา module เก&#3637;&#3656;ยวก&#3633;บการ embedded view แล&#3657;วหาเท&#3656;าไรก&#3655;หาไม&#3656;เจอ ท&#3637;&#3656;เจอก&#3655;ใช&#3657;ยากหร&#3639;อใช&#3657;ไม&#3656;ได&#3657;เลย คราวน&#3637;&#3657;ก&#3655;เลยต&#3657;องมาหา API ในการเร&#3637;ยกใช&#3657;ม&#3633;นแทน ปรากฏว&#3656;าง&#3656;ายกว&#3656;าท&#3637;&#3656;ค&#3636;ดเยอะ ทำให&#3657;ร&#3641;&#3657;เลยว&#3656;าทำไมเขาไม&#3656;ทำเป&#3655;น module ก&#3633;น<br />
+<br />
+ว&#3636;ธ&#3637;การ embedded ม&#3637;ด&#3633;งน&#3637;&#3657;<br />
+<br />
+<pre class="brush: php">&lt;?php
+&nbsp; $viewName = 'viewname';
+&nbsp; print views_embed_view($viewName);
+?&gt;</pre><br />
+แค&#3656;น&#3637;&#3657;เราก&#3655;สามารถ embedded view เข&#3657;าไปใน page หร&#3639;อ story ได&#3657;แล&#3657;วคร&#3633;บ<br />
+<br />
+ท&#3637;&#3656;มา - <a href="http://thedrupalblog.com/embedding-view-drupal-6-using-views-embed-view">thedrupalblog.com</a>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn'>Tantai Thanakanok</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://www.leknarm.com/2011/05/embedded-view-content-drupal.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-05-19T15:59:00+07:00'>15:59</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://www.leknarm.com/2011/05/embedded-view-content-drupal.html#comment-form' onclick=''>0
+comments</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-578826122'>
+<a href='http://www.blogger.com/post-edit.g?blogID=57392424587537905&postID=3866908081605744054&from=pencil' title='แก้ไขบทความ'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=3866908081605744054&target=email' target='_blank' title='ส่งอีเมลข้อมูลนี้'><span class='share-button-link-text'>ส&#3656;งอ&#3637;เมลข&#3657;อม&#3641;ลน&#3637;&#3657;</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=3866908081605744054&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=3866908081605744054&target=twitter' target='_blank' title='แบ่งปันไปที่ Twitter'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=57392424587537905&postID=3866908081605744054&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='แบ่งปันไปที่ Facebook'><span class='share-button-link-text'>แบ&#3656;งป&#3633;นไปท&#3637;&#3656; Facebook</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger' href='http://www.leknarm.com/2011/05/embedded-view-content-drupal.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+tags
+<a href='http://www.leknarm.com/search/label/drupal' rel='tag'>drupal</a>,
+<a href='http://www.leknarm.com/search/label/embed' rel='tag'>embed</a>,
+<a href='http://www.leknarm.com/search/label/embedded' rel='tag'>embedded</a>,
+<a href='http://www.leknarm.com/search/label/view' rel='tag'>view</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://www.leknarm.com/search?updated-max=2011-05-19T15:59:00%2B07:00&max-results=5' id='Blog1_blog-pager-older-link' title='บทความที่เก่ากว่า'>บทความท&#3637;&#3656;เก&#3656;ากว&#3656;า</a>
+</span>
+<a class='home-link' href='http://www.leknarm.com/'>หน&#3657;าแรก</a>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+สม&#3633;ครสมาช&#3636;ก:
+<a class='feed-link' href='http://www.leknarm.com/feeds/posts/default' target='_blank' type='application/atom+xml'>บทความ (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'th_TH'};window.___gapisync = false;(function() {var po = document.createElement('script');po.type = 'text/javascript';po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.body.getElementsByTagName('script')[0];s.parentNode.insertBefore(po, s);})();</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget Profile' id='Profile1'>
+<h2>about me</h2>
+<div class='widget-content'>
+<a href='https://plus.google.com/105761820717326472079/about'><img alt='ภาพถ่ายของฉัน' class='profile-img' height='80' src='//lh5.googleusercontent.com/-jkl-QXkcHk0/AAAAAAAAAAI/AAAAAAAAAAA/_z7XmYxSV_c/s512-c/photo.jpg' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link' href='https://plus.google.com/105761820717326472079/about' rel='author'>
+Tantai Thanakanok
+</a>
+</dt>
+<dd class='profile-textblock'><br></dd>
+</dl>
+<a class='profile-link' href='https://plus.google.com/105761820717326472079/about' rel='author'>ด&#3641;โปรไฟล&#3660;ท&#3633;&#3657;งหมดของฉ&#3633;น</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=57392424587537905&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='แก้ไข'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogList' id='BlogList1'>
+<h2 class='title'>blog list</h2>
+<div class='widget-content'>
+<div class='blog-list-container' id='BlogList1_container'>
+<ul id='BlogList1_blogs'>
+<li style='display: block;'>
+<div class='blog-icon'>
+<input type='hidden' value='http://blogs.alfresco.com/favicon.ico'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blogs.alfresco.com/wp/ddraper' target='_blank'>
+David Draper's Blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://blogs.alfresco.com/wp/ddraper/2012/01/04/extensibilty-updates-roundup/' target='_blank'>
+Extensibilty Updates Roundup</a>
+</span>
+<div class='item-time'>
+1 ส&#3633;ปดาห&#3660;ท&#3637;&#3656;ผ&#3656;านมา
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<input type='hidden' value='http://www.i-som.com/favicon.ico'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.i-som.com' target='_blank'>
+i-som</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.i-som.com/?p=1327' target='_blank'>
+Passion and Fusion at Tokiya</a>
+</span>
+<div class='item-time'>
+1 เด&#3639;อนท&#3637;&#3656;แล&#3657;ว
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<input type='hidden' value='http://www.grails66.com/favicon.ico'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.grails66.com/blog' target='_blank'>
+grails66</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.grails66.com/blog/?p=1223' target='_blank'>
+อยากให&#3657;เป&#3636;ดคอร&#3660;สสอน Grails &amp; Groovy คร&#3633;บ</a>
+</span>
+<div class='item-time'>
+3 เด&#3639;อนท&#3637;&#3656;ผ&#3656;านมา
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<input type='hidden' value='http://www.code-66.com/favicon.ico'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.code-66.com/blog' target='_blank'>
+code-66</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.code-66.com/blog/2011/09/refactoring-toward-smaller-methods/' target='_blank'>
+Refactoring toward smaller methods</a>
+</span>
+<div class='item-time'>
+4 เด&#3639;อนท&#3637;&#3656;ผ&#3656;านมา
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<input type='hidden' value='http://www.iporsut.com/favicon.ico'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.iporsut.com' target='_blank'>
+iporsut</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.iporsut.com/content/central-dogma-%E0%B8%88%E0%B8%B2%E0%B8%81-dna-%E0%B8%AA%E0%B8%B9%E0%B9%88-protein' target='_blank'>
+The Central Dogma จาก DNA ส&#3641;&#3656; Protein</a>
+</span>
+<div class='item-time'>
+4 เด&#3639;อนท&#3637;&#3656;ผ&#3656;านมา
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=57392424587537905&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogList1"));' target='configBlogList1' title='แก้ไข'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div><div class='widget Gadget' id='Gadget1'>
+<h2 class='title'>Recent Comments</h2>
+<script type="text/javascript">
+        if (!window.google || !google.friendconnect) {
+          document.write('<script type="text/javascript"' +
+              'src="http://www.google.com/friendconnect/script/friendconnect.js">' +
+              '</scr' + 'ipt>');
+        }
+      </script>
+<script type="text/javascript">
+      if (!window.registeredBloggerCallbacks) {
+        window.registeredBloggerCallbacks = true;
+
+        
+
+        
+        gadgets.rpc.register('requestReload', function() {
+          document.location.reload();
+        });
+
+        
+        gadgets.rpc.register('requestSignOut', function(siteId) {
+          
+          google.friendconnect.container.openSocialSiteId = siteId;
+          google.friendconnect.requestSignOut();
+        });
+      }
+    </script>
+<script type="text/javascript">
+    
+    function registerGetBlogUrls() {
+      gadgets.rpc.register('getBlogUrls', function() {
+        var holder = {};
+        
+          
+          
+          
+            holder.postFeed = "http://www.blogger.com/feeds/57392424587537905/posts/default";
+          
+          
+          
+            holder.commentFeed = "http://www.blogger.com/feeds/57392424587537905/comments/default";
+          
+          holder.currentBlogUrl = "http://www.leknarm.com/";
+          holder.currentBlogId = "57392424587537905";
+        
+        return holder;
+      });
+    }
+  </script>
+<script type="text/javascript">
+  if (!window.registeredCommonBloggerCallbacks) {
+    window.registeredCommonBloggerCallbacks = true;
+
+    gadgets.rpc.register('resize_iframe', function(height) {
+      var el = document.getElementById(this['f']);
+      if (el) {
+        el.style.height = height + 'px';
+      }
+    });
+
+    
+    gadgets.rpc.register('set_pref', function() {});
+
+    registerGetBlogUrls();
+  }
+  </script>
+<div id="div-13iekfrnub361" style="width: 100%; "></div>
+<script type="text/javascript">
+    var skin = {};
+    skin['FACE_SIZE'] = '32';
+    skin['HEIGHT'] = "200";
+    skin['TITLE'] = "Recent Comments";
+    skin['BORDER_COLOR'] = "transparent";
+    skin['ENDCAP_BG_COLOR'] = "transparent";
+    skin['ENDCAP_TEXT_COLOR'] = "#333333";
+    skin['ENDCAP_LINK_COLOR'] = "#d52a33";
+    skin['ALTERNATE_BG_COLOR'] = "transparent";
+    
+    skin['CONTENT_BG_COLOR'] = "transparent";
+    skin['CONTENT_LINK_COLOR'] = "#d52a33";
+    skin['CONTENT_TEXT_COLOR'] = "#333333";
+    skin['CONTENT_SECONDARY_LINK_COLOR'] = "#d52a33";
+    skin['CONTENT_SECONDARY_TEXT_COLOR'] = "#666666";
+    skin['CONTENT_HEADLINE_COLOR'] = "#000000";
+    skin['FONT_FACE'] = "normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif";
+    google.friendconnect.container.setParentUrl("/");
+    google.friendconnect.container["renderOpenSocialGadget"](
+    {id: "div-13iekfrnub361",
+     height: 200,
+     
+       url: "http://gadgetsforblogger.googlecode.com/files/recent-comments-gadget.xml",
+     
+     
+       "view-params": {"summaryLength":"200","numberOfPosts":"5"},
+     
+     
+       "prefs": {"summaryLength":"200","numberOfPosts":"5"},
+     
+     site: "16576144627007029386",
+      
+     locale: 'th_TH' },
+     skin);
+  </script>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=57392424587537905&widgetType=Gadget&widgetId=Gadget1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Gadget1"));' target='configGadget1' title='แก้ไข'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Stats' id='Stats1'>
+<h2>Stats</h2>
+<div class='widget-content'>
+<div id='Stats1_content' style='display: none;'>
+<img alt='Sparkline' height='30' id='Stats1_sparkline' width='75'/>
+<span class='counter-wrapper text-counter-wrapper' id='Stats1_totalCount'></span>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=57392424587537905&widgetType=Stats&widgetId=Stats1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Stats1"));' target='configStats1' title='แก้ไข'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='sidebar section' id='sidebar-right-3'><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>hierachy</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/search?updated-min=2011-01-01T00:00:00%2B07:00&updated-max=2012-01-01T00:00:00%2B07:00&max-results=16'>2011</a>
+<span class='post-count' dir='ltr'>(16)</span>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_11_01_archive.html'>พฤศจ&#3636;กายน</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/11/cron-web-application-spring-quartz.html'>ทำ Cron บน Web Application ง&#3656;ายๆ ด&#3657;วย Spring + Qua...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_10_01_archive.html'>ต&#3640;ลาคม</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/10/failed-to-add-host-to-list-of-known.html'>แก&#3657;ป&#3633;ญหา Failed to add the host to the list of kno...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_08_01_archive.html'>ส&#3636;งหาคม</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/08/install-gitorious-ubuntu-1004-lts.html'>Install Gitorious บน Ubuntu 10.04 LTS</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_07_01_archive.html'>กรกฎาคม</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/07/libreofficeopenofficeorg.html'>แปลงเลขอาราบ&#3636;กให&#3657;เป&#3655;นเลขไทยใน LibreOffice/OpenOffi...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_05_01_archive.html'>พฤษภาคม</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/05/embedded-view-content-drupal.html'>การ embedded view ลงใน content บน drupal</a></li>
+<li><a href='http://www.leknarm.com/2011/05/menutoolbar-merging-libreoffice.html'>การทำ Menu/Toolbar Merging บน LibreOffice</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_04_01_archive.html'>เมษายน</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/04/search-replace-mysql.html'>การ search &amp; replace ใน MySQL</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_02_01_archive.html'>ก&#3640;มภาพ&#3633;นธ&#3660;</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/02/thai-labels-for-libreoffice.html'>Thai labels for LibreOffice และ OpenOffice.org</a></li>
+<li><a href='http://www.leknarm.com/2011/02/debug-libreofficeopenofficeorg-visual.html'>ว&#3636;ธ&#3637;การ debug LibreOffice/OpenOffice.org ด&#3657;วย Visu...</a></li>
+<li><a href='http://www.leknarm.com/2011/02/font-openofficeorg-libreoffice.html'>แก&#3657;ป&#3633;ญหา Font ภาษาไทยซ&#3657;อนก&#3633;นบน OpenOffice.org และ ...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2011_01_01_archive.html'>มกราคม</a>
+<span class='post-count' dir='ltr'>(6)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2011/01/build-libreoffice.html'>ระบบ Build ของ LibreOffice</a></li>
+<li><a href='http://www.leknarm.com/2011/01/first-child-css-selector.html'>First child CSS Selector</a></li>
+<li><a href='http://www.leknarm.com/2011/01/function-bahteng-openofficeorg-calc.html'>Function Bahteng บน OpenOffice.org Calc</a></li>
+<li><a href='http://www.leknarm.com/2011/01/cookie-javascript.html'>ใช&#3657;งาน cookie บน javascript ก&#3633;บภาษาไทย</a></li>
+<li><a href='http://www.leknarm.com/2011/01/warning-attempt-to-assign-property-of.html'>แก&#3657;ป&#3633;ญหา warning: Attempt to assign property of no...</a></li>
+<li><a href='http://www.leknarm.com/2011/01/alfresco-version-34-windows.html'>แก&#3657;ป&#3633;ญหาช&#3639;&#3656;อภาษาไทยบน Alfresco เละใน Version 3.4 บ...</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/search?updated-min=2010-01-01T00:00:00%2B07:00&updated-max=2011-01-01T00:00:00%2B07:00&max-results=29'>2010</a>
+<span class='post-count' dir='ltr'>(29)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_12_01_archive.html'>ธ&#3633;นวาคม</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/12/restore-database-character-encoding-utf.html'>ว&#3636;ธ&#3637;การ restore database ท&#3637;&#3656;ม&#3637; character encoding ...</a></li>
+<li><a href='http://www.leknarm.com/2010/12/module-drupal.html'>สร&#3657;าง module ใน drupal</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_11_01_archive.html'>พฤศจ&#3636;กายน</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/11/thunderbird-delete-mail-delete-connect.html'>ต&#3633;&#3657;งค&#3656;าให&#3657; Thunderbird delete mail ท&#3633;นท&#3637;หล&#3633;งจากกดป...</a></li>
+<li><a href='http://www.leknarm.com/2010/11/get-locale-openofficeorg-macro.html'>get locale ของ openoffice.org ด&#3657;วย macro</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_10_01_archive.html'>ต&#3640;ลาคม</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/10/patch-bug-export-excel.html'>ช&#3656;วยก&#3633;นทดสอบ patch แก&#3657; bug ว&#3633;นท&#3637;&#3656;พ&#3640;ทธศ&#3633;กราช export...</a></li>
+<li><a href='http://www.leknarm.com/2010/10/openofficeorg-writer.html'>เปล&#3637;&#3656;ยนต&#3633;วเลขอาราบ&#3636;ก ให&#3657;เป&#3655;นเลขไทยบน OpenOffice.or...</a></li>
+<li><a href='http://www.leknarm.com/2010/10/image-button-drupal-from.html'>ทำ image ให&#3657;เป&#3655;น button ใน drupal from</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_09_01_archive.html'>ก&#3633;นยายน</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/09/custom-workflow-alfresco.html'>สร&#3657;าง custom workflow บน alfresco</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_08_01_archive.html'>ส&#3636;งหาคม</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/08/default-language-alfresco.html'>แก&#3657;ไข default language ของ alfresco</a></li>
+<li><a href='http://www.leknarm.com/2010/08/openofficeorg-java.html'>เข&#3637;ยนไฟล&#3660; OpenOffice.org ด&#3657;วย Java</a></li>
+<li><a href='http://www.leknarm.com/2010/08/install-openerp-on-ubuntu-1004-server.html'>Install openerp on ubuntu 10.04 server</a></li>
+<li><a href='http://www.leknarm.com/2010/08/command-line-jodconverter-command-line.html'>แปลงไฟล&#3660;ผ&#3656;าน command line ด&#3657;วย JODConverter (Comma...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_07_01_archive.html'>กรกฎาคม</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/07/switch-ubuntu-1004-sun-java.html'>Switch ubuntu 10.04 ไปใช&#3657; sun java</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_06_01_archive.html'>ม&#3636;ถ&#3640;นายน</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/06/hover-ie.html'>hover ไม&#3656;เว&#3636;ร&#3660;คบน IE</a></li>
+<li><a href='http://www.leknarm.com/2010/06/read-only-openofficeorg.html'>แก&#3657;ไขไฟล&#3660; read-only บน OpenOffice.org ให&#3657;กล&#3633;บมาใช&#3657;...</a></li>
+<li><a href='http://www.leknarm.com/2010/06/show-reads-view-node-drupal.html'>show จำนวน reads (view) ของ node ใน drupal</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_05_01_archive.html'>พฤษภาคม</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/05/set-redirect-permanent-virtualhost.html'>ว&#3636;ธ&#3637;การ set redirect แบบ permanent บน virtualhost</a></li>
+<li><a href='http://www.leknarm.com/2010/05/bazaar-v2x-ubuntu.html'>ต&#3636;ดต&#3633;&#3657;ง bazaar v2.x ใน ubuntu</a></li>
+<li><a href='http://www.leknarm.com/2010/05/bonita-and-ldap-configuration.html'>Bonita and Ldap Configuration (Authenticate User)</a></li>
+<li><a href='http://www.leknarm.com/2010/05/bonita-and-ldap-configuration-module.html'>Bonita and Ldap Configuration (Module Login)</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_04_01_archive.html'>เมษายน</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/04/wireless-driver-compaq-cq40-621tu.html'>แก&#3657;ไขป&#3633;ญหา wireless driver ของ Compaq CQ40-621TU (...</a></li>
+<li><a href='http://www.leknarm.com/2010/04/locale-ubuntu.html'>ว&#3636;ธ&#3637;การต&#3633;&#3657;งค&#3656;า locale ใน ubuntu</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_03_01_archive.html'>ม&#3637;นาคม</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/03/repeat-detail-band-ireport.html'>การ repeat เส&#3657;นใน Detail Band บน iReport</a></li>
+<li><a href='http://www.leknarm.com/2010/03/fgetcsv-php.html'>ป&#3633;ญหา fgetcsv ก&#3633;บ php</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_02_01_archive.html'>ก&#3640;มภาพ&#3633;นธ&#3660;</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/02/svn-command-ubuntu.html'>การใช&#3657;งาน svn command (ubuntu)</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2010_01_01_archive.html'>มกราคม</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2010/01/set-mysql-utf8.html'>set ค&#3656;า mysql ให&#3657;ใช&#3657;งาน utf8</a></li>
+<li><a href='http://www.leknarm.com/2010/01/reset-change-password-mysql.html'>reset, change password สำหร&#3633;บ mysql</a></li>
+<li><a href='http://www.leknarm.com/2010/01/driver-ubuntu-intel-945gm.html'>แก&#3657;ป&#3633;ญหา driver บน Ubuntu สำหร&#3633;บ Intel 945GM</a></li>
+<li><a href='http://www.leknarm.com/2010/01/basic-html-and-js.html'>basic html and js</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/search?updated-min=2009-01-01T00:00:00%2B07:00&updated-max=2010-01-01T00:00:00%2B07:00&max-results=13'>2009</a>
+<span class='post-count' dir='ltr'>(13)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2009_12_01_archive.html'>ธ&#3633;นวาคม</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2009/12/osdev.html'>ส&#3633;มนาก&#3633;บ Osdev ท&#3637;&#3656;เกาะช&#3657;าง</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2009_11_01_archive.html'>พฤศจ&#3636;กายน</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://www.leknarm.com/2009/11/contributed-numbertext-extension.html'>Contributed numbertext extension</a></li>
+<li><a href='http://www.leknarm.com/2009/11/open-with-notepad2.html'>เพ&#3636;&#3656;ม Open with Notepad2 ในการคล&#3636;กขวาไฟล&#3660;ท&#3640;กไฟล&#3660;</a></li>
+<li><a href='http://www.leknarm.com/2009/11/openofficeorg-calc-windows-7.html'>ป&#3636;ดการแสดงผลต&#3633;วอ&#3633;กษรซ&#3657;อนก&#3633;นของ OpenOffice.org Calc...</a></li>
+<li><a href='http://www.leknarm.com/2009/11/openofficeorg-calc-add-in-with-datedif.html'>OpenOffice.org Calc Add-In with datedif function</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2009_10_01_archive.html'>ต&#3640;ลาคม</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2009_08_01_archive.html'>ส&#3636;งหาคม</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2009_07_01_archive.html'>กรกฎาคม</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://www.leknarm.com/2009_06_01_archive.html'>ม&#3636;ถ&#3640;นายน</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=57392424587537905&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='แก้ไข'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+เทมเพลต Awesome Inc.. ข&#3633;บเคล&#3639;&#3656;อนโดย <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=57392424587537905&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='แก้ไข'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script src='http://www.assoc-amazon.com/s/link-enhancer?tag=leknarmsblog-20&o=1' type='text/javascript'></script>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/1947642054-widgets.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '57392424587537905';BLOG_attachCsiOnload(''); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID\x3d57392424587537905','http://www.leknarm.com/','57392424587537905');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID\x3d57392424587537905','APq4FmBMcjy7tE1Zh3KoBwtUKHk4r2uvd26M9sJ1BGhDESx8-heROGuMMCPZwS0lwUGy7WZMSPPedMyilC1Dg1kCLFJP9J4-FWny-QOCfuvMpiaRiug_ewg\x3d','AOuZoY7lTq9jPVg8PP7tC2gxAgG9CDwJjA:1326872668393');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'leknarm\47s blog', 'pageType': 'index', 'url': 'http://www.leknarm.com/', 'canonicalUrl': 'http://www.leknarm.com/', 'homepageUrl': 'http://www.leknarm.com/', 'blogspotFaviconUrl': 'http://www.leknarm.com/favicon.ico', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'leknarm\47s blog', 'encoding': 'UTF-8', 'locale': 'th-TH', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42leknarm\46#39;s blog - Atom\42 href\75\42http://www.leknarm.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42leknarm\46#39;s blog - RSS\42 href\75\42http://www.leknarm.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42leknarm\46#39;s blog - Atom\42 href\75\42http://www.blogger.com/feeds/57392424587537905/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\07557392424587537905\42 /\076', 'meTag': '\74link rel\75\42me\42 href\75\42https://plus.google.com/105761820717326472079/about\42 /\76\n', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(b,i,d){d\75void 0!\75d?d:(new Date).getTime();this.t[b]\75[d,i]};this.tick(\42start\42,null,b)}var f\75new c;a.jstiming\75{Timer:c,load:f};try{var g\75null;a.chrome\46\46a.chrome.csi\46\46(g\75Math.floor(a.chrome.csi().pageT));null\75\75g\46\46a.gtbExternal\46\46(g\75a.gtbExternal.pageT());null\75\75g\46\46a.external\46\46(g\75a.external.pageT);g\46\46(a.jstiming.pt\75g)}catch(h){};a.tickAboveFold\75function(b){var e\0750;if(b.offsetParent){do e+\75b.offsetTop;while(b\75b.offsetParent)}b\75e;750\76\75b\46\46a.jstiming.load.tick(\42aft\42)};var j\75!1;function k(){j||(j\75!0,a.jstiming.load.tick(\42firstScrollTime\42))}a.addEventListener?a.addEventListener(\42scroll\42,k,!1):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'analyticsAccountNumber': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42http://www.blogger.com/static/v1/jsbin/1211808609-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076'}}]);
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-3', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'เทมเพลต Awesome Inc.. ข&#3633;บเคล&#3639;&#3656;อนโดย \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'http://www.blogger.com/static/v1/jsbin/436444889-lbx_th.js', 'lightboxCssUrl': 'http://www.blogger.com/static/v1/v-css/2985960345-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogListView', new _WidgetInfo('BlogList1', 'sidebar-right-1', null, document.getElementById('BlogList1'), {'numItemsToShow': 5, 'totalItems': 5}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_GadgetView', new _WidgetInfo('Gadget1', 'sidebar-right-1', null, document.getElementById('Gadget1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'sidebar-right-1', null, document.getElementById('Stats1'), {'title': 'Stats', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': true, 'statsUrl': 'http://www.leknarm.com/b/stats?style\75BLACK_TRANSPARENT\46timeRange\75ALL_TIME\46token\75ap198TQBAAA.CgHQIBg2mKt6mbOOvh-lUnXKqMP4DhdG5rTAFUrg2TU.ezG4dR1b1iJLRLyGKk6Ymg'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'หน&#3657;าเว&#3655;บ', 'links': [{'href': 'http://www.leknarm.com/', 'title': 'หน&#3657;าแรก', 'isCurrentPage': true}], 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+</html>
